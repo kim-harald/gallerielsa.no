@@ -1,0 +1,58 @@
+body {
+	background-color : #FFF;
+}
+
+div.banner img {
+	width : 100%;
+}
+
+ul.menu li {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+ul.menu li a {
+	padding: 2px;
+	width: auto;
+	margin: 5px;
+	max-height: 40px;
+	color: black;
+	text-decoration: none;
+	display: block;
+	letter-spacing: 1px;
+	font-size: 1em;
+	font-family: verdana;
+	-o-transition: 0.7s;
+	-ms-transition: 0.7s;
+	-moz-transition: 0.7s;
+	transition: 0.7s;
+	height: 40px;
+	border-radius: 5px;
+}
+
+ul.menu li>a:hover {
+	background: transparent;
+}
+
+ul.menu {
+	text-align: left;
+	width: 20%;
+	display: block;
+	position: relative;
+}
+
+.artist-container img {
+	width:50px;
+}
+
+.artist-container:hover {
+	//cursor:pointer;
+	background-color:lightblue;
+}
+
+tr.artist-container th,tr.artist-container td {
+	padding:2px;
+	vertical-align: top;
+	text-align: left;
+}
+

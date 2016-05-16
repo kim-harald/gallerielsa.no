@@ -1,0 +1,127 @@
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 03:27:00
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 03:26:59 GET /robots.txt - - 80.69.225.169 HTTP/1.0 ECCP/1.2.1+(productlists@eniro.com) - 404 1424
+2016-04-24 03:26:59 GET / - - 80.69.225.169 HTTP/1.0 ECCP/1.2.1+(productlists@eniro.com) - 200 1216
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 04:19:19
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 04:19:19 GET /robots.txt - - 77.75.76.171 HTTP/1.1 Mozilla/5.0+(compatible;+SeznamBot/3.2;++http://fulltext.sblog.cz/) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 05:13:43
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 05:13:43 GET /robots.txt - - 176.36.80.39 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1429
+2016-04-24 05:13:45 GET /arrangement/arr_barnekunst_2004.shtml - - 176.36.80.39 HTTP/1.1 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1405
+2016-04-24 05:13:46 GET /arrangement/index.shtml - - 176.36.80.39 HTTP/1.1 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1405
+2016-04-24 05:13:49 GET /arrangement/uts_barn.shtml - - 176.36.80.39 HTTP/1.1 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 07:05:54
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 07:05:54 GET /bilder/pushwagner_babytrip.jpg - - 51.255.65.12 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 0
+2016-04-24 07:15:51 GET /robots.txt - - 94.23.214.33 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 07:15:53 GET /arrangement/index.shtml - - 94.23.214.33 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 07:15:54 GET /kunstnere/opdahl.shtml - - 94.23.214.33 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 07:15:56 GET /kunstnere/sletvold-moe.shtml - - 94.23.214.33 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 07:40:35
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 07:40:35 GET /robots.txt - - 149.202.47.161 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 07:40:37 GET / - - 149.202.47.161 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 200 1216
+2016-04-24 07:47:40 GET /bilder/bjertnas_1103_3_6.jpg - - 66.249.66.148 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 08:50:25
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 08:50:25 GET /bilder/kharr_1312_9_6.jpg - - 164.132.161.88 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 0
+2016-04-24 08:51:37 GET /bilder/waksvik_1301_4_1.jpg - - 207.46.13.64 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 14372
+2016-04-24 09:02:54 GET /bilder/jub06_6.jpg - - 164.132.161.11 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 0
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 09:34:40
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 09:34:39 GET /robots.txt - - 80.69.225.169 HTTP/1.0 ECCP/1.2.1+(productlists@eniro.com) - 404 1424
+2016-04-24 09:34:39 GET /kunstnere/index.shtml - - 80.69.225.169 HTTP/1.0 ECCP/1.2.1+(productlists@eniro.com) - 404 1424
+2016-04-24 09:38:36 GET / - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 https://www.google.no/ 200 1197
+2016-04-24 09:38:36 GET /style/style.css - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 2418
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 12:19:05
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 12:19:04 GET / - - 178.62.21.202 HTTP/1.1 Mozilla/5.0+Crawlr.no_Webcrawler+(http://www.crawlr.no) - 200 1197
+2016-04-24 12:19:04 GET / - - 178.62.21.202 HTTP/1.1 Mozilla/5.0+Crawlr.no_Webcrawler+(http://www.crawlr.no) - 200 1197
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 12:40:41
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 12:40:41 GET /robots.txt - - 123.125.71.60 HTTP/1.1 Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html) - 404 1424
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 13:10:28
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 13:10:28 GET /robots.txt - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+2016-04-24 13:15:42 GET /robots.txt - - 62.210.107.201 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 13:15:45 GET /kunstnere/comiskey.shtml - - 62.210.107.201 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 13:15:53 GET /robots.txt - - 62.210.107.201 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 13:15:55 GET /kunstnere/furuholmen.shtml - - 62.210.107.201 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 13:15:59 GET /kunstnere/gullvag.shtml - - 62.210.107.201 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 13:26:43 GET /utstilling/helgesen.shtml - - 207.46.13.64 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 13:52:40
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 13:52:40 GET /robots.txt - - 62.210.90.118 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 13:52:41 GET /kunstnere/hovdenak.shtml - - 62.210.90.118 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 13:52:43 GET /kunstnere/pahr-iversen.shtml - - 62.210.90.118 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 13:58:09 GET / - - 164.132.161.18 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 1197
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 14:53:27
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 14:53:26 GET /robots.txt - - 136.243.152.18 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 14:53:28 GET /kunstnere/opdahl.shtml - - 136.243.152.18 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 15:24:10
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 15:24:10 GET /kunstnere/andresen.shtml - - 207.46.13.64 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 17:35:03
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 17:35:02 GET /robots.txt - - 144.76.8.132 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 17:35:04 GET /kunstnere/bodtker.shtml - - 144.76.8.132 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 17:35:05 GET /kunstnere/nerli.shtml - - 144.76.8.132 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 17:35:07 GET /kunstnere/sandemose.shtml - - 144.76.8.132 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-24 17:35:08 GET /kunstnere/sitter.shtml - - 144.76.8.132 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 18:21:18
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 18:21:18 GET /bilder/sandemose_1412_12_6.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-04-24 18:21:18 GET /robots.txt - - 80.69.225.169 HTTP/1.0 ECCP/1.2.1+(productlists@eniro.com) - 404 1424
+2016-04-24 18:21:18 GET / - - 80.69.225.169 HTTP/1.0 ECCP/1.2.1+(productlists@eniro.com) - 200 1216
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 20:13:33
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 20:13:33 GET /bilder/nerli_1312_1_3.jpg - - 164.132.161.68 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 0
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 22:01:13
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 22:01:13 GET /kunstnere/hovdenak.shtml - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 23:00:27
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 23:00:27 GET /bilder/pushwagner_1312_1_6.jpg - - 148.252.117.4 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+GT-I9505+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/49.0.2623.105+Mobile+Safari/537.36 - 200 138569
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-24 23:50:47
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-24 23:50:47 GET /bilder/bergesen_1203_s2_6.jpg - - 51.255.65.32 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 0

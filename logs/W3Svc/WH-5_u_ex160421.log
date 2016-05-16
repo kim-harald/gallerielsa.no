@@ -1,0 +1,155 @@
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 01:07:21
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 01:07:20 GET / - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 200 1197
+2016-04-21 01:07:22 GET /hoved.html - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 200 3619
+2016-04-21 01:07:23 GET /felles/bunn.html - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 200 679
+2016-04-21 01:07:24 GET /felles/hoyre.html - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 200 3010
+2016-04-21 01:07:25 GET /felles/topp_hoved.html - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 200 915
+2016-04-21 01:07:25 GET /felles/venstre.html - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 200 2921
+2016-04-21 01:07:26 GET /kunstnere/widerberg.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:28 GET /utstilling/bjertnas.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:28 GET /utstilling/sandemose.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:28 GET /kunstnere/andresen.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:30 GET /kunstnere/bergesen.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:30 GET /kunstnere/bjerke.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:31 GET /kunstnere/bjertnas.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:31 GET /kunstnere/bleken.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:32 GET /kunstnere/bodtker.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:32 GET /kunstnere/comiskey.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:33 GET /kunstnere/eharr.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:33 GET /kunstnere/furuholmen.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:34 GET /kunstnere/gullvag.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:35 GET /kunstnere/helgesen.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:35 GET /kunstnere/hovdenak.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:36 GET /kunstnere/jharr.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:37 GET /kunstnere/kharr.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:37 GET /kunstnere/kielland.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:39 GET /kunstnere/killiolsen.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:39 GET /kunstnere/nerli.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:40 GET /kunstnere/nesjar.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:40 GET /kunstnere/pahr-iversen.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:41 GET /kunstnere/placht.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:41 GET /kunstnere/pushwagner.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:42 GET /kunstnere/roed.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:45 GET /kunstnere/rygh.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+2016-04-21 01:07:45 GET /kunstnere/sandemose.shtml - - 88.5.87.240 HTTP/1.1 Java/1.6.0_04 - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 02:45:24
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 02:45:24 GET /robots.txt - - 188.166.49.251 HTTP/1.0 SafeDNSBot+(https://www.safedns.com/searchbot) - 404 1424
+2016-04-21 02:45:24 GET / - - 188.166.49.251 HTTP/1.0 SafeDNSBot+(https://www.safedns.com/searchbot) - 200 1216
+2016-04-21 02:49:11 GET /bilder/stolen_flyvendehol_6.jpg - - 157.55.39.186 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 167082
+2016-04-21 02:51:48 GET /robots.txt - - 174.34.135.242 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-21 02:51:50 GET /kunstnere/unilsen.shtml - - 174.34.135.242 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-21 02:51:51 GET /kunstnere/vikhagen.shtml - - 174.34.135.242 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-21 02:51:53 GET /kunstnere/waksvik.shtml - - 174.34.135.242 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-21 02:56:07 GET /bilder/bjertnas_1505_4_1.jpg - - 40.77.167.94 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 8488
+2016-04-21 02:56:07 GET /bilder/gullvag_1301_1_1.jpg - - 40.77.167.94 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 16741
+2016-04-21 03:04:13 GET /grafikk/galleri_elsa150n.jpg - - 66.249.64.58 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-04-21 03:08:03 GET /bilder/kharr_0802_2_1.jpg - - 157.55.39.186 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - 200 5094
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 05:24:42
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 05:24:41 GET /kunstnere/waksvik.shtml - - 85.93.91.84 HTTP/1.0 Mozilla/5.0+(compatible;+DeuSu/5.0.2;++https://deusu.de/robot.html) - 404 1424
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 06:02:59
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 06:02:58 GET /kunstnere/kharr.shtml - - 2a02:598:2::160 HTTP/1.1 Mozilla/5.0+(compatible;+SeznamBot/3.2;++http://fulltext.sblog.cz/) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 08:33:25
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 08:33:25 GET /bilder/placht_1509_1_6.jpg - - 2.150.32.152 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/46.0.2486.0+Safari/537.36+Edge/13.10586 https://www.bing.com/ 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 09:09:45
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 09:09:44 GET / - - 80.69.224.65 HTTP/1.1 - - 200 1197
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 10:30:19
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 10:30:19 GET /bilder/vikhagen_1503_1_6.jpg - - 80.212.163.178 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 https://www.google.no/ 200 129283
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 11:45:19
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 11:45:19 GET / - - 178.164.56.182 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 https://www.google.no/ 200 1197
+2016-04-21 11:45:19 GET /style/style.css - - 178.164.56.182 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 2418
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 12:21:09
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 12:21:09 GET / - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 https://www.google.no/ 200 1197
+2016-04-21 12:21:09 GET /style/style.css - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 2418
+2016-04-21 12:27:58 GET / - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 - 200 1197
+2016-04-21 12:28:00 GET /style/style.css - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 2418
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 14:10:48
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 14:10:48 GET / - - 51.255.65.71 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 1197
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 14:44:58
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 14:44:58 GET / - - 84.215.77.173 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_11_4)+AppleWebKit/601.5.17+(KHTML,+like+Gecko) - 200 1197
+2016-04-21 14:44:58 GET /apple-touch-icon-precomposed.png - - 84.215.77.173 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+2016-04-21 14:44:58 GET /favicon.ico - - 84.215.77.173 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+2016-04-21 14:44:58 GET /apple-touch-icon.png - - 84.215.77.173 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+2016-04-21 14:44:58 GET /apple-touch-icon-precomposed.png - - 84.215.77.173 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+2016-04-21 14:44:58 GET /apple-touch-icon.png - - 84.215.77.173 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 17:04:03
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 17:04:02 GET /modules/help/help.css - - 62.210.152.87 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+Trident/7.0;+rv:11.0)+like+Gecko - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 17:40:22
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 17:40:21 GET /utstilling/placht.shtml - - 66.249.78.53 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 18:58:44
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 18:58:44 GET / - - 66.249.78.53 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 1197
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 19:29:57
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 19:29:57 GET /kunstnere/thorhallsdottir.shtml - - 66.249.78.60 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+2016-04-21 19:42:06 GET /bilder/sandemose_1412_12_1.jpg - - 66.249.78.60 HTTP/1.1 Googlebot-Image/1.0 - 200 6776
+2016-04-21 19:51:46 GET /bilder/helgesen_1409_02_1.jpg - - 66.249.78.60 HTTP/1.1 Googlebot-Image/1.0 - 200 13730
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 21:53:03
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 21:53:03 GET /kunstnere/furuholmen.shtml - - 66.249.78.53 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 22:15:02
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 22:15:02 GET /bilder/gullvag_1503_3_6.jpg - - 66.249.78.53 HTTP/1.1 Googlebot-Image/1.0 - 200 101345
+2016-04-21 22:25:56 GET /robots.txt - - 62.210.107.201 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-21 22:25:58 GET /arrangement/arr_barnekunst_2004.shtml - - 62.210.107.201 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-21 22:26:00 GET /arrangement/index.shtml - - 62.210.107.201 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-21 22:26:09 GET /arrangement/uts_barn.shtml - - 62.210.107.201 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 22:51:36
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 22:51:36 GET /bilder/gullvag_1503_2_6.jpg - - 66.249.66.140 HTTP/1.1 Googlebot-Image/1.0 - 304 163
+2016-04-21 22:54:55 GET /robots.txt - - 66.249.78.60 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+2016-04-21 23:00:15 GET /bilder/gullvag_1503_1_6.jpg - - 66.249.78.60 HTTP/1.1 Googlebot-Image/1.0 - 200 120090
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-04-21 23:20:33
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-04-21 23:20:33 GET /robots.txt - - 176.9.131.69 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424
+2016-04-21 23:20:34 GET /utstilling/vikhagen.shtml - - 176.9.131.69 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1424

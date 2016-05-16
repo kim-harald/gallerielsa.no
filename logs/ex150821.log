@@ -1,0 +1,217 @@
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 00:16:58
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 00:16:58 148.122.215.226 GET /kunstnere/pahr-iversen.shtml - 80 - 157.55.39.249 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 10060 425 593
+2015-08-21 00:17:09 148.122.215.226 GET /jquery/css/slimbox.css - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 1608 387 187
+2015-08-21 00:17:14 148.122.215.226 GET /jquery/js/slimbox.js - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 4854 385 375
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 00:50:53
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 00:50:53 148.122.215.226 GET /bilder/jharr_0809_1_6.jpg - 80 - 188.165.15.108 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.0;++http://ahrefs.com/robot/) - - www.gallerielsa.no 200 0 0 83840 194 453
+2015-08-21 00:59:43 148.122.215.226 GET /kunstnere/sandoy.shtml - 80 - 207.46.13.13 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 9752 295 562
+2015-08-21 00:59:59 148.122.215.226 GET /style/style.css - 80 - 207.46.13.47 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 2456 256 187
+2015-08-21 01:00:13 148.122.215.226 GET /robots.txt - 80 - 68.180.230.97 HTTP/1.1 Mozilla/5.0+(compatible;+Yahoo!+Slurp;+http://help.yahoo.com/help/us/ysearch/slurp) - - www.gallerielsa.no 404 0 2 620 164 187
+2015-08-21 01:00:15 148.122.215.226 GET /bilder/kharr_1312_4_6.jpg - 80 - 68.180.230.97 HTTP/1.1 Mozilla/5.0+(compatible;+Yahoo!+Slurp;+http://help.yahoo.com/help/us/ysearch/slurp) - - www.gallerielsa.no 200 0 0 128200 202 1328
+2015-08-21 01:05:47 148.122.215.226 GET /kunstnere/opdahl.shtml - 80 - 207.46.13.13 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 9697 295 593
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 01:42:47
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 01:42:47 148.122.215.226 GET /robots.txt - 80 - 66.249.67.65 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 404 0 2 620 259 140
+2015-08-21 01:42:47 148.122.215.226 GET /bilder/widerberg_1503_14_6.jpg - 80 - 66.249.78.41 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 304 0 0 249 259 31
+2015-08-21 01:44:17 148.122.215.226 GET /kunstnere/bjerke.shtml - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 19858 419 859
+2015-08-21 01:44:25 148.122.215.226 GET /style/style.css - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 2456 380 187
+2015-08-21 01:44:30 148.122.215.226 GET /jquery/css/slimbox.css - 80 - 207.46.13.47 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 1608 387 171
+2015-08-21 01:44:30 148.122.215.226 GET /jquery/js/slimbox.js - 80 - 207.46.13.47 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 4854 385 375
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 02:26:50
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 02:26:50 148.122.215.226 GET /kunstnere/jharr.shtml - 80 - 157.55.39.249 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 12986 294 671
+2015-08-21 02:27:06 148.122.215.226 GET /bilder/jharr_1301_1_1.jpg - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 15700 266 765
+2015-08-21 02:27:17 148.122.215.226 GET /bilder/jharr_0809_1_1.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 6226 266 421
+2015-08-21 02:27:17 148.122.215.226 GET /bilder/jharr_1301_2_1.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 14937 266 390
+2015-08-21 02:27:18 148.122.215.226 GET /bilder/jharr_1503_2_1.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 9588 266 218
+2015-08-21 02:40:01 148.122.215.226 GET /bilder/jharr_0804_3_1.jpg - 80 - 157.55.39.237 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 2683 266 187
+2015-08-21 02:40:01 148.122.215.226 GET /bilder/jharr_1503_1_1.jpg - 80 - 157.55.39.237 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 11051 266 562
+2015-08-21 02:48:21 148.122.215.226 GET /bilder/hovdenak_1301_5_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 269 375
+2015-08-21 02:48:21 148.122.215.226 GET /bilder/helgesen_1409_07_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 270 375
+2015-08-21 02:48:22 148.122.215.226 GET /bilder/helgesen_1409_03_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 270 359
+2015-08-21 02:48:22 148.122.215.226 GET /bilder/gullvag_1405_5_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 268 375
+2015-08-21 02:48:23 148.122.215.226 GET /bilder/gullvag_1207_5_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 268 375
+2015-08-21 02:48:23 148.122.215.226 GET /bilder/pushwagner_gibraltar.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 404 0 2 620 272 171
+2015-08-21 02:48:23 148.122.215.226 GET /bilder/pushwagner_rose.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 267 218
+2015-08-21 02:48:24 148.122.215.226 GET /bilder/pushwagner_softtoy.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 270 359
+2015-08-21 02:48:24 148.122.215.226 GET /bilder/waksvik_elg_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 404 0 2 620 265 171
+2015-08-21 02:48:24 148.122.215.226 GET /bilder/pushwagner_tangerbeach.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 274 203
+2015-08-21 02:48:25 148.122.215.226 GET /bilder/rygh_1006_4_10.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 375
+2015-08-21 02:48:25 148.122.215.226 GET /bilder/rygh_1006_5_10.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 359
+2015-08-21 02:48:26 148.122.215.226 GET /bilder/kharr_1312_2_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 359
+2015-08-21 02:48:26 148.122.215.226 GET /bilder/sandemose_1412_12_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 271 375
+2015-08-21 02:48:27 148.122.215.226 GET /bilder/sitter_1208_10_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 268 390
+2015-08-21 02:48:27 148.122.215.226 GET /bilder/kharr_1312_3_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 359
+2015-08-21 02:48:29 148.122.215.226 GET /bilder/vikhagen_1503_1_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 269 375
+2015-08-21 02:48:29 148.122.215.226 GET /bilder/sitter_1301_1_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 267 359
+2015-08-21 02:48:30 148.122.215.226 GET /bilder/sletvoldmoe_etsing1_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 273 359
+2015-08-21 02:48:30 148.122.215.226 GET /bilder/stolen_havnen_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 267 359
+2015-08-21 02:48:31 148.122.215.226 GET /bilder/kharr_1312_5_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 375
+2015-08-21 02:48:31 148.122.215.226 GET /bilder/galleri_1312_1_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 268 359
+2015-08-21 02:48:32 148.122.215.226 GET /bilder/eharr_1503_1_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 359
+2015-08-21 02:48:32 148.122.215.226 GET /bilder/eharr_1301_5_8.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 375
+2015-08-21 02:48:33 148.122.215.226 GET /bilder/eharr_1301_4_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 359
+2015-08-21 02:48:33 148.122.215.226 GET /bilder/comiskey_1301_1_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 269 421
+2015-08-21 02:48:34 148.122.215.226 GET /bilder/comiskey_0809_1_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 269 359
+2015-08-21 02:48:34 148.122.215.226 GET /bilder/bleken_1503_8_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 267 375
+2015-08-21 02:48:35 148.122.215.226 GET /bilder/bleken_1503_3_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 267 375
+2015-08-21 02:48:35 148.122.215.226 GET /bilder/bleken_1503_2_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 267 375
+2015-08-21 02:49:29 148.122.215.226 GET /bilder/bleken_1410_2_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 267 359
+2015-08-21 02:49:29 148.122.215.226 GET /bilder/andresen_1503_3_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 269 375
+2015-08-21 02:49:30 148.122.215.226 GET /bilder/jub12_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 259 359
+2015-08-21 02:49:30 148.122.215.226 GET /bilder/jub15_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 259 375
+2015-08-21 02:49:31 148.122.215.226 GET /bilder/bjertnas_1103_4_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 269 390
+2015-08-21 02:49:31 148.122.215.226 GET /bilder/bjertnas_1103_3_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 269 375
+2015-08-21 02:49:32 148.122.215.226 GET /bilder/nerli_1312_1_3.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 406
+2015-08-21 02:49:32 148.122.215.226 GET /bilder/nerli_1312_2_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 359
+2015-08-21 02:49:33 148.122.215.226 GET /bilder/pahr-iversen_1301_1_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 273 359
+2015-08-21 02:49:33 148.122.215.226 GET /bilder/waksvik_1301_5_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 268 375
+2015-08-21 02:49:34 148.122.215.226 GET /bilder/pushwagner_1312_1_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 271 375
+2015-08-21 02:49:34 148.122.215.226 GET /bilder/jub04_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 259 375
+2015-08-21 02:49:35 148.122.215.226 GET /bilder/jharr_1503_2_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 359
+2015-08-21 02:49:35 148.122.215.226 GET /bilder/jharr_1301_2_6.jpg - 80 - 157.55.39.248 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 64 0 266 359
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 03:17:18
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 03:17:18 148.122.215.226 GET /robots.txt - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 404 0 2 620 270 187
+2015-08-21 03:17:23 148.122.215.226 GET /kunstnere/furuholmen.shtml - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 9689 299 562
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 03:47:15
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 03:47:15 148.122.215.226 GET /kunstnere/bleken.shtml - 80 - 66.249.78.55 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+8_3+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12F70+Safari/600.1.4+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 16798 436 171
+2015-08-21 03:49:00 148.122.215.226 GET /kunstnere/eharr.shtml - 80 - 66.249.78.55 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+8_3+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12F70+Safari/600.1.4+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 13732 485 125
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 04:28:49
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 04:28:49 148.122.215.226 GET /kunstnere/kielland.shtml - 80 - 66.249.78.48 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 11853 366 140
+2015-08-21 04:30:18 148.122.215.226 GET /utstilling/uts_killiolsen2.shtml - 80 - 157.55.39.216 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 404 0 2 620 305 187
+2015-08-21 04:43:05 148.122.215.226 GET /kunstnere/jharr.shtml - 80 - 66.249.78.48 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+8_3+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12F70+Safari/600.1.4+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 12986 485 218
+2015-08-21 04:48:22 148.122.215.226 GET /kunstnere/jharr.shtml - 80 - 66.249.67.65 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 12986 363 437
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 05:07:36
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 05:07:36 148.122.215.226 GET /bilder/galleri_1312_1_6.jpg - 80 - 81.167.196.50 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+nb-no;+SAMSUNG+GT-I9506+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Version/1.5+Chrome/28.0.1500.94+Mobile+Safari/537.36 - https://www.google.no/ www.gallerielsa.no 200 0 0 75348 426 421
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 05:26:48
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 05:26:48 148.122.215.226 GET /bilder/gullvag_1105_15_6.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - https://www.google.no/ www.gallerielsa.no 200 0 0 293229 339 1218
+2015-08-21 05:27:02 148.122.215.226 GET /kunstnere/gullvag.shtml - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - https://www.google.no/ www.gallerielsa.no 200 0 0 14491 394 93
+2015-08-21 05:27:02 148.122.215.226 GET /jquery/js/slimbox.js - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 4854 358 78
+2015-08-21 05:27:02 148.122.215.226 GET /jquery/css/slimbox.css - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 1608 375 46
+2015-08-21 05:27:02 148.122.215.226 GET /style/style.css - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 2456 368 31
+2015-08-21 05:27:02 148.122.215.226 GET /grafikk/galleri_elsa150n.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 2232 366 62
+2015-08-21 05:27:02 148.122.215.226 GET /grafikk/rute_sort.gif - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 1094 359 93
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1503_2_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 10652 365 78
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1503_3_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 10695 365 171
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1503_1_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 12068 365 328
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1405_10_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 14741 366 343
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1301_1_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 16780 365 390
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1405_5_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 15715 365 406
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1105_15_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 15231 366 468
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1405_6_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 14375 365 484
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1207_5_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 15008 365 500
+2015-08-21 05:27:02 148.122.215.226 GET /bilder/gullvag_1105_14_1.jpg - 80 - 84.52.194.142 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+8_4_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12H321+Safari/600.1.4 - http://www.gallerielsa.no/kunstnere/gullvag.shtml www.gallerielsa.no 200 0 0 11578 366 484
+2015-08-21 05:30:35 148.122.215.226 GET /bilder/waksvik_1301_4_6.jpg - 80 - 188.165.15.108 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.0;++http://ahrefs.com/robot/) - - www.gallerielsa.no 200 0 0 177003 196 828
+2015-08-21 05:43:37 148.122.215.226 GET /kunstnere/johannessen.shtml - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 10469 300 593
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 06:23:54
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 06:23:54 148.122.215.226 GET /robots.txt - 80 - 89.233.234.186 HTTP/1.0 psbot/0.1+(+http://www.picsearch.com/bot.html) - - www.gallerielsa.no 404 0 2 639 141 78
+2015-08-21 06:23:54 148.122.215.226 GET /kunstnere/rygh.shtml - 80 - 89.233.234.186 HTTP/1.0 psbot/0.1+(+http://www.picsearch.com/bot.html) - - www.gallerielsa.no 200 0 0 11607 252 109
+2015-08-21 06:29:49 148.122.215.226 GET /index.shtml - 80 - 66.249.78.55 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 10830 292 125
+2015-08-21 06:33:25 148.122.215.226 GET /arrangement/index.shtml - 80 - 68.180.230.97 HTTP/1.1 Mozilla/5.0+(compatible;+Yahoo!+Slurp;+http://help.yahoo.com/help/us/ysearch/slurp) - - www.gallerielsa.no 200 0 0 10005 200 750
+2015-08-21 06:37:16 148.122.215.226 GET /kunstnere/stolen.shtml - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 12065 419 640
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 07:00:33
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 07:00:33 148.122.215.226 GET /robots.txt - 80 - 69.30.250.178 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - - www.gallerielsa.no 404 0 2 639 179 156
+2015-08-21 07:00:48 148.122.215.226 GET /arrangement/arr_barnekunst_2004.shtml - 80 - 69.30.250.178 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - - www.gallerielsa.no 200 0 0 8510 417 14218
+2015-08-21 07:00:53 148.122.215.226 GET /arrangement/uts_barn.shtml - 80 - 69.30.250.178 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - - www.gallerielsa.no 200 0 0 9655 429 468
+2015-08-21 07:16:03 148.122.215.226 GET /bilder/helgesen_1409_04_6.jpg - 80 - 66.249.67.65 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 304 0 0 248 258 140
+2015-08-21 07:23:33 148.122.215.226 GET /bilder/widerberg_1503_5_6.jpg - 80 - 66.249.78.48 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 304 0 0 249 258 46
+2015-08-21 07:34:11 148.122.215.226 GET /utstilling/nerli.shtml - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 13259 295 671
+2015-08-21 07:34:23 148.122.215.226 GET /bilder/nerli_1112_4_1.jpg - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 404 0 2 620 266 234
+2015-08-21 07:34:27 148.122.215.226 GET /bilder/nerli_1112_6_1.jpg - 80 - 157.55.39.222 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 404 0 2 620 266 171
+2015-08-21 07:35:39 148.122.215.226 GET /bilder/nerli_1112_1_1.jpg - 80 - 157.55.39.40 HTTP/1.1 Mozilla/5.0+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 404 0 2 620 266 171
+2015-08-21 07:42:36 148.122.215.226 GET /index.shtml - 80 - 66.249.78.41 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+8_3+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12F70+Safari/600.1.4+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 10830 414 93
+2015-08-21 07:47:48 148.122.215.226 GET /index.shtml - 80 - 66.249.78.55 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 10830 342 93
+2015-08-21 07:47:50 148.122.215.226 GET /kunstnere/bleken.shtml - 80 - 66.249.78.55 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 16798 314 109
+2015-08-21 07:47:51 148.122.215.226 GET /bilder/bjertnas_1505_1_4.jpg - 80 - 66.249.78.48 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 200 0 0 74192 207 421
+2015-08-21 07:47:51 148.122.215.226 GET /kunstnere/jharr.shtml - 80 - 66.249.67.71 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 12986 313 375
+2015-08-21 07:47:51 148.122.215.226 GET /kunstnere/sitter.shtml - 80 - 66.249.78.55 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 12927 314 93
+2015-08-21 07:47:53 148.122.215.226 GET /kunstnere/gullvag.shtml - 80 - 66.249.78.41 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 14491 315 109
+2015-08-21 07:47:53 148.122.215.226 GET /kunstnere/andresen.shtml - 80 - 66.249.78.41 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 11041 316 125
+2015-08-21 07:47:54 148.122.215.226 GET /kunstnere/bergesen.shtml - 80 - 66.249.67.65 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 9759 316 390
+2015-08-21 07:47:54 148.122.215.226 GET /kunstnere/kielland.shtml - 80 - 66.249.78.48 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 11853 316 78
+2015-08-21 07:52:58 148.122.215.226 GET /bilder/kharr_1312_1_6.jpg - 80 - 68.180.230.97 HTTP/1.1 Mozilla/5.0+(compatible;+Yahoo!+Slurp;+http://help.yahoo.com/help/us/ysearch/slurp) - - www.gallerielsa.no 200 0 0 165554 202 1656
+2015-08-21 07:53:38 148.122.215.226 GET /bilder/eharr_1301_1_6.jpg - 80 - 93.94.15.13 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+WOW64;+Trident/6.0) - - www.gallerielsa.no 200 0 0 130980 302 546
+2015-08-21 07:57:37 148.122.215.226 GET /utstilling/gullvag.shtml - 80 - 66.249.67.65 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 14545 366 515
+2015-08-21 08:05:39 148.122.215.226 GET /bilder/gullvag_1405_4_6.jpg - 80 - 66.249.67.65 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 404 0 2 620 206 125
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 08:25:48
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 08:25:48 148.122.215.226 GET /bilder/gullvag_1405_9_6.jpg - 80 - 66.249.78.55 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 404 0 2 620 206 46
+2015-08-21 08:27:51 148.122.215.226 GET /kunstnere/killiolsen.shtml - 80 - 180.76.15.28 HTTP/1.1 Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html) - - www.gallerielsa.no 200 0 0 9645 246 750
+2015-08-21 08:35:25 148.122.215.226 GET /bilder/nerli_1112_5_1.jpg - 80 - 199.30.25.111 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - http://www.gallerielsa.no/utstilling/nerli.shtml www.gallerielsa.no 404 0 2 620 276 265
+2015-08-21 08:35:25 148.122.215.226 GET /bilder/nerli_1112_3_1.jpg - 80 - 199.30.25.111 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - http://www.gallerielsa.no/utstilling/nerli.shtml www.gallerielsa.no 404 0 2 620 276 312
+2015-08-21 08:35:25 148.122.215.226 GET /bilder/nerli_1112_2_1.jpg - 80 - 199.30.25.111 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - http://www.gallerielsa.no/utstilling/nerli.shtml www.gallerielsa.no 404 0 2 620 276 234
+2015-08-21 08:46:19 148.122.215.226 GET /bilder/gullvag_1405_2_6.jpg - 80 - 66.249.78.41 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 404 0 2 620 206 31
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 09:03:14
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 09:03:13 148.122.215.226 GET /bilder/gullvag_1405_1_6.jpg - 80 - 66.249.78.55 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 404 0 2 620 206 31
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 09:23:22
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 09:23:22 148.122.215.226 GET /bilder/gullvag_1405_3_6.jpg - 80 - 66.249.67.65 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 404 0 2 620 206 109
+2015-08-21 09:29:05 148.122.215.226 GET /index.shtml - 80 - 157.55.39.3 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+7_0+like+Mac+OS+X)+AppleWebKit/537.51.1+(KHTML,+like+Gecko)+Version/7.0+Mobile/11A465+Safari/9537.53+(compatible;+bingbot/2.0;++http://www.bing.com/bingbot.htm) - - www.gallerielsa.no 200 0 0 10830 397 546
+2015-08-21 09:30:19 148.122.215.226 GET /index.shtml - 80 - 66.249.81.156 HTTP/1.1 Google+favicon - - www.gallerielsa.no 200 0 0 10830 232 93
+2015-08-21 09:30:19 148.122.215.226 GET /favicon.ico - 80 - 66.249.81.160 HTTP/1.1 Google+favicon - - www.gallerielsa.no 404 0 2 620 187 31
+2015-08-21 09:43:31 148.122.215.226 GET /bilder/gullvag_1405_8_6.jpg - 80 - 66.249.78.48 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 404 0 2 620 206 31
+2015-08-21 09:56:39 148.122.215.226 GET /bilder/bleken_1410_3_6.jpg - 80 - 68.180.230.97 HTTP/1.1 Mozilla/5.0+(compatible;+Yahoo!+Slurp;+http://help.yahoo.com/help/us/ysearch/slurp) - - www.gallerielsa.no 200 0 0 144566 203 1437
+2015-08-21 10:02:01 148.122.215.226 GET /bilder/eharr_1301_3_6.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - https://www.google.no/ www.gallerielsa.no 200 0 0 171022 428 765
+2015-08-21 10:02:06 148.122.215.226 GET /kunstnere/eharr.shtml - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - https://www.google.no/ www.gallerielsa.no 200 0 0 13732 508 140
+2015-08-21 10:02:06 148.122.215.226 GET /jquery/js/slimbox.js - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 4854 431 109
+2015-08-21 10:02:06 148.122.215.226 GET /jquery/css/slimbox.css - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 1608 448 46
+2015-08-21 10:02:06 148.122.215.226 GET /style/style.css - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 2456 441 46
+2015-08-21 10:02:06 148.122.215.226 GET /grafikk/galleri_elsa150n.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 2232 456 46
+2015-08-21 10:02:06 148.122.215.226 GET /grafikk/rute_sort.gif - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 1094 449 78
+2015-08-21 10:02:06 148.122.215.226 GET /bilder/eharr_1503_1_1.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 9948 453 203
+2015-08-21 10:02:06 148.122.215.226 GET /bilder/eharr_1312_2_2.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 9424 453 93
+2015-08-21 10:02:06 148.122.215.226 GET /bilder/eharr_1301_4_1.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 11530 453 140
+2015-08-21 10:02:06 148.122.215.226 GET /bilder/eharr_1503_2_1.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 10753 453 218
+2015-08-21 10:02:06 148.122.215.226 GET /bilder/eharr_1312_1_1.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 11842 453 265
+2015-08-21 10:02:06 148.122.215.226 GET /bilder/eharr_1301_2_1.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 9317 453 203
+2015-08-21 10:02:06 148.122.215.226 GET /bilder/eharr_1301_5_1.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 8529 453 171
+2015-08-21 10:02:06 148.122.215.226 GET /bilder/eharr_1301_1_1.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 12594 453 343
+2015-08-21 10:02:06 148.122.215.226 GET /bilder/eharr_1301_3_1.jpg - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 200 0 0 13791 453 343
+2015-08-21 10:02:08 148.122.215.226 GET /favicon.ico - 80 - 89.11.219.172 HTTP/1.1 Mozilla/5.0+(Linux;+Android+4.4.2;+SM-T310+Build/KOT49H)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/44.0.2403.133+Safari/537.36 - http://www.gallerielsa.no/kunstnere/eharr.shtml www.gallerielsa.no 404 0 2 620 422 31
+#Software: Microsoft Internet Information Services 6.0
+#Version: 1.0
+#Date: 2015-08-21 10:23:49
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs-version cs(User-Agent) cs(Cookie) cs(Referer) cs-host sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken 
+2015-08-21 10:23:48 148.122.215.226 GET /bilder/gullvag_1405_12_6.jpg - 80 - 66.249.78.41 HTTP/1.1 Googlebot-Image/1.0 - - www.gallerielsa.no 404 0 2 620 207 46
+2015-08-21 10:30:02 148.122.215.226 GET /utstilling/jharr.shtml - 80 - 66.249.78.41 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - - www.gallerielsa.no 200 0 0 11573 364 125
+2015-08-21 10:32:59 148.122.215.226 GET /admin/ftb.imagegallery.aspx - 80 - 110.84.32.66 HTTP/1.1 - - - www.gallerielsa.no 301 0 0 391 95 281
+2015-08-21 10:32:59 148.122.215.226 GET /ftb.imagegallery.aspx - 80 - 110.84.32.66 HTTP/1.1 - - - www.gallerielsa.no 404 0 0 1773 89 375
+2015-08-21 10:33:00 148.122.215.226 GET /ftb/ftb.imagegallery.aspx - 80 - 110.84.32.66 HTTP/1.1 - - - www.gallerielsa.no 404 0 0 1777 69 281

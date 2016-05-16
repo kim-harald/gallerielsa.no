@@ -43,9 +43,9 @@ $(function() {
 		var artist = {
 				id : $row.data("id"),
 				name : $row.find("input.artist-name").val(),
-				shortdescr : $row.find("input.artist-shortdescr").val(),
-				longdescr : $row.find("textarea.artist-longdescr").val(),
-				deleteddate : $row.data("deleteddate")
+				shortDescr : $row.find("input.artist-shortdescr").val(),
+				longDescr : $row.find("textarea.artist-longdescr").val(),
+				deletedDate : $row.data("deleteddate")
 				};
 		var obj = {js_object : JSON.stringify(artist)};
 		$.ajax({

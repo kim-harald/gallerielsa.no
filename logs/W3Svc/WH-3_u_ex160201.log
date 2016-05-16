@@ -1,0 +1,13 @@
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-02-01 10:39:17
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-02-01 10:39:17 GET / - - 134.47.109.184 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/47.0.2526.106+Safari/537.36+OPR/34.0.2036.47 - 403 1393
+2016-02-01 10:39:18 GET /favicon.ico - - 134.47.109.184 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/47.0.2526.106+Safari/537.36+OPR/34.0.2036.47 http://t-gallerielsa.no.temptelenorhosting.net/ 404 1405
+2016-02-01 10:41:45 GET / - - 134.47.109.184 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/47.0.2526.106+Safari/537.36+OPR/34.0.2036.47 - 200 1197
+2016-02-01 10:41:45 GET /style/style.css - - 134.47.109.184 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/47.0.2526.106+Safari/537.36+OPR/34.0.2036.47 http://t-gallerielsa.no.temptelenorhosting.net/ 200 2418
+2016-02-01 10:41:52 GET / - - 134.47.109.184 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/47.0.2526.106+Safari/537.36+OPR/34.0.2036.47 - 200 1197
+2016-02-01 10:41:53 GET /style/style.css - - 134.47.109.184 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/47.0.2526.106+Safari/537.36+OPR/34.0.2036.47 http://t-gallerielsa.no.temptelenorhosting.net/ 200 2418
+2016-02-01 10:41:55 GET / - - 134.47.109.184 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/47.0.2526.106+Safari/537.36+OPR/34.0.2036.47 - 200 1197
+2016-02-01 10:41:55 GET /style/style.css - - 134.47.109.184 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/47.0.2526.106+Safari/537.36+OPR/34.0.2036.47 http://t-gallerielsa.no.temptelenorhosting.net/ 200 2418
+2016-02-01 10:42:07 GET /postinfo.html - - 134.47.109.184 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/47.0.2526.106+Safari/537.36+OPR/34.0.2036.47 - 200 2699

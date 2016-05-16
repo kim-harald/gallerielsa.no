@@ -18,9 +18,19 @@ class ArtistMySqlExtDAO extends ArtistMySqlDAO{
 	}
 	
 	public function all() {
-		$sql = "SELECT * FROM artist WHERE deletedDate='0000-00-00' OR deletedDate < CURDATE()";
+		$sql = "SELECT * FROM artist WHERE deletedDate='0000-00-00' OR NOW() < deletedDate";
 		$sqlQuery = new SqlQuery($sql);
 		return $this->getList($sqlQuery);
+	}
+	
+	public function remove($artist) {
+		$sql = 'UPDATE artist SET deletedDate = ? WHERE id = ?';
+
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($artist->deletedDate);
+		$sqlQuery->setNumber($artist->id);
+		
+		return $this->executeUpdate($sqlQuery);
 	}
 	
 }

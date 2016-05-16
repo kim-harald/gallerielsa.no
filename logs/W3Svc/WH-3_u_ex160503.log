@@ -1,0 +1,318 @@
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 00:13:04
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 00:13:04 GET / - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(Linux;+Android+6.0.1;+Nexus+5X+Build/MMB29P)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.96+Mobile+Safari/537.36+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 10929
+2016-05-03 00:18:51 GET /kunstnere/thorhallsdottir.html - - 66.249.66.140 HTTP/1.1 Mozilla/5.0+(Linux;+Android+6.0.1;+Nexus+5X+Build/MMB29P)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.96+Mobile+Safari/537.36+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 4009
+2016-05-03 00:20:47 GET /kunstnere/stolen.html - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(Linux;+Android+6.0.1;+Nexus+5X+Build/MMB29P)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.96+Mobile+Safari/537.36+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 3383
+2016-05-03 00:22:44 GET /kunstnere/sitter.html - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(Linux;+Android+6.0.1;+Nexus+5X+Build/MMB29P)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.96+Mobile+Safari/537.36+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 9597
+2016-05-03 00:27:50 GET /utstilling/placht.shtml - - 68.180.229.226 HTTP/1.1 Mozilla/5.0+(compatible;+Yahoo!+Slurp;+http://help.yahoo.com/help/us/ysearch/slurp) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 01:07:18
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 01:07:18 HEAD /kunstnere/bleken.shtml - - 193.91.211.59 HTTP/1.1 Mozilla/5.0+(compatible;+Mikromarc+LinkChecker/1.0;++http://www.bibits.no) - 404 179
+2016-05-03 01:08:34 HEAD /kunstnere/bleken.shtml - - 193.91.211.59 HTTP/1.1 Mozilla/5.0+(compatible;+Mikromarc+LinkChecker/1.0;++http://www.bibits.no) - 404 179
+2016-05-03 01:22:56 GET /kunstnere/waksvik.html - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(Linux;+Android+6.0.1;+Nexus+5X+Build/MMB29P)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.96+Mobile+Safari/537.36+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 3217
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 03:19:03
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 03:19:02 GET /bilder/gullvag_1405_10_6.jpg - - 84.202.211.42 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+7_1+like+Mac+OS+X)+AppleWebKit/537.51.2+(KHTML,+like+Gecko)+Version/7.0+Mobile/11D167+Safari/9537.53 https://www.google.no/ 200 211031
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 04:24:56
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 04:24:56 GET /kunstnere/killiolsen.shtml - - 68.180.229.226 HTTP/1.1 Mozilla/5.0+(compatible;+Yahoo!+Slurp;+http://help.yahoo.com/help/us/ysearch/slurp) - 404 1405
+2016-05-03 04:39:31 GET /bilder/helgesen_1409_02_6.jpg - - 164.132.161.65 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 196858
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 05:35:42
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 05:35:42 GET /kunstnere/kharr.shtml - - 131.253.24.132 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+9.0;+Windows+NT+6.1;+Trident/5.0;++Trident/5.0) - 404 1405
+2016-05-03 05:45:32 GET /robots.txt - - 178.12.106.103 HTTP/1.0 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1429
+2016-05-03 05:45:33 GET /arrangement/arr_barnekunst_2004.shtml - - 178.12.106.103 HTTP/1.1 Mozilla/5.0+(compatible;+MJ12bot/v1.4.5;+http://www.majestic12.co.uk/bot.php?+) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 06:27:45
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 06:27:45 GET /bilder/bleken_1410_7_6.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 07:45:16
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 07:45:16 GET /bilder/andresen_1503_2_6.jpg - - 164.132.161.15 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 107508
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 08:04:05
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 08:04:05 GET /kunstnere/nerli.html - - 220.181.108.153 HTTP/1.1 Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html) - 200 2376
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 09:11:56
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 09:11:56 GET /robots.txt - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+2016-05-03 09:18:03 GET /kunstnere/kharr.shtml - - 80.1.39.201 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 10:20:58
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 10:20:58 GET /robots.txt - - 68.180.229.226 HTTP/1.1 Mozilla/5.0+(compatible;+Yahoo!+Slurp;+http://help.yahoo.com/help/us/ysearch/slurp) - 404 1405
+2016-05-03 10:20:58 GET /kunstnere/thorhallsdottir.shtml - - 68.180.229.226 HTTP/1.1 Mozilla/5.0+(compatible;+Yahoo!+Slurp;+http://help.yahoo.com/help/us/ysearch/slurp) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 11:11:33
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 11:11:33 GET / - - 164.132.161.85 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 200 10929
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 11:57:27
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 11:57:27 GET /bilder/gullvag_1503_1_6.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-05-03 12:00:19 GET /bilder/gullvag_1503_3_6.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-05-03 12:01:17 GET /bilder/gullvag_1405_6_1.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 12:17:07
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 12:17:07 GET /kunstnere/kharr.shtml - - 193.47.71.253 HTTP/1.1 Mozilla/5.0+(compatible;+MSIE+10.0;+Windows+NT+6.2;+WOW64;+Trident/6.0) - 404 1405
+2016-05-03 12:23:43 GET /bilder/pushwagner_rosita.jpg - - 93.94.15.194 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_11_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.86+Safari/537.36 https://www.google.no/ 200 58465
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 13:34:25
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 13:34:25 GET /utstilling/horsheim_1306_9_5.jpg - - 62.210.254.52 HTTP/1.1 Mozilla/5.0+(X11;+Linux+x86_64)+AppleWebKit/537.11+(KHTML,+like+Gecko)+Chrome/23.0.1271.64+Safari/537.11 - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 14:02:08
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 14:02:07 GET /bilder/bergesen_1203_7_6.jpg - - 40.77.162.31 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/534++(KHTML,+like+Gecko)+BingPreview/1.0b - 200 142720
+2016-05-03 14:11:57 GET /utstilling/placht.shtml - - 66.249.66.144 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 14:48:40
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 14:48:40 GET /kunstnere/kharr.shtml - - 208.80.155.255 HTTP/1.1 German+Wikipedia+Broken+Weblinks+Bot;+contact:+gifti@tools.wmflabs.org - 404 1405
+2016-05-03 15:03:39 GET /bilder/pushwagner_rosita.jpg - - 84.213.102.215 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 https://www.google.no/ 200 58465
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 15:36:50
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 15:36:50 GET /kunstnere/comiskey.shtml - - 164.132.161.56 HTTP/1.1 Mozilla/5.0+(compatible;+AhrefsBot/5.1;++http://ahrefs.com/robot/) - 404 1405
+2016-05-03 15:37:20 GET /bilder/pushwagner_tangerbeach.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 16:05:48
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 16:05:48 GET /bilder/kharr_0802_2_6.jpg - - 84.202.203.11 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://www.bing.com/images/search?q=Karl+Erik+harr+bilder&view=detailv2&&id=F43097658BF71894017FE6F02D6E50EC9A4BC3BB&selectedIndex=1&ccid=3SYVYu6b&simid=608007562952641047&thid=OIP.Mdd261562ee9b98e323ad11e6e96dbdd2o0&mode=overlay 200 87084
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 16:22:02
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 16:22:02 GET /bilder/jharr_0809_1_6.jpg - - 84.211.79.116 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36 - 200 83802
+2016-05-03 16:22:15 GET /bilder/jharr_0804_3_6.jpg - - 84.211.79.116 HTTP/1.1 Mozilla/5.0+(Windows+NT+6.1;+WOW64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36 - 200 28185
+2016-05-03 16:26:41 GET / - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 - 200 0
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 16:42:31
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 16:42:31 GET /index.shtml - - 109.189.92.165 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_11_4)+AppleWebKit/601.5.17+(KHTML,+like+Gecko) - 404 1405
+2016-05-03 16:42:31 GET /apple-touch-icon-precomposed.png - - 109.189.92.165 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+2016-05-03 16:42:31 GET /favicon.ico - - 109.189.92.165 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+2016-05-03 16:42:31 GET /apple-touch-icon.png - - 109.189.92.165 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+2016-05-03 16:42:31 GET /index.shtml - - 109.189.92.165 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+9_3+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E188a+Safari/601.1 - 404 1405
+2016-05-03 16:42:31 GET /apple-touch-icon-precomposed.png - - 109.189.92.165 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+2016-05-03 16:42:31 GET /apple-touch-icon.png - - 109.189.92.165 HTTP/1.1 Safari/11601.5.17.1+CFNetwork/760.4.2+Darwin/15.4.0+(x86_64) - 404 1405
+2016-05-03 16:45:21 GET / - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 - 200 10929
+2016-05-03 16:45:23 GET /style/style.css - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 2418
+2016-05-03 16:45:23 GET /csi.js - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 404 1405
+2016-05-03 16:45:23 GET /grafikk/rute_sort.gif - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 1056
+2016-05-03 16:45:23 GET /grafikk/galleri_elsa_3n.jpg - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 0
+2016-05-03 16:45:42 GET /bilder/sitter_1604_02_4.jpg - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 0
+2016-05-03 16:47:57 GET / - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 - 200 10929
+2016-05-03 16:47:57 GET /grafikk/galleri_elsa_3n.jpg - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 7522
+2016-05-03 16:47:57 GET /bilder/sitter_1604_02_4.jpg - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 200 94937
+2016-05-03 16:48:48 GET / - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 - 200 10929
+2016-05-03 16:48:48 GET /csi.js - - 148.252.110.30 HTTP/1.1 Mozilla/5.0+(iPad;+CPU+OS+9_3_1+like+Mac+OS+X)+AppleWebKit/601.1.46+(KHTML,+like+Gecko)+Version/9.0+Mobile/13E238+Safari/601.1 http://www.gallerielsa.no/ 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 17:11:10
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 17:11:10 GET /kunstnere/pushwagner.shtml - - 66.249.66.140 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 17:49:59
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 17:49:56 GET /kunstnere/bjerke.html - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(Linux;+Android+6.0.1;+Nexus+5X+Build/MMB29P)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.96+Mobile+Safari/537.36+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 10120
+2016-05-03 18:02:14 GET /kunstnere/unilsen.html - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(Linux;+Android+6.0.1;+Nexus+5X+Build/MMB29P)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.96+Mobile+Safari/537.36+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 2703
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 18:45:04
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 18:45:04 GET /index.shtml - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 - 404 1405
+2016-05-03 18:45:04 GET /favicon.ico - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 - 404 1405
+2016-05-03 18:45:04 GET /favicon.ico - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 - 404 1405
+2016-05-03 18:45:22 GET / - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 - 200 10929
+2016-05-03 18:45:22 GET /csi.js - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 404 1405
+2016-05-03 18:45:22 GET /style/style.css - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 2418
+2016-05-03 18:45:23 GET /grafikk/galleri_elsa_3n.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 7522
+2016-05-03 18:45:23 GET /grafikk/rute_sort.gif - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 1056
+2016-05-03 18:45:23 GET /bilder/sitter_1604_02_4.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 94937
+2016-05-03 18:45:31 GET /kunstnere/sitter.php - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 10887
+2016-05-03 18:45:31 GET /kunstnere/csi.js - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 404 1405
+2016-05-03 18:45:31 GET /bilder/sitter_1208_10_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 16397
+2016-05-03 18:45:31 GET /bilder/sitter_1604_12_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 14165
+2016-05-03 18:45:31 GET /bilder/sitter_1208_7_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 16489
+2016-05-03 18:45:31 GET /bilder/sitter_1208_9_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 16142
+2016-05-03 18:45:31 GET /bilder/sitter_1208_14_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 17414
+2016-05-03 18:45:31 GET /bilder/sitter_1208_13_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 16984
+2016-05-03 18:45:31 GET /bilder/sitter_1208_11_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 18555
+2016-05-03 18:45:31 GET /bilder/sitter_1208_6_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 18344
+2016-05-03 18:45:31 GET /bilder/sitter_1301_1_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 17966
+2016-05-03 18:45:31 GET /bilder/sitter_1208_12_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 19349
+2016-05-03 18:45:31 GET /bilder/sitter_1604_05_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 14966
+2016-05-03 18:45:31 GET /bilder/sitter_1604_06_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 13192
+2016-05-03 18:45:31 GET /bilder/sitter_1604_09_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 13346
+2016-05-03 18:45:31 GET /bilder/sitter_1604_07_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 14880
+2016-05-03 18:45:31 GET /bilder/sitter_1604_02_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 16308
+2016-05-03 18:45:31 GET /bilder/sitter_1604_01_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 13087
+2016-05-03 18:45:31 GET /bilder/sitter_1604_08_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 14833
+2016-05-03 18:45:31 GET /bilder/sitter_1604_10_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 9457
+2016-05-03 18:45:31 GET /bilder/sitter_1604_11_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/sitter.php 200 12291
+2016-05-03 18:46:07 GET /kunstnere/widerberg.html - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 1699
+2016-05-03 18:46:07 GET /bilder/widerberg_1503_1_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/widerberg.html 200 10738
+2016-05-03 18:46:07 GET /bilder/widerberg_1602_1_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/widerberg.html 200 15423
+2016-05-03 18:46:07 GET /bilder/widerberg_1602_2_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/widerberg.html 200 14844
+2016-05-03 18:46:23 GET /kunstnere/nesjar.html - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 1145
+2016-05-03 18:46:32 GET /kunstnere/killiolsen.html - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 899
+2016-05-03 18:46:39 GET /kunstnere/kielland.html - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 1872
+2016-05-03 18:46:39 GET /bilder/kielland_1602_3_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/kielland.html 200 11466
+2016-05-03 18:46:39 GET /bilder/kielland_1602_1_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/kielland.html 200 12954
+2016-05-03 18:46:39 GET /bilder/kielland_1602_2_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/kielland.html 200 12541
+2016-05-03 18:46:44 GET /bilder/kielland_1602_3_6.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/kielland.html 200 116331
+2016-05-03 18:46:51 GET /bilder/kielland_1602_1_6.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/kielland.html 200 139751
+2016-05-03 18:47:10 GET /kunstnere/bleken.html - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 5352
+2016-05-03 18:47:12 GET /bilder/bleken_1503_3_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 10038
+2016-05-03 18:47:12 GET /bilder/bleken_1602_1_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 10368
+2016-05-03 18:47:12 GET /bilder/bleken_1503_8_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 12007
+2016-05-03 18:47:12 GET /bilder/bleken_1602_2_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 16052
+2016-05-03 18:47:12 GET /bilder/bleken_1602_3_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 10633
+2016-05-03 18:47:12 GET /bilder/bleken_1503_10_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 17586
+2016-05-03 18:47:12 GET /bilder/bleken_1410_7_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 14599
+2016-05-03 18:47:12 GET /bilder/bleken_1503_11_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 16100
+2016-05-03 18:47:12 GET /bilder/bleken_1503_2_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 16103
+2016-05-03 18:47:12 GET /bilder/bleken_1602_4_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 23148
+2016-05-03 18:47:12 GET /bilder/bleken_1503_5_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 14599
+2016-05-03 18:47:28 GET /bilder/bleken_1503_3_6.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/bleken.html 200 65169
+2016-05-03 18:47:39 GET /kunstnere/gullvag.html - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/ 200 4070
+2016-05-03 18:47:39 GET /bilder/gullvag_1105_14_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/gullvag.html 200 11540
+2016-05-03 18:47:39 GET /bilder/gullvag_1301_1_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/gullvag.html 200 16742
+2016-05-03 18:47:39 GET /bilder/gullvag_1207_5_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/gullvag.html 200 14970
+2016-05-03 18:47:40 GET /bilder/gullvag_1503_2_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/gullvag.html 200 10614
+2016-05-03 18:47:40 GET /bilder/gullvag_1405_10_1.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/gullvag.html 200 14703
+2016-05-03 18:47:44 GET /bilder/gullvag_1207_5_6.jpg - - 178.164.40.50 HTTP/1.1 Mozilla/5.0+(Windows+NT+10.0;+WOW64;+rv:45.0)+Gecko/20100101+Firefox/45.0 http://www.gallerielsa.no/kunstnere/gullvag.html 200 246537
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 19:29:47
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 19:29:46 GET /kunstnere/killiolsen.html - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(Linux;+Android+6.0.1;+Nexus+5X+Build/MMB29P)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/41.0.2272.96+Mobile+Safari/537.36+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 200 899
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 20:08:01
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 20:08:01 GET /favicon.ico - - 188.149.128.231 HTTP/1.1 okhttp/2.5.0 - 404 1424
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 20:50:36
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 20:50:36 POST / - - 107.151.218.131 HTTP/1.1 Mozilla/5.0+(Windows;+Windows+NT+5.1;+en-US)+Firefox/3.5.0 http://www.gallerielsa.no/ 200 10948
+2016-05-03 20:50:50 GET /wp-content/uploads/woo.php - - 107.151.218.131 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) http://www.googlebot.com/bot.html 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 21:15:13
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 21:15:13 GET / - - 2a02:fe0:c320:96f1:6905:d294:c4cd:1e68 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_10_5)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36 https://www.google.no/ 200 10929
+2016-05-03 21:15:13 GET /csi.js - - 2a02:fe0:c320:96f1:6905:d294:c4cd:1e68 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_10_5)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36 http://www.gallerielsa.no/ 404 1405
+2016-05-03 21:15:13 GET /style/style.css - - 2a02:fe0:c320:96f1:6905:d294:c4cd:1e68 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_10_5)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36 http://www.gallerielsa.no/ 200 2418
+2016-05-03 21:15:13 GET /grafikk/rute_sort.gif - - 2a02:fe0:c320:96f1:6905:d294:c4cd:1e68 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_10_5)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36 http://www.gallerielsa.no/ 200 1056
+2016-05-03 21:15:13 GET /grafikk/galleri_elsa_3n.jpg - - 2a02:fe0:c320:96f1:6905:d294:c4cd:1e68 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_10_5)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36 http://www.gallerielsa.no/ 200 7522
+2016-05-03 21:15:13 GET /bilder/sitter_1604_02_4.jpg - - 2a02:fe0:c320:96f1:6905:d294:c4cd:1e68 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_10_5)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36 http://www.gallerielsa.no/ 200 94937
+2016-05-03 21:15:13 GET /favicon.ico - - 2a02:fe0:c320:96f1:6905:d294:c4cd:1e68 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_10_5)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/50.0.2661.94+Safari/537.36 http://www.gallerielsa.no/ 404 1405
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 21:50:54
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 21:50:54 GET /arrangement/index.shtml - - 148.252.104.84 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_11)+AppleWebKit/601.1.56+(KHTML,+like+Gecko) - 404 1405
+2016-05-03 21:50:54 GET /apple-touch-icon-precomposed.png - - 148.252.104.84 HTTP/1.1 Safari/11601.1.56+CFNetwork/760.0.5+Darwin/15.0.0+(x86_64) - 404 1405
+2016-05-03 21:50:54 GET /favicon.ico - - 148.252.104.84 HTTP/1.1 Safari/11601.1.56+CFNetwork/760.0.5+Darwin/15.0.0+(x86_64) - 404 1405
+2016-05-03 21:50:54 GET /apple-touch-icon.png - - 148.252.104.84 HTTP/1.1 Safari/11601.1.56+CFNetwork/760.0.5+Darwin/15.0.0+(x86_64) - 404 1405
+2016-05-03 21:50:54 GET /arrangement/index.shtml - - 148.252.104.84 HTTP/1.1 Mozilla/5.0+(iPhone;+CPU+iPhone+OS+8_1+like+Mac+OS+X)+AppleWebKit/600.1.4+(KHTML,+like+Gecko)+Version/8.0+Mobile/12B410+Safari/600.1.4 - 404 1405
+2016-05-03 21:50:54 GET /apple-touch-icon-precomposed.png - - 148.252.104.84 HTTP/1.1 Safari/11601.1.56+CFNetwork/760.0.5+Darwin/15.0.0+(x86_64) - 404 1405
+2016-05-03 21:50:54 GET /apple-touch-icon.png - - 148.252.104.84 HTTP/1.1 Safari/11601.1.56+CFNetwork/760.0.5+Darwin/15.0.0+(x86_64) - 404 1405
+2016-05-03 21:54:29 GET /robots.txt - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 404 1405
+2016-05-03 21:55:10 GET /robots.txt - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 404 1405
+2016-05-03 21:55:51 GET / - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 10929
+2016-05-03 21:56:32 GET / - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 10929
+2016-05-03 21:57:13 GET /omgalleriet/index.php - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 6980
+2016-05-03 21:58:03 GET /kunstnere/index.php - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1671
+2016-05-03 21:58:57 GET /utstilling/index.php - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 4882
+2016-05-03 21:59:47 GET /arrangement/index.php - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 5277
+2016-05-03 22:00:29 GET /utstilling/myrvold.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 3990
+2016-05-03 22:01:15 GET /kunstnere/sitter.php - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 10887
+2016-05-03 22:01:53 GET /kunstnere/andresen.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 2447
+2016-05-03 22:02:34 GET /kunstnere/bergesen.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1603
+2016-05-03 22:03:17 GET /kunstnere/bjerke.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 10120
+2016-05-03 22:04:09 GET /kunstnere/bjertnas.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 6503
+2016-05-03 22:04:59 GET /kunstnere/bleken.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 5352
+2016-05-03 22:05:50 GET /kunstnere/bodtker.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1681
+2016-05-03 22:06:39 GET /kunstnere/comiskey.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1858
+2016-05-03 22:07:30 GET /kunstnere/furuholmen.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 964
+2016-05-03 22:08:24 GET /kunstnere/gullvag.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 4070
+2016-05-03 22:09:12 GET /kunstnere/eharr.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 5452
+2016-05-03 22:09:54 GET /kunstnere/jharr.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 4426
+2016-05-03 22:10:35 GET /kunstnere/kharr.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 9232
+2016-05-03 22:11:03 GET /bilder/helgesen_1409_06_6.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 404 1405
+2016-05-03 22:11:17 GET /kunstnere/helgesen.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 2895
+2016-05-03 22:12:00 GET /kunstnere/hovdenak.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1449
+2016-05-03 22:12:41 GET /kunstnere/kielland.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1872
+2016-05-03 22:13:26 GET /kunstnere/killiolsen.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 899
+2016-05-03 22:13:44 GET /bilder/kharr_trenfjorden_6.jpg - - 37.123.130.241 HTTP/1.1 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10.11;+rv:45.0)+Gecko/20100101+Firefox/45.0 https://www.google.no 200 85254
+2016-05-03 22:14:17 GET /kunstnere/nerli.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 2357
+2016-05-03 22:15:09 GET /kunstnere/nesjar.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1145
+2016-05-03 22:16:00 GET /kunstnere/unilsen.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 2703
+2016-05-03 22:16:54 GET /kunstnere/pahr-iversen.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1223
+2016-05-03 22:17:43 GET /kunstnere/placht.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 4759
+2016-05-03 22:18:31 GET /kunstnere/pushwagner.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 4359
+2016-05-03 22:19:16 GET /kunstnere/roed.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1607
+2016-05-03 22:19:59 GET /utstilling/thorhallsdottir.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 4009
+2016-05-03 22:20:42 GET /utstilling/placht.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 4724
+2016-05-03 22:21:26 GET /arrangement/uts_barn.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 3881
+2016-05-03 22:22:12 GET /utstilling/bjertnas.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 2439
+2016-05-03 22:22:56 GET /kunstnere/widerberg.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1699
+2016-05-03 22:23:36 GET /arrangement/arr_barnekunst_2004.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 2786
+2016-05-03 22:24:18 GET /kunstnere/waksvik.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 3217
+2016-05-03 22:25:01 GET /kunstnere/sitter.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 9597
+2016-05-03 22:25:49 GET /kunstnere/rygh.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 2517
+2016-05-03 22:26:42 GET /arrangement/index.shtml - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 404 1405
+2016-05-03 22:27:31 GET /kunstnere/vikhagen.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 1090
+2016-05-03 22:28:12 GET /kunstnere/stolen.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 3383
+2016-05-03 22:28:53 GET /kunstnere/thorhallsdottir.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 4009
+2016-05-03 22:29:35 GET /kunstnere/sandemose.html - - 31.204.128.94 HTTP/1.1 Mozilla/5.0+(compatible;+WBSearchBot/1.1;++http://www.warebay.com/bot.html) - 200 2473
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 22:46:28
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 22:46:28 GET /favicon.ico - - 188.149.128.231 HTTP/1.1 okhttp/2.5.0 - 404 1424
+2016-05-03 22:50:52 GET /bilder/pushwagner_1312_1_6.jpg - - 158.85.51.196 HTTP/1.1 - - 200 138570
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2016-05-03 23:30:51
+#Fields: date time cs-method cs-uri-stem cs-uri-query cs-username c-ip cs-version cs(User-Agent) cs(Referer) sc-status sc-bytes
+2016-05-03 23:30:51 GET /bilder/widerberg_1503_2_1.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-05-03 23:31:52 GET /bilder/widerberg_1503_14_1.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-05-03 23:32:23 GET /bilder/widerberg_1503_4_1.jpg - - 66.249.66.144 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-05-03 23:33:55 GET /bilder/widerberg_1503_9_1.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-05-03 23:34:59 GET /bilder/widerberg_1503_3_1.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-05-03 23:35:42 GET /bilder/widerberg_1503_7_1.jpg - - 66.249.78.46 HTTP/1.1 Googlebot-Image/1.0 - 304 164
+2016-05-03 23:50:38 GET /kunstnere/bodtker.shtml - - 66.249.78.46 HTTP/1.1 Mozilla/5.0+(compatible;+Googlebot/2.1;++http://www.google.com/bot.html) - 404 1405
+2016-05-03 23:56:38 GET /favicon.ico - - 188.149.132.32 HTTP/1.1 okhttp/2.5.0 - 404 1424

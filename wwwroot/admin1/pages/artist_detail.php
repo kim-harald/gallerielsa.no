@@ -8,6 +8,6 @@
         <p><?php echo $artist->name;?></p>
         <p><?php echo $artist->shortDescr;?></p>
         <p><?php echo $artist->longDescr;?></p>
-        <a href="#edit" class="btn"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a href="#edit" class="btn" data-id="<?php echo $artistId;?>"><span class="glyphicon glyphicon-pencil"></span></a>
         <a href="#main" class="btn"><span class="glyphicon glyphicon-chevron-left"></span></a>
 </div>

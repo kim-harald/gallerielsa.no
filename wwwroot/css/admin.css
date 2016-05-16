@@ -1,0 +1,19 @@
+@CHARSET "ISO-8859-1";
+.stuff {
+	width:400px;	
+}
+
+.artist-element {
+	display: inline-block;
+	width:100px;
+	padding:5px;
+	vertical-align: top;
+}
+
+.artist-element a img {
+	width :50px
+}
+
+img.small {
+	width : 50px;
+	}

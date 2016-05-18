@@ -189,5 +189,9 @@
 		background-color:transparent;
 		background-image:none;
 	}
+	
+	.site-container {
+	width:100%
+	}
 }
 

@@ -50,9 +50,7 @@ ul.menu {
 	background-color:lightblue;
 }
 
-tr.artist-container th,tr.artist-container td {
-	padding:2px;
-	vertical-align: top;
-	text-align: left;
+.site-container {
+	width:50%
 }
 

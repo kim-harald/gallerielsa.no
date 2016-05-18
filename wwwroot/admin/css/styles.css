@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+.stuff {
+	width:400px;	
+}
+
+.artist-element,.picture-element,.exhibition-element {
+	display: inline-block;
+	width:100px;
+	padding:5px;
+	vertical-align: top;
+}
+
+.artist-element a img, .picture-element a img, .exhibition-element a img {
+	width :50px
+}
+
+img.small {
+	width : 50px;
+	}
+
+img.picture-medium {
+	width : 150px;
+}
+
+.dateGroup {
+	display:block;
+	width:60px;
+}

@@ -6,7 +6,7 @@
 	//$langCode = getDefaultLanguage();
 	$artists = DAOFactory::getArtistDAO()->all();
 ?>
-<link rel="stylesheet" href="../css/admin.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <script>
@@ -186,15 +186,10 @@ function find_artist(id) {
     for (i = 0; i < artists.length; i++) {
         if (id == artists[i].id) return artists[i];
     }
-    return { "id": "0",
-        "name": "0",
-        "shortDescr": "",
-        "longDescr": "",
-        "profilePicturePath": "",
-        "jsonData": "",
-        "createdDate": "0000-00-00",
-        "deletedDate": "0000-00-00"
-    };
+    return <?php
+    	$artist = new Artist();
+    	echo json_encode($artist);
+    ?>
 }
 
 function initialise() {

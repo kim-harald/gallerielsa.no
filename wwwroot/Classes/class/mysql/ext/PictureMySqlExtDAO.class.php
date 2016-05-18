@@ -17,5 +17,11 @@ class PictureMySqlExtDAO extends PictureMySqlDAO{
 		return $this->getList($sqlQuery);
 	}
 	
+	public function all() {
+		$sql = "SELECT * FROM picture WHERE deletedDate='0000-00-00' OR NOW() < deletedDate";
+		$sqlQuery = new SqlQuery($sql);
+		return $this->getList($sqlQuery);
+	}
+	
 }
 ?>

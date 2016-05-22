@@ -17,6 +17,10 @@
 	require_once('class/dto/ArtistPicture.class.php');
 	require_once('class/mysql/ArtistPictureMySqlDAO.class.php');
 	require_once('class/mysql/ext/ArtistPictureMySqlExtDAO.class.php');
+	require_once('class/dao/BlogDAO.class.php');
+	require_once('class/dto/Blog.class.php');
+	require_once('class/mysql/BlogMySqlDAO.class.php');
+	require_once('class/mysql/ext/BlogMySqlExtDAO.class.php');
 	require_once('class/dao/DictionaryDAO.class.php');
 	require_once('class/dto/Dictionary.class.php');
 	require_once('class/mysql/DictionaryMySqlDAO.class.php');

@@ -247,8 +247,8 @@ var artists = <?php echo json_encode($artists);?>;
 	  <div class="artist-element">
   		<a href="#detail" data-id="0" class="nav">
 	  		<img alt="" src="../images/art-icon.png">
-	  		<p></p>
-	  		<p>0</p>
+	  		<div></div>
+	  		<div></div>
   		</a>
   	</div>
 	</div>

@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-05-16 12:02
+ * @date: 2016-05-19 22:46
  */
 interface DictionaryDAO{
 

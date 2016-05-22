@@ -10,16 +10,10 @@ class PictureMySqlExtDAO extends PictureMySqlDAO{
 	 * Get all pictures by artist
 	 */
 	public function queryByArtist($artistId) {
-		$sql = 'SELECT p.* FROM artist_picture ap	INNER JOIN picture p ON p.id = ap.picture_Id WHERE ap.artist_Id = ?';
+		$sql = 'SELECT p.* FROM picture p WHERE p.artist_Id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->setNumber($artistId);
 	
-		return $this->getList($sqlQuery);
-	}
-	
-	public function all() {
-		$sql = "SELECT * FROM picture WHERE deletedDate='0000-00-00' OR NOW() < deletedDate";
-		$sqlQuery = new SqlQuery($sql);
 		return $this->getList($sqlQuery);
 	}
 	

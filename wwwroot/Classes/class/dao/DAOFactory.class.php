@@ -22,6 +22,13 @@ class DAOFactory{
 	}
 
 	/**
+	 * @return BlogDAO
+	 */
+	public static function getBlogDAO(){
+		return new BlogMySqlExtDAO();
+	}
+
+	/**
 	 * @return DictionaryDAO
 	 */
 	public static function getDictionaryDAO(){

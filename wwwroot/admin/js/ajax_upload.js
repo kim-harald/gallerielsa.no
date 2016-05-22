@@ -1,4 +1,4 @@
-(function() {
+(function(){
 	$('#imageform').ajaxForm({
 		beforeSubmit: function() {	
 			count = 0;
@@ -44,8 +44,10 @@
 			base_path = "/";
 			
 			if( result.success ){
-				name = base_path+'pictures/'+result.success;
-				$("section#edit .picture-medium img").attr("src",name);
+				name = result.success.path;
+				//$("section#edit .picture-medium img").attr("src",name);
+				$(".row.picture").attr("data-id",result.success.id);
+				$("#Path").attr("src",name);
 			} else if( result.error ){
 				error = result.error
 				html = '';
@@ -57,4 +59,4 @@
 		}
 	}); 
 	
-})();  
+})();   

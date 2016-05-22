@@ -3,7 +3,7 @@
  * Class that operate on table 'artist'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-05-16 12:01
+ * @date: 2016-05-19 22:45
  */
 class ArtistMySqlDAO implements ArtistDAO{
 

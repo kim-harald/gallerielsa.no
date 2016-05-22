@@ -10,8 +10,12 @@
 	vertical-align: top;
 }
 
-.artist-element a img, .picture-element a img, .exhibition-element a img {
+.artist-element a img, .picture-element a img, .exhibition-element a img, .exhibition-picture img {
 	width :50px
+}
+
+.exhibition-picture.selected  {
+	background-color : lightpink;
 }
 
 img.small {
@@ -20,6 +24,10 @@ img.small {
 
 img.picture-medium {
 	width : 150px;
+}
+
+a.nav.detail img {
+	width:50px;
 }
 
 .dateGroup {

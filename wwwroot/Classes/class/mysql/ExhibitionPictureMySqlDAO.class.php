@@ -3,7 +3,7 @@
  * Class that operate on table 'exhibition_picture'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-05-16 12:02
+ * @date: 2016-05-19 22:45
  */
 class ExhibitionPictureMySqlDAO implements ExhibitionPictureDAO{
 

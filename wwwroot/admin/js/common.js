@@ -71,6 +71,7 @@ function setSection(pageRef) {
 }
 
 function loadSection(pageId,id) {
+	setSpinner();
     var $this = $(pageId);
     var idQuery = (id == undefined ? "" : "?id=" + id);
     var page = $this.attr("src") + idQuery;
@@ -89,11 +90,15 @@ function loadSection(pageId,id) {
         },
         error: function(xhr) {
             alert(JSON.stringify(xhr));
+        },
+        complete: function(xhr) {
+        	clearSpinner();
         }
     });
 }
 
 function loadContent(src,$anchor,onComplete) {
+	setSpinner();
 	$.ajax({
         url: src,
         dataType: 'html',
@@ -103,6 +108,18 @@ function loadContent(src,$anchor,onComplete) {
         },
         error: function(xhr) {
             alert(JSON.stringify(xhr));
+        },
+        complete: function(xhr) {
+        	clearSpinner();
         }
+        	
     });
+}
+
+function setSpinner() {
+	$("#AjaxSpinner").addClass("loading");
+}
+
+function clearSpinner() {
+	$("#AjaxSpinner").removeClass("loading");
 }

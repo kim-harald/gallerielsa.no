@@ -44,10 +44,13 @@
 			base_path = "/";
 			
 			if( result.success ){
-				name = result.success.path;
+				var name = result.success.path;
+				var thumb = result.success.thPath; 
 				//$("section#edit .picture-medium img").attr("src",name);
 				$(".row.picture").attr("data-id",result.success.id);
 				$("#Path").attr("src",name);
+				$("#ThPath").text(thumb);
+				$("#CheckUpload").removeAttr("checked");
 			} else if( result.error ){
 				error = result.error
 				html = '';

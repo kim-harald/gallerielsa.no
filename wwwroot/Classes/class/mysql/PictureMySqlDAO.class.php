@@ -3,7 +3,7 @@
  * Class that operate on table 'picture'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-05-19 22:45
+ * @date: 2016-05-23 11:33
  */
 class PictureMySqlDAO implements PictureDAO{
 
@@ -57,13 +57,14 @@ class PictureMySqlDAO implements PictureDAO{
  	 * @param PictureMySql picture
  	 */
 	public function insert($picture){
-		$sql = 'INSERT INTO picture (artistid, refid, name, path, dateCreated, dateDisplayed, dateRemoved, keywords, status, shortDescr, longDescr, price, dimensions) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO picture (artistid, refid, name, path, thPath, dateCreated, dateDisplayed, dateRemoved, keywords, status, shortDescr, longDescr, price, dimensions) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->setNumber($picture->artistid);
 		$sqlQuery->set($picture->refid);
 		$sqlQuery->set($picture->name);
 		$sqlQuery->set($picture->path);
+		$sqlQuery->set($picture->thPath);
 		$sqlQuery->set($picture->dateCreated);
 		$sqlQuery->set($picture->dateDisplayed);
 		$sqlQuery->set($picture->dateRemoved);
@@ -85,13 +86,14 @@ class PictureMySqlDAO implements PictureDAO{
  	 * @param PictureMySql picture
  	 */
 	public function update($picture){
-		$sql = 'UPDATE picture SET artistid = ?, refid = ?, name = ?, path = ?, dateCreated = ?, dateDisplayed = ?, dateRemoved = ?, keywords = ?, status = ?, shortDescr = ?, longDescr = ?, price = ?, dimensions = ? WHERE id = ?';
+		$sql = 'UPDATE picture SET artistid = ?, refid = ?, name = ?, path = ?, thPath = ?, dateCreated = ?, dateDisplayed = ?, dateRemoved = ?, keywords = ?, status = ?, shortDescr = ?, longDescr = ?, price = ?, dimensions = ? WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->setNumber($picture->artistid);
 		$sqlQuery->set($picture->refid);
 		$sqlQuery->set($picture->name);
 		$sqlQuery->set($picture->path);
+		$sqlQuery->set($picture->thPath);
 		$sqlQuery->set($picture->dateCreated);
 		$sqlQuery->set($picture->dateDisplayed);
 		$sqlQuery->set($picture->dateRemoved);
@@ -138,6 +140,13 @@ class PictureMySqlDAO implements PictureDAO{
 
 	public function queryByPath($value){
 		$sql = 'SELECT * FROM picture WHERE path = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
+	public function queryByThPath($value){
+		$sql = 'SELECT * FROM picture WHERE thPath = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
@@ -235,6 +244,13 @@ class PictureMySqlDAO implements PictureDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
+	public function deleteByThPath($value){
+		$sql = 'DELETE FROM picture WHERE thPath = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->executeUpdate($sqlQuery);
+	}
+
 	public function deleteByDateCreated($value){
 		$sql = 'DELETE FROM picture WHERE dateCreated = ?';
 		$sqlQuery = new SqlQuery($sql);
@@ -313,6 +329,7 @@ class PictureMySqlDAO implements PictureDAO{
 		$picture->refid = $row['refid'];
 		$picture->name = $row['name'];
 		$picture->path = $row['path'];
+		$picture->thPath = $row['thPath'];
 		$picture->dateCreated = $row['dateCreated'];
 		$picture->dateDisplayed = $row['dateDisplayed'];
 		$picture->dateRemoved = $row['dateRemoved'];

@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-05-19 22:46
+ * @date: 2016-05-23 11:34
  */
 interface PictureDAO{
 
@@ -59,6 +59,8 @@ interface PictureDAO{
 
 	public function queryByPath($value);
 
+	public function queryByThPath($value);
+
 	public function queryByDateCreated($value);
 
 	public function queryByDateDisplayed($value);
@@ -85,6 +87,8 @@ interface PictureDAO{
 	public function deleteByName($value);
 
 	public function deleteByPath($value);
+
+	public function deleteByThPath($value);
 
 	public function deleteByDateCreated($value);
 

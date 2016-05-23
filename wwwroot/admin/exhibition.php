@@ -15,21 +15,25 @@
         $("section.ui_page#main").addClass("active");
         $("section.ui_page.active").show();
 
-        $("a.nav").on("click", function() {
+        setEvents();
+    });
+
+    function setEvents() {
+    	$("a.nav").on("click", function() {
+        		var id = $(this).attr("data-id");
             setSection($(this).attr("href"));
-            loadContent($(this).attr("href"), $(this).attr("data-id"));
+            var src = $($(this).attr("href")).attr("src");
+            loadContent(src + "?id="+id, $("#detail"),setEvents);
         });
 
-        $("a.btn").on("click", function() {
-            $(".slideshow").html("");
-        });
-
+/*
         $("a.nav.detail").on("click", function() {
             var id = $(this).attr("data-id");
             var exh = findObject(id, Exhibitions);
 
             displayExhibition(exh);
         });
+*/
 
         $("a.btn.save").on("click", function() {
             var $content = $(this).parent(".row");
@@ -43,7 +47,36 @@
 
             saveExhibition(exh);
         });
-    });
+
+        $("#DdArtists").on("change", function() {
+            $("#PictureList .select-element").hide();
+            if ($(this).val() == 0) {
+                $("#PictureList .select-element").show();
+            } else {
+                $("#PictureList .select-element[data-artistid='" + $(this).val() + "']").show();
+            }
+        });
+
+        $('ul.sortable').sortable();
+
+        $("a.btn").on("click", function() {
+            var items = [];
+            var i = 0;
+            $(".select-element .selected").each(function() {
+                var entry = { exhibitionId: $("#Exhibition").attr("data-id"), pictureId: $(this).attr("data-id"), orderNo: i };
+                items.push(entry);
+                i++;
+            });
+
+            $("#Result").text(JSON.stringify(items));
+
+        });
+
+        $(".select-element a").on("click", function() {
+            $(this).parent().toggleClass("selected");
+            $(this).toggleClass("selected");
+        });
+    }
 
     function saveExhibition(exhibition) {
     	var obj = { js_object: JSON.stringify(exhibition) };
@@ -130,7 +163,7 @@ var Artists= [{"id":"1","name":"Sverre Andresen","shortDescr":"Kunster","longDes
     }
     	?>
         <div class="page-element">
-            <a href="#edit" data-id="<?php echo $exh->id?>" class="nav detail" data-edit="0">
+            <a href="#detail" data-id="<?php echo $exh->id?>" class="nav detail">
 	            <img alt="" src="<?php echo $p->path?>" />
 	            <p><?php echo $exh->name?></p>
 	            <p><?php echo count($pictures)?></p>
@@ -143,9 +176,7 @@ var Artists= [{"id":"1","name":"Sverre Andresen","shortDescr":"Kunster","longDes
 <section class="ui_page" id="detail" src="pages/exhibition_detail.php" >
 </section>
 
-<section class="ui_page" id="edit" src="pages/exhibition_detail.php">
-</section>
-
 </div>
+<div id="AjaxSpinner" class=""></div>
 </body>
 </html>

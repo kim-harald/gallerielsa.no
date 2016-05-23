@@ -3,7 +3,7 @@
 	 * Object represents table 'status'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2016-05-19 22:45	 
+     	 * @date: 2016-05-23 11:33	 
 	 */
 	class Statu{
 		

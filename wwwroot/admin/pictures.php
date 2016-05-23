@@ -3,6 +3,7 @@
 <head>
 <?php
 	include("../head.php");
+        
 	//$langCode = getDefaultLanguage();
 	$artists = DAOFactory::getArtistDAO()->all();
 	$artistId = isset($_GET["id"])?$_GET["id"]:0;
@@ -24,9 +25,8 @@
       $(function() {
           $("section.ui_page").hide();
           $("section.ui_page.active").show();
-          //loadContent("pages/picture_entries.php?artistid=<?php echo $artistId;?>",$("#Picture-Entries"));
-
-          setEvents();
+          loadContent("pages/picture_entries.php",$("#Picture-Entries"),setEvents);
+          $("#imageform").hide();
       });
 
       function setEvents() {
@@ -50,13 +50,27 @@
 						var id = $(this).attr("data-id");
 						deletePicture(id);
 					});
+
+					$("#CheckUpload").on("change",function(){
+            if($(this).is(":checked")){
+                $("#imageform").show();
+            }
+            else if($(this).is(":not(:checked)")){
+            	$("#imageform").hide();
+            }
+					});
 			
       }
 
       function getDetails(id) {
+        setSpinner();
+        if (id==0) {
+        	$("#CheckUpload").attr("checked","");
+        	$("#imageform").show();
+        }
     	  $.ajax({
    	       dataType: 'json',
-   	       url: "pages/ajax_get_picture.php?id="+id,
+   	       url: "pages/ajax_picture.php?verb=get&id="+id,
    	       method: "GET",
    	       success: function(xhr) {
    	    	 		 displayDetails(xhr);
@@ -64,13 +78,17 @@
    	       },
    	       error: function(xhr) {
    	           alert(JSON.stringify(xhr));
-   	       }
+   	       },
+		   	   complete: function(xhr) {
+		        	clearSpinner();
+        	 }
    	   });
       }
 
       function displayDetails(p) {
           var $e = $(".page-element");
           $("#Path").attr("src",p.path);
+          $("#ThPath").text(p.thPath),
           $("#Name").val(p.name);
           $("#ShortDescr").val(p.shortDescr);
           $("#LongDescr").val(p.longDescr);
@@ -96,12 +114,14 @@
 					dimensions : $("#Dimensions").val(),
 					keywords : $("#Keywords").val(),
 					status : $("#Status").val(),
-					path : $("#Path").attr("src")
+					path : $("#Path").attr("src"),
+          thPath : $("#ThPath").text()
 			};
 			var obj = { js_object : JSON.stringify(picture)};
+			setSpinner();
 			$.ajax({
 	    	       dataType: 'json',
-	    	       url: "pages/ajax_save_picture.php",
+	    	       url: "pages/ajax_picture.php?verb=post",
 	    	       method: "POST",
 	    	       data: obj,
 	    	       success: function(xhr) {
@@ -113,21 +133,28 @@
 	    	       },
 	    	       error: function(xhr) {
 	    	           alert(JSON.stringify(xhr));
+	    	       },
+	    	       complete: function(xhr) {
+	    	        	clearSpinner();
 	    	       }
 	    	});
       }
 
       function deletePicture(id) {
+          setSpinner();
     			$.ajax({
       	       dataType: 'json',
-      	       url: "pages/ajax_delete_picture.php?id="+id,
+      	       url: "pages/ajax_picture.php?verb=delete&id="+id,
       	       method: "GET",
       	       success: function(xhr) {
       	    	 		loadContent("pages/picture_entries.php",$("#Picture-Entries"),setEvents);
       	       },
       	       error: function(xhr) {
       	           alert("Error! : "+JSON.stringify(xhr));
-      	       }
+      	       },
+      	       complete: function(xhr) {
+         	       	clearSpinner();
+             	 }
       		});
       }
 			
@@ -143,31 +170,22 @@
   		    </a>
         </div>
     </div>
-    <div id="Picture-Entries">
-	    <?php foreach ($pictures as $picture) { ?>
-	    <div class="row" data-id="<?php echo $picture->id?>">
-	        <div class="page-element">
-	            <a href="#detail" data-id="<?php echo $picture->id?>" class="nav detail">
-		  		    <img alt="<?php echo $picture->name?>" src="<?php echo $picture->path?>" />
-		  		    <p><?php echo $picture->name?></p>
-		  		    <p><?php echo $picture->price?></p>
-	  		    </a>
-	        </div>
-	    </div>
-	    <?php }?>
-    </div>
+    <div id="Picture-Entries"></div>
 </section>
 
 <section class="ui_page" id="detail">
 	<div class="row picture" data-id="0">
 		<div class="page-element">
 			<div><img id="Path" class="picture-medium" src="" title="navn" /></div>
+			<div class="hidden" id="ThPath"></div>
+			<label for="CheckUpload">Opplast ny bilde</label>
+			<input type="checkbox" id="CheckUpload" name="CheckUpload">
 			<form enctype="multipart/form-data" name='imageform' role="form" id="imageform" method="post" action="ajax_file_upload.php">
 				<input type=file name="images" id="images" accept=".jpg,.png,.jpeg" placeholder="valg bilde" data-id="0" />
 				<input type=hidden name="pictureid" id="pictureid" />
 				<div id="loader" style="display: none;">opplastes til serveren</div>
 				<div id="picture-error"></div>
-				<input type="submit" class="btn" value="opplast" id="image_upload" name="image_upload">
+				<input type="submit" class="btn btn-primary" value="opplast" id="image_upload" name="image_upload">
 			</form>
 		</div>
 		<div class="page-element">
@@ -203,12 +221,13 @@
 			<?php }?>
 			</select>
 		</div>   
-	<a href="#main" class="btn nav save" data-id="0"><span class="glyphicon glyphicon-floppy-save"></span></a>
-	<a href="#main" class="btn nav"><span class="glyphicon glyphicon-menu-up"></span></a>
-	<a href="#main" class="btn nav delete"><span class="glyphicon glyphicon-remove" data-id="0"></span></a>
+	<a href="#main" class="btn nav save btn-default" data-id="0">lagre</span></a>
+	<a href="#main" class="btn nav btn-default">avbryt</a>
+	<a href="#main" class="btn nav delete btn-default">slette</span></a>
 </div>
 </section>
 
 </div>
+<div id="AjaxSpinner" class=""></div>
 </body>
 </html>

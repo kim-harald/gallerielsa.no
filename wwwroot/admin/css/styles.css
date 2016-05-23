@@ -24,6 +24,7 @@ img.small {
 
 img.picture-medium {
 	width : 150px;
+	height : 150px;
 }
 
 a.nav.detail img {
@@ -33,4 +34,18 @@ a.nav.detail img {
 .dateGroup {
 	display:block;
 	width:60px;
+}
+
+.selected {
+	background-color:Yellow;
+	border-color:Yellow;
+}
+
+li.select-element {
+	padding:5px;
+}
+
+li.select-element {
+	border-color: transparent;
+	border: 3px;
 }

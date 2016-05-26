@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-05-23 11:34
+ * @date: 2016-05-26 12:02
  */
 interface StatusDAO{
 

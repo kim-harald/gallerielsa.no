@@ -3,7 +3,7 @@
  * Class that operate on table 'exhibition'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-05-23 11:33
+ * @date: 2016-05-26 12:01
  */
 class ExhibitionMySqlDAO implements ExhibitionDAO{
 
@@ -57,10 +57,11 @@ class ExhibitionMySqlDAO implements ExhibitionDAO{
  	 * @param ExhibitionMySql exhibition
  	 */
 	public function insert($exhibition){
-		$sql = 'INSERT INTO exhibition (name, startDate, endDate) VALUES (?, ?, ?)';
+		$sql = 'INSERT INTO exhibition (name, longDescr, startDate, endDate) VALUES (?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($exhibition->name);
+		$sqlQuery->set($exhibition->longDescr);
 		$sqlQuery->set($exhibition->startDate);
 		$sqlQuery->set($exhibition->endDate);
 
@@ -75,10 +76,11 @@ class ExhibitionMySqlDAO implements ExhibitionDAO{
  	 * @param ExhibitionMySql exhibition
  	 */
 	public function update($exhibition){
-		$sql = 'UPDATE exhibition SET name = ?, startDate = ?, endDate = ? WHERE id = ?';
+		$sql = 'UPDATE exhibition SET name = ?, longDescr = ?, startDate = ?, endDate = ? WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($exhibition->name);
+		$sqlQuery->set($exhibition->longDescr);
 		$sqlQuery->set($exhibition->startDate);
 		$sqlQuery->set($exhibition->endDate);
 
@@ -102,6 +104,13 @@ class ExhibitionMySqlDAO implements ExhibitionDAO{
 		return $this->getList($sqlQuery);
 	}
 
+	public function queryByLongDescr($value){
+		$sql = 'SELECT * FROM exhibition WHERE longDescr = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
 	public function queryByStartDate($value){
 		$sql = 'SELECT * FROM exhibition WHERE startDate = ?';
 		$sqlQuery = new SqlQuery($sql);
@@ -119,6 +128,13 @@ class ExhibitionMySqlDAO implements ExhibitionDAO{
 
 	public function deleteByName($value){
 		$sql = 'DELETE FROM exhibition WHERE name = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->executeUpdate($sqlQuery);
+	}
+
+	public function deleteByLongDescr($value){
+		$sql = 'DELETE FROM exhibition WHERE longDescr = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
@@ -150,6 +166,7 @@ class ExhibitionMySqlDAO implements ExhibitionDAO{
 		
 		$exhibition->id = $row['id'];
 		$exhibition->name = $row['name'];
+		$exhibition->longDescr = $row['longDescr'];
 		$exhibition->startDate = $row['startDate'];
 		$exhibition->endDate = $row['endDate'];
 

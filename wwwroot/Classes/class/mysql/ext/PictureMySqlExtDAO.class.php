@@ -27,5 +27,15 @@ class PictureMySqlExtDAO extends PictureMySqlDAO{
 		return $this->getList($sqlQuery);
 	}
 	
+	public function queryAvailablePictures($exhibitionId) {
+		$sql = 'SELECT p.* FROM picture p '.
+				'WHERE p.id NOT IN ' .
+				'(SELECT picture_id FROM exhibition_picture WHERE exhibition_id = ?)';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->setNumber($exhibitionId);
+		
+		return $this->getList($sqlQuery);
+	}
+	
 }
 ?>

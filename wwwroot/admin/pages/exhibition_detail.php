@@ -4,7 +4,7 @@ include_once '../../Classes/include_dao.php';
 $id = (isset($_GET["id"])?$_GET["id"]:0);
 $exhibition = DAOFactory::getExhibitionDAO()->load($id);
 $exhibitionPictures = DAOFactory::getPictureDAO()->queryByExhibition($id);
-$pictures = DAOFactory::getPictureDAO()->queryAll();
+$pictures = DAOFactory::getPictureDAO()->queryAvailablePictures($id);
 $artists = DAOFactory::getArtistDAO()->all();
 
 ?>
@@ -21,7 +21,7 @@ $artists = DAOFactory::getArtistDAO()->all();
     
 	    <div class="dateGroup">
 	    	<label for="exhibition-startdate">startdato</label>
-	    	<input name="exhibition-startdate" class="exhibition-startdate" placeholder="" value="<?php $exhbition->startDate ?>" type="date">
+	    	<input name="exhibition-startdate" class="exhibition-startdate" placeholder="" value="<?php echo $exhibition->startDate ?>" type="date">
 	    </div>
 	    <div class="dateGroup">
 	    	<label for="exhibition-enddate">sluttdato</label>
@@ -38,10 +38,10 @@ $artists = DAOFactory::getArtistDAO()->all();
 	<h3>utstillinge bilder</h3>
 	<ul id="SelectedPictures" class="sortable">
 		<?php foreach($exhibitionPictures as $p) { ?>
-		<li class="select-element exhibition-element" data-artistid="<?php echo $p->artistId?>" data-id="<?php echo $p->id?>">
-		    <img src="<?php echo $p->path?>">
+		<li class="select-element exhibition-element" data-artistid="<?php echo $p->artistid?>" data-id="<?php echo $p->id?>">
+		    <img src="<?php echo $p->thPath?>">
 	    	<div><?php echo $p->name ?></div>
-	    	<a href="#" data-id="<?php echo $p->id?>" data-artistid="<?php echo $p->artistId?>">
+	    	<a href="#" data-id="<?php echo $p->id?>" data-artistid="<?php echo $p->artistid?>">
 	        	<span class="glyphicon glyphicon-plus"></span>
 			</a>
 	    </li>
@@ -54,25 +54,20 @@ $artists = DAOFactory::getArtistDAO()->all();
 		<select id="DdArtists">
 			<option selected="selected" value="0">alle kunstner</option>
 			<?php foreach($artists as $artist) {?>
-			<option value="<?php echo $artist->id?>"><?php $artist->name ?></option>
+			<option value="<?php echo $artist->id?>"><?php echo $artist->name ?></option>
 			
 			<?php }?>
 		</select>
 	</div>
 	<ul id="AvailablePictures">
-		<li class="select-element exhibition-element" data-artistid="1" data-id="17">
-		    <img src="exhibition_detail_files/th_1464000617.jpg">
+	<?php foreach ($pictures as $picture) {?>
+		<li class="select-element exhibition-element" data-artistid="<?php echo $picture->artistid?>" data-id="<?php echo $picture->id?>">
+		    <img src="<?php echo $picture->thPath?>">
 	    	<div>cv</div>
-	    	<a href="#" data-id="17" data-artistid="1">
+	    	<a href="#" data-artistid="<?php echo $picture->artistid?>" data-id="<?php echo $picture->id?>">
 	        	<span class="glyphicon glyphicon-plus"></span>
 			</a>
 	    </li>
-	    <li class="select-element exhibition-element" data-artistid="3" data-id="19">
-			<img src="exhibition_detail_files/th_1464002200.jpg">
-			<div>klo</div>
-    		<a href="#" data-id="19" data-artistid="3">
-				<span class="glyphicon glyphicon-plus"></span>
-			</a>
-		</li>
+	  <?php }?>
 		</ul>
 </div>

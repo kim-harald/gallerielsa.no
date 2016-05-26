@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-05-23 11:34
+ * @date: 2016-05-26 12:02
  */
 interface ExhibitionDAO{
 
@@ -53,12 +53,16 @@ interface ExhibitionDAO{
 
 	public function queryByName($value);
 
+	public function queryByLongDescr($value);
+
 	public function queryByStartDate($value);
 
 	public function queryByEndDate($value);
 
 
 	public function deleteByName($value);
+
+	public function deleteByLongDescr($value);
 
 	public function deleteByStartDate($value);
 

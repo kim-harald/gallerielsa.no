@@ -43,7 +43,7 @@ class ExhibitionMySqlExtDAO extends ExhibitionMySqlDAO{
 		$exhp->longDescr = $row['longDescr'];
 		$exhp->price = $row['price'];
 		$exhp->dimensions = $row['dimensions'];
-		$exhp->exhibitionId = $row['exhibitionId'];
+		$exhp->exhibitionId = $row['exhibition_id'];
 		
 		return $exhp;
 	}

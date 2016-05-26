@@ -15,5 +15,13 @@ class ExhibitionPictureMySqlExtDAO extends ExhibitionPictureMySqlDAO{
 		return $this->getList($sqlQuery);
 	}
 	
+	public function deleteByExhibition($exhibitionId) {
+		$sql = 'DELETE FROM exhibition_picture WHERE exhibition_id = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->setNumber($exhibitionId);
+		
+		return $this->executeUpdate($sqlQuery);
+	}
+	
 }
 ?>

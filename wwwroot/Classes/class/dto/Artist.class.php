@@ -3,7 +3,7 @@
 	 * Object represents table 'artist'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2016-05-23 11:33	 
+     	 * @date: 2016-05-26 12:01	 
 	 */
 	class Artist{
 		

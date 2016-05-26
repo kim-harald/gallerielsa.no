@@ -11,9 +11,9 @@
 <body>
 <script>
 $(function() {
+		var href = $("section#main").attr("src");
+		loadContent(href,$("section#main"),setEvents);
     setSection("#main");
-
-    setEvents();
 });
 
 function setEvents() {
@@ -43,7 +43,7 @@ function setEvents() {
             pictures.push({ id: $(this).attr("data-id"), orderNo: i });
             i++;
         });
-        exh.Pictures = pictures;
+        exh.pictures = pictures;
         saveExhibition(exh);
     });
 
@@ -70,42 +70,34 @@ function setEvents() {
     });
 }
 
-function displayExhibition(exhibition) { }
-
-function showPictures() { }
-   
+function saveExhibition(exhibition) { 
+	var obj = { js_object : JSON.stringify(exhibition)};
+	setSpinner();
+	$.ajax({
+	       dataType: 'json',
+	       url: "pages/ajax_exhibition.php?verb=post",
+	       method: "POST",
+	       data: obj,
+	       success: function(xhr) {
+	           if (exhibition.id == 0) {
+	        	   exhibition.id = xhr.id;
+	           } 
+	           loadContent("pages/exhibition_entries.php",$("section#main"),setEvents);
+	       },
+	       error: function(xhr) {
+	           alert(JSON.stringify(xhr));
+	       },
+	       complete: function(xhr) {
+	        	clearSpinner();
+	       }
+	});
+}
 
 </script>
 <div class="container-fluid site-container">
 
-<section class="ui_page" id="main" src="" >
-    <div class="add">
-        <div class="page-element">
-            <a href="#edit" data-id="0" class="btn nav add">
-	            <img class="exhibition-element" alt="Ny utstilling" src="../images/exhibition-icon.png" />
-	            <p>Ny utstilling</p>
-            </a>
-        </div>
-    </div>
-     <div class="row">
-    <?php $exhibitions = DAOFactory::getExhibitionDAO()->queryAll();
-    foreach($exhibitions as $exh) {
-    $pictures = DAOFactory::getExhibitionDAO()->queryExhibitionPictures($exh->id);
-    if (count($pictures)==0) {
-    	$p = new Picture();
-    } else {
-    	$p = $pictures[0];
-    }
-    	?>
-        <div class="page-element">
-            <a href="#detail" data-id="<?php echo $exh->id?>" class="nav detail">
-	            <img alt="" src="<?php echo $p->path?>" />
-	            <p><?php echo $exh->name?></p>
-	            <p><?php echo count($pictures)?></p>
-            </a>
-        </div>
-     <?php }?>
-    </div>
+<section class="ui_page" id="main" src="pages/exhibition_entries.php" >
+    
 </section>
 
 <section class="ui_page" id="detail" src="pages/exhibition_detail.php" >

@@ -4,7 +4,7 @@ include_once '../../Classes/include_dao.php';
 ?>
 <div class="add">
 	<div class="page-element">
-		<a href="#edit" data-id="0" class="btn nav add">
+		<a href="#detail" data-id="0" class="btn nav">
 			<img class="exhibition-element" alt="Ny utstilling" src="../images/exhibition-icon.png" />
 	    <p>Ny utstilling</p>
     </a>

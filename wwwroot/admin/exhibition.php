@@ -47,6 +47,11 @@ function setEvents() {
         saveExhibition(exh);
     });
 
+    $("a.btn.delete").on("click",function(){
+        var id = $(this).attr("data-id");
+        deleteExhibition(id);
+    });
+
     $("#DdArtists").on("change", function() {
         $("#AvailablePictures .select-element").hide()
         if ($(this).val() == 0) {
@@ -93,6 +98,24 @@ function saveExhibition(exhibition) {
 	});
 }
 
+function deleteExhibition(id) {
+	setspinner();
+	$.ajax({
+		dataType:'json',
+		url: "pages/ajax_exhibition.php?verb=delete&id="+id,
+		method:"GET",
+		success:function(xhr) {
+			loadContent("pages/exhibition_entries.php",$("section#main"),setEvents);
+		},
+		error: function(xhr) {
+			alert(JSON.stringify(xhr));
+		},
+		complete:function(xhr) {
+			clearSpinner();
+		}
+	});
+}
+
 </script>
 <div class="container-fluid site-container">
 
@@ -101,6 +124,7 @@ function saveExhibition(exhibition) {
 </section>
 
 <section class="ui_page" id="detail" src="pages/exhibition_detail.php" >
+
 </section>
 
 </div>

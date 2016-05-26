@@ -2,13 +2,18 @@
 include_once '../../Classes/include_dao.php';
 
 $id = (isset($_GET["id"])?$_GET["id"]:0);
-$exhibition = DAOFactory::getExhibitionDAO()->load($id);
+if ($id==0) {
+	$exhibition = new Exhibition();
+} else {
+	$exhibition = DAOFactory::getExhibitionDAO()->load($id);	
+}
+
 $exhibitionPictures = DAOFactory::getPictureDAO()->queryByExhibition($id);
 $pictures = DAOFactory::getPictureDAO()->queryAvailablePictures($id);
 $artists = DAOFactory::getArtistDAO()->all();
 
 ?>
-<div class="row" data-id="1">
+<div class="row" data-id="<?php echo $exhibition->id?>">
     <fieldset class="controlGroup">
 		<div class="dateGroup">
 			<label for= "exhibition-name">utstillingstitel</label>
@@ -63,7 +68,7 @@ $artists = DAOFactory::getArtistDAO()->all();
 	<?php foreach ($pictures as $picture) {?>
 		<li class="select-element exhibition-element" data-artistid="<?php echo $picture->artistid?>" data-id="<?php echo $picture->id?>">
 		    <img src="<?php echo $picture->thPath?>">
-	    	<div>cv</div>
+	    	<div><?php echo $picture->name?></div>
 	    	<a href="#" data-artistid="<?php echo $picture->artistid?>" data-id="<?php echo $picture->id?>">
 	        	<span class="glyphicon glyphicon-plus"></span>
 			</a>

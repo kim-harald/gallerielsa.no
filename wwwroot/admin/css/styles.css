@@ -5,7 +5,7 @@
 
 .artist-element,.picture-element,.exhibition-element {
 	display: inline-block;
-	width:100px;
+	min-width:100px;
 	padding:5px;
 	vertical-align: top;
 }
@@ -16,6 +16,11 @@
 
 .exhibition-picture.selected  {
 	background-color : lightpink;
+}
+
+img.exhibition-element 
+{
+    width:150px;
 }
 
 img.small {
@@ -41,11 +46,12 @@ a.nav.detail img {
 	border-color:Yellow;
 }
 
-li.select-element {
-	padding:5px;
+.controlGroup {
+	display: inline-block;
+	width:150px;
 }
 
-li.select-element {
-	border-color: transparent;
-	border: 3px;
+.buttonGroup 
+{
+    padding:5px;
 }

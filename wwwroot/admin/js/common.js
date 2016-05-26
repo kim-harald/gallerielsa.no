@@ -1,32 +1,3 @@
-
-function createPictures(n) {
-    var pictureTemplate = {
-        id: 0,
-        name: "",
-        shortDescr: "",
-        longDescr: "",
-        path: ""
-    };
-    var result = [];
-    for (i = 1; i < n+1; i++) {
-        var p = $.parseJSON(JSON.stringify(pictureTemplate));
-        p.id = i;
-        p.name = "picture" + i;
-        p.shortDescr = "picture" + i + ".kort beskrivelse";
-        p.longDescr = "picture" + i + ".lang beskrivelse";
-        p.path = "/pictures/picture" + i + ".jpg";
-        result.push(p);
-    }
-    return result;
-}
-
-function findObject(id, objArray) {
-    for (i = 0; i < objArray.length; i++) {
-        if (objArray[i].id == id) return objArray[i];
-    }
-    return undefined;
-}
-
 function assignPicture2Exhibition(pictureId, exhibitionId, picExhArray) {
     var entry = [exhibitionId,pictureId];
     picExhArray.push(entry);
@@ -64,10 +35,12 @@ function createPictureExhibition(nPic, exhibitionId, picArray) {
 function setSection(pageRef) {
     if (pageRef === undefined) return;
     if (pageRef.indexOf("#") < 0) return;
-    $("section.ui_page.active").hide();
+    $("section.ui_page.active").fadeOut(250, function() {
+        $("section.ui_page" + pageRef).fadeIn(250);
+    });
     $("section.ui_page.active").removeClass("active");
     $("section.ui_page" + pageRef).addClass("active");
-    $("section.ui_page" + pageRef).show();
+    
 }
 
 function loadSection(pageId,id) {
@@ -122,4 +95,21 @@ function setSpinner() {
 
 function clearSpinner() {
 	$("#AjaxSpinner").removeClass("loading");
+}
+
+function format(x, y) {
+    var z = {
+        M: x.getMonth() + 1,
+        d: x.getDate(),
+        h: x.getHours(),
+        m: x.getMinutes(),
+        s: x.getSeconds()
+    };
+    y = y.replace(/(M+|d+|h+|m+|s+)/g, function(v) {
+        return ((v.length > 1 ? "0" : "") + eval('z.' + v.slice(-1))).slice(-2)
+    });
+
+    return y.replace(/(y+)/g, function(v) {
+        return x.getFullYear().toString().slice(-v.length)
+    });
 }

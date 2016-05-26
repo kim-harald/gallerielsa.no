@@ -1,57 +1,78 @@
 <?php 
 include_once '../../Classes/include_dao.php';
-$id = isset($_GET["id"])?$_GET["id"]:0;
-$exhPictures = DAOFactory::getExhibitionDAO()->queryExhibitionPictures($id);
-$exh = DAOFactory::getExhibitionDAO()->load($id);
-$artists = DAOFactory::getArtistDAO()->all();
+
+$id = (isset($_GET["id"])?$_GET["id"]:0);
+$exhibition = DAOFactory::getExhibitionDAO()->load($id);
+$exhibitionPictures = DAOFactory::getPictureDAO()->queryByExhibition($id);
 $pictures = DAOFactory::getPictureDAO()->queryAll();
+$artists = DAOFactory::getArtistDAO()->all();
+
 ?>
-<div class="row" data-id="<?php echo $id?>">
-    <div>
-    	<input type="text" class="exhibition-name" placeholder="utstillingstitel" value="<?php echo $exh->name?>">
-    	
-    </div>
-    <div class="dateGroup">
-    	<label for="exhibition-startDate">startdato</label>
-    	<input name="exhibition-startDate" type="date" class="exhibition-startDate" placeholder="" value="<?php echo $exh->startDate?>">
-    </div>
-    <div class="dateGroup">
-    	<label for="exhibition-endDate">sluttdato</label>
-    	<input name="exhibition-endDate" type="date" class="exhibition-endDate" placeholder="" value="<?php echo $exh->endDate?>">
-    </div>
-    <div>
-        <a href="#main" class="btn save nav btn-default" data-id="0">lagre</span></a>
+<div class="row" data-id="1">
+    <fieldset class="controlGroup">
+		<div class="dateGroup">
+			<label for= "exhibition-name">utstillingstitel</label>
+    		<input name="exhibition-name" class="exhibition-name" placeholder="utstillingstitel" value="<?php echo $exhibition->name ?>" type="text">
+		</div>
+		<div class="dateGroup">
+			<label for= "exhibition-descr">beskrivelse</label>
+    		<textarea name="exhibition-descr" class="exhibition-descr" placeholder="beskrivelse" ><?php echo $exhibition->longDescr ?></textarea>
+		</div>
+    
+	    <div class="dateGroup">
+	    	<label for="exhibition-startdate">startdato</label>
+	    	<input name="exhibition-startdate" class="exhibition-startdate" placeholder="" value="<?php $exhbition->startDate ?>" type="date">
+	    </div>
+	    <div class="dateGroup">
+	    	<label for="exhibition-enddate">sluttdato</label>
+	    	<input name="exhibition-enddate" class="exhibition-enddate" placeholder="" value="<?php echo $exhibition->endDate?>" type="date">
+	    </div>
+	  </fieldset>
+    <div class="buttonGroup">
+        <a href="#main" class="btn save btn-default" data-id="1">lagre</a>
         <a href="#main" class="btn nav btn-default">avbryt</a>
         <a href="#main" class="btn delete btn-default" data-id="0">slette</a>
     </div>
 </div>
-<div class="row" data-id="0">
-	<ul class="">
-	<?php foreach($exhPictures as $p){?>
-	    <li>
-	        <img src="<?php echo $p->thPath ?>">
-	        <div><?php echo $p->name?></div>';
+<div class="row">
+	<h3>utstillinge bilder</h3>
+	<ul id="SelectedPictures" class="sortable">
+		<?php foreach($exhibitionPictures as $p) { ?>
+		<li class="select-element exhibition-element" data-artistid="<?php echo $p->artistId?>" data-id="<?php echo $p->id?>">
+		    <img src="<?php echo $p->path?>">
+	    	<div><?php echo $p->name ?></div>
+	    	<a href="#" data-id="<?php echo $p->id?>" data-artistid="<?php echo $p->artistId?>">
+	        	<span class="glyphicon glyphicon-plus"></span>
+			</a>
 	    </li>
-	<?php }?>
+	    <?php } ?>
 	</ul>
-<div class="row" data-id="0">
-	<a href="#" class="btn pictures btn-default" data-id="0">legg til bilder</a>
+</div>
+<div class="row">
+	<h3>ledig bilder</h3>
 	<div id="Artists">
 		<select id="DdArtists">
-			<option value="0">alle kunstner</option>
-			<?php foreach ($artists as $a){?>
-			<option value="<?php echo $a->id?>"><?php echo $a->name?></option>
+			<option selected="selected" value="0">alle kunstner</option>
+			<?php foreach($artists as $artist) {?>
+			<option value="<?php echo $artist->id?>"><?php $artist->name ?></option>
+			
 			<?php }?>
 		</select>
 	</div>
-	<ul class="sortable">
-	<?php foreach($pictures as $p){?>
-	    <li class="select-element" data-artistid="<?php $p->artistid?>">
-	    		<a href="#" data-id="<?php echo $p->id?>" data-artistid="<?php $p->artistid?>">
-	        <img src="<?php echo $p->thPath ?>">
-	        <div><?php echo $p->name?></div>
-	        </a>
+	<ul id="AvailablePictures">
+		<li class="select-element exhibition-element" data-artistid="1" data-id="17">
+		    <img src="exhibition_detail_files/th_1464000617.jpg">
+	    	<div>cv</div>
+	    	<a href="#" data-id="17" data-artistid="1">
+	        	<span class="glyphicon glyphicon-plus"></span>
+			</a>
 	    </li>
-	<?php }?>
-	</ul>
+	    <li class="select-element exhibition-element" data-artistid="3" data-id="19">
+			<img src="exhibition_detail_files/th_1464002200.jpg">
+			<div>klo</div>
+    		<a href="#" data-id="19" data-artistid="3">
+				<span class="glyphicon glyphicon-plus"></span>
+			</a>
+		</li>
+		</ul>
 </div>

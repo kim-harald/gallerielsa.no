@@ -3,7 +3,7 @@
 	 * Object represents table 'picture'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2016-05-26 12:01	 
+     	 * @date: 2016-06-05 14:11	 
 	 */
 	class Picture{
 		
@@ -21,7 +21,7 @@
 		var $shortDescr;
 		var $longDescr;
 		var $price;
-		var $dimensions;
+		var $aspect;
 		
 	}
 ?>

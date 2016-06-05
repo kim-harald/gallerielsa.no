@@ -1,9 +1,12 @@
 body {
-	background-color : #FFF;
+	background: #F9F9F9 url("/images/nice_snow_@2X.png") repeat scroll left top;
+  color: #333;
+  font-family: "Oswald",Arial,sans-serif;
+  font-size: 13px;
 }
 
 div.banner img {
-	width : 100%;
+	width : 75%;
 }
 
 ul.menu li {
@@ -52,6 +55,54 @@ ul.menu {
 
 .site-container {
 	width:50%
+}
+
+.exhibition {
+	text-align:left;
+}
+
+#Footer {
+	font-size: 10px;
+	border-top: 1px solid gray;
+	padding-top: 3px;
+}
+
+address#Footer {
+	text-align:center;
+}
+
+.khd {
+	text-align:right;
+	position:relative;
+	top:-40px;
+}
+
+.khd img {
+	width:20px;
+}
+
+.fullsize img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+.textBox {
+  max-height: 120px;
+  position: relative;
+  overflow: hidden;
+  text-align : left;
+}
+.textBox .read-more { 
+  position: absolute; 
+  bottom: -35px; 
+  left: 0;
+  width: 100%; 
+  text-align: center; 
+  margin: 0; padding: 30px 0; 
+	
+  /* "transparent" only works here because == rgba(0,0,0,0) */
+  background-image: linear-gradient(to bottom, transparent, rgba(10,0,0,0));
 }
 
 /* Absolute Center Spinner */
@@ -172,4 +223,103 @@ ul.menu {
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+.fancybox-button img {
+	padding:5px;
+}
+
+.item-container {
+	width: 180px;
+	height: 180px;
+	text-align: center;
+	position:relative;
+	border:10px solid #FFF;
+	float:left;
+	margin:10px;
+}
+
+.item-title h4 {
+	-webkit-margin-before: 0.2em;
+	-webkit-margin-after: 0.1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.image-container, .text-container, .item-title, .item-select
+{
+    position:absolute;
+    left:0;
+    top:0;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+    /*border: 1px solid blue;*/
+    width: 160px;
+    height: 160px;
+}
+
+.image-container:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.image-container {
+	z-index:2;
+    background: #F9F9F9 url("/images/nice_snow_@2X.png") repeat scroll left top;
+    }       
+.text-container {
+	z-index:1;
+	-webkit-margin-before: 4.5em;
+  -webkit-margin-after: 0em;
+}       
+.item-container .image-container img.landscape {
+	width: 160px;
+}
+
+.item-container .image-container img.portrait {
+	height: 160px;
+}
+
+.item-title, .item-select {
+	z-index:3;
+	height:2.0em;
+	background-color : whitesmoke;
+	opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.item-select {
+	top:144px;
+}
+
+.item-select:hover {
+	background-color:blue;
+	opacity: 0.2;
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  width:160px;
+  height:160px;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
 }

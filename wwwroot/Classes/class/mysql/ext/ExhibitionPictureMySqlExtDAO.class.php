@@ -7,7 +7,7 @@
  */
 class ExhibitionPictureMySqlExtDAO extends ExhibitionPictureMySqlDAO{
 	public function queryByExhibition($exhibitionId) {
-		$sql = 'SELECT * FROM exhibition_picture WHERE exhibitionid=?';
+		$sql = 'SELECT * FROM exhibition_picture WHERE exhibitionid=? ORDER BY orderNo';
 		
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->setNumber($exhibitionId);
@@ -22,6 +22,5 @@ class ExhibitionPictureMySqlExtDAO extends ExhibitionPictureMySqlDAO{
 		
 		return $this->executeUpdate($sqlQuery);
 	}
-	
 }
 ?>

@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W
+3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+
+<title>Untitled Page</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<style type="text/css">
+body 
+{
+    background: #F9F9F9 url("/images/nice_snow_@2X.png") repeat scroll left top;
+    color: #333;
+    font-family: "Oswald",Arial,sans-serif;
+    font-size: 13px;
+}
+.item-container {
+	width: 160px;
+	height: 160px;
+	text-align: center;
+	position:relative;
+	border:10px solid #FFF;
+	float:left;
+	margin:10px;
+}
+
+.item-title h4 {
+	-webkit-margin-before: 0.1em;
+	-webkit-margin-after: 0.1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+.image-container, .text-container, .item-title, .item-select
+{
+    position:absolute;
+    left:0;
+    top:0;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+    /*border: 1px solid blue;*/
+    width:inherit;
+    height:inherit;
+}
+
+.image-container:hover
+{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.image-container {
+	z-index:2;
+    background: #F9F9F9 url("/images/nice_snow_@2X.png") repeat scroll left top;
+    }       
+.text-container {
+	z-index:1;
+	-webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0em;
+}       
+.item-container .image-container img.landscape {
+	width: 160px;
+}
+
+.item-container .image-container img.portrait {
+	height: 160px;
+}
+
+.item-title, .item-select {
+	z-index:3;
+	height:1.3em;
+	background-color : whitesmoke;
+	opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.item-select {
+	top:144px;
+}
+
+.item-select:hover {
+	background-color:blue;
+	opacity: 0.2;
+  filter: alpha(opacity=20); /* For IE8 and earlier */
+}
+
+.thumbnail {
+  position: relative;
+  overflow: hidden;
+  width:160px;
+  height:160px;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+}
+
+@media ( max-width: 768px) {
+	.item-container {
+		width: 240px;
+		height: 240px;
+		text-align: center;
+		position:relative;
+		border:10px solid #FFF;
+		float:left;
+		margin:10px;
+	}
+	
+	.item-container .image-container img.landscape {
+		width: 240px;
+	}
+	
+	.item-container .image-container img.portrait {
+		height: 240px;
+	}
+	
+	.item-select {
+		top:224px;
+	}
+	
+	.thumbnail {
+  position: relative;
+  overflow: hidden;
+  width:240px;
+  height:240px;
+}
+
+}
+    </style>
+</head>
+<body>
+    <div class="item-container">
+	    <div class="item-title">
+		    	<h4>"Dagen"</h4>
+		  </div>
+		  <a class="item-select" href="#" data-id="0">
+	    		select
+	    </a>
+	    <div class="image-container">
+    							
+		    <img class="thumbnail landscape" alt="&quot;Dagen&quot;" src="http://58.96.120.7/pictures/1464725070.jpg">
+	    </div>
+	    <div class="text-container">
+		    <p>av en kunstne</p>
+		    <p>3200,00&nbsp;<span>NOK</span></p>
+	    </div>
+	    
+	    
+    </div>
+    <div class="item-container">
+    	<div class="item-title">
+		    	<h4>"Bleken"</h4>
+		  </div>
+	    <div class="image-container">
+    							
+		    <img class="thumbnail portrait" alt="Bleken" src="http://58.96.120.7/pictures/1464690093.jpg">
+	    </div>
+	    <div class="text-container">
+		    <p>av Bleken</p>
+		    <p>0,00&nbsp;<span>NOK</span></p>
+	    </div>
+    </div>
+</body>
+</html>

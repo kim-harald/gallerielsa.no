@@ -6,6 +6,7 @@
  * @date: 2016-05-09 11:52
  */
 class ExhibitionMySqlExtDAO extends ExhibitionMySqlDAO{
+	
 	public function queryExhibitionPictures($exhibitionId) {
 		$sql = "SELECT p.*,ep.exhibition_id FROM exhibition_picture ep INNER JOIN picture p ON p.id = ep.picture_id WHERE ep.exhibition_id =?;";
 		
@@ -42,7 +43,7 @@ class ExhibitionMySqlExtDAO extends ExhibitionMySqlDAO{
 		$exhp->shortDescr = $row['shortDescr'];
 		$exhp->longDescr = $row['longDescr'];
 		$exhp->price = $row['price'];
-		$exhp->dimensions = $row['dimensions'];
+		$exhp->aspect = $row['aspect'];
 		$exhp->exhibitionId = $row['exhibition_id'];
 		
 		return $exhp;

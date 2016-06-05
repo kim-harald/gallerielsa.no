@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-05-26 12:02
+ * @date: 2016-06-05 14:12
  */
 interface BlogDAO{
 
@@ -55,14 +55,18 @@ interface BlogDAO{
 
 	public function queryByMessage($value);
 
-	public function queryByCreatedDate($value);
+	public function queryByStartDate($value);
+
+	public function queryByEndDate($value);
 
 
 	public function deleteByTitle($value);
 
 	public function deleteByMessage($value);
 
-	public function deleteByCreatedDate($value);
+	public function deleteByStartDate($value);
+
+	public function deleteByEndDate($value);
 
 
 }

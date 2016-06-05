@@ -3,16 +3,17 @@
 	 * Object represents table 'artist'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2016-05-26 12:01	 
+     	 * @date: 2016-06-05 14:11	 
 	 */
 	class Artist{
 		
 		var $id;
 		var $name;
+		var $firstname;
+		var $lastname;
 		var $shortDescr;
 		var $longDescr;
 		var $profilePicturePath;
-		var $jsonData;
 		var $createdDate;
 		var $deletedDate;
 		

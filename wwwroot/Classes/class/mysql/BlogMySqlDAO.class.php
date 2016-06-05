@@ -3,7 +3,7 @@
  * Class that operate on table 'blog'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-05-26 12:01
+ * @date: 2016-06-05 14:11
  */
 class BlogMySqlDAO implements BlogDAO{
 
@@ -57,12 +57,13 @@ class BlogMySqlDAO implements BlogDAO{
  	 * @param BlogMySql blog
  	 */
 	public function insert($blog){
-		$sql = 'INSERT INTO blog (title, message, createdDate) VALUES (?, ?, ?)';
+		$sql = 'INSERT INTO blog (title, message, startDate, endDate) VALUES (?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($blog->title);
 		$sqlQuery->set($blog->message);
-		$sqlQuery->set($blog->createdDate);
+		$sqlQuery->set($blog->startDate);
+		$sqlQuery->set($blog->endDate);
 
 		$id = $this->executeInsert($sqlQuery);	
 		$blog->id = $id;
@@ -75,12 +76,13 @@ class BlogMySqlDAO implements BlogDAO{
  	 * @param BlogMySql blog
  	 */
 	public function update($blog){
-		$sql = 'UPDATE blog SET title = ?, message = ?, createdDate = ? WHERE id = ?';
+		$sql = 'UPDATE blog SET title = ?, message = ?, startDate = ?, endDate = ? WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($blog->title);
 		$sqlQuery->set($blog->message);
-		$sqlQuery->set($blog->createdDate);
+		$sqlQuery->set($blog->startDate);
+		$sqlQuery->set($blog->endDate);
 
 		$sqlQuery->setNumber($blog->id);
 		return $this->executeUpdate($sqlQuery);
@@ -109,8 +111,15 @@ class BlogMySqlDAO implements BlogDAO{
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByCreatedDate($value){
-		$sql = 'SELECT * FROM blog WHERE createdDate = ?';
+	public function queryByStartDate($value){
+		$sql = 'SELECT * FROM blog WHERE startDate = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
+	public function queryByEndDate($value){
+		$sql = 'SELECT * FROM blog WHERE endDate = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
@@ -131,8 +140,15 @@ class BlogMySqlDAO implements BlogDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByCreatedDate($value){
-		$sql = 'DELETE FROM blog WHERE createdDate = ?';
+	public function deleteByStartDate($value){
+		$sql = 'DELETE FROM blog WHERE startDate = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->executeUpdate($sqlQuery);
+	}
+
+	public function deleteByEndDate($value){
+		$sql = 'DELETE FROM blog WHERE endDate = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
@@ -151,7 +167,8 @@ class BlogMySqlDAO implements BlogDAO{
 		$blog->id = $row['id'];
 		$blog->title = $row['title'];
 		$blog->message = $row['message'];
-		$blog->createdDate = $row['createdDate'];
+		$blog->startDate = $row['startDate'];
+		$blog->endDate = $row['endDate'];
 
 		return $blog;
 	}

@@ -49,7 +49,8 @@ function post($data) {
 	$php_object = json_decode($json_object);
 	
 	$artist = new Artist();
-	$artist->name = $php_object->name;
+	$artist->firstname = $php_object->firstname;
+	$artist->lastname = $php_object->lastname;
 	$artist->shortDescr = $php_object->shortDescr;
 	$artist->longDescr = $php_object->longDescr;
 	//$artist->profilePicturePath = $php_object->profilepicturepath;

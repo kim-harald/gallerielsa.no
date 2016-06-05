@@ -3,7 +3,7 @@
  * Class that operate on table 'exhibition_picture'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-05-26 12:01
+ * @date: 2016-06-05 14:12
  */
 class ExhibitionPictureMySqlDAO implements ExhibitionPictureDAO{
 
@@ -61,9 +61,10 @@ class ExhibitionPictureMySqlDAO implements ExhibitionPictureDAO{
  	 * @param ExhibitionPictureMySql exhibitionPicture
  	 */
 	public function insert($exhibitionPicture){
-		$sql = 'INSERT INTO exhibition_picture ( exhibition_id, picture_id) VALUES ( ?, ?)';
+		$sql = 'INSERT INTO exhibition_picture (orderNo, exhibition_id, picture_id) VALUES (?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
+		$sqlQuery->setNumber($exhibitionPicture->orderNo);
 
 		
 		$sqlQuery->setNumber($exhibitionPicture->exhibitionId);
@@ -81,9 +82,10 @@ class ExhibitionPictureMySqlDAO implements ExhibitionPictureDAO{
  	 * @param ExhibitionPictureMySql exhibitionPicture
  	 */
 	public function update($exhibitionPicture){
-		$sql = 'UPDATE exhibition_picture SET  WHERE exhibition_id = ?  AND picture_id = ? ';
+		$sql = 'UPDATE exhibition_picture SET orderNo = ? WHERE exhibition_id = ?  AND picture_id = ? ';
 		$sqlQuery = new SqlQuery($sql);
 		
+		$sqlQuery->setNumber($exhibitionPicture->orderNo);
 
 		
 		$sqlQuery->setNumber($exhibitionPicture->exhibitionId);
@@ -102,6 +104,20 @@ class ExhibitionPictureMySqlDAO implements ExhibitionPictureDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
+	public function queryByOrderNo($value){
+		$sql = 'SELECT * FROM exhibition_picture WHERE orderNo = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->setNumber($value);
+		return $this->getList($sqlQuery);
+	}
+
+
+	public function deleteByOrderNo($value){
+		$sql = 'DELETE FROM exhibition_picture WHERE orderNo = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->setNumber($value);
+		return $this->executeUpdate($sqlQuery);
+	}
 
 
 	
@@ -115,6 +131,7 @@ class ExhibitionPictureMySqlDAO implements ExhibitionPictureDAO{
 		
 		$exhibitionPicture->exhibitionId = $row['exhibition_id'];
 		$exhibitionPicture->pictureId = $row['picture_id'];
+		$exhibitionPicture->orderNo = $row['orderNo'];
 
 		return $exhibitionPicture;
 	}

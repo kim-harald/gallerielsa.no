@@ -51,6 +51,7 @@
 				$("#Path").attr("src",name);
 				$("#ThPath").text(thumb);
 				$("#CheckUpload").removeAttr("checked");
+				$("a.btn.nav.save").disable(false);
 			} else if( result.error ){
 				error = result.error
 				html = '';

@@ -1,5 +1,7 @@
 <?php
 include_once '/../../Classes/include_dao.php';
+include_once "/../../utilities/common.php";
+
 if (!isset($_GET["verb"])) {
   die("No verb set!");
 }
@@ -34,6 +36,7 @@ function get($id) {
   } else {
 	$picture = DAOFactory::getPictureDAO()->load($id);
   }
+  
   return ($picture) ;
 }
 
@@ -54,7 +57,7 @@ function post($data) {
   $picture->name = $php_object->name;
   $picture->id = $php_object->id;
   $picture->artistid = $php_object->artistid;
-  $picture->dimensions = $php_object->dimensions;
+  
   $picture->keywords = $php_object->keywords;
   $picture->longDescr = $php_object->longDescr;
   $picture->shortDescr = $php_object->shortDescr;
@@ -62,13 +65,13 @@ function post($data) {
   $picture->thPath = $php_object->thPath;
   $picture->price = $php_object->price;
   $picture->status = $php_object->status;
-
+  $picture->aspect = getAspect($php_object->path);
+  
   if ($picture->id == 0) {
 	$picture->id = DAOFactory::getPictureDAO()->insert($picture);
   } else {
 	DAOFactory::getPictureDAO()->update($picture);
   }
-
   return ($picture);
 }
 

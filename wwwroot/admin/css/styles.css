@@ -11,7 +11,7 @@
 }
 
 .artist-element a img, .picture-element a img, .exhibition-element a img, .exhibition-picture img {
-	width :50px
+/*	width :50px*/
 }
 
 .exhibition-picture.selected  {
@@ -20,7 +20,7 @@
 
 img.exhibition-element 
 {
-    width:150px;
+    width:100px;
 }
 
 img.small {
@@ -28,12 +28,13 @@ img.small {
 	}
 
 img.picture-medium {
-	width : 150px;
-	height : 150px;
+		/*width: 150px; */
+    height: 250px;
+    border: 10px solid white;
 }
 
 a.nav.detail img {
-	width:50px;
+	/*width:50px;*/
 }
 
 .dateGroup {
@@ -54,4 +55,23 @@ a.nav.detail img {
 .buttonGroup 
 {
     padding:5px;
+}
+
+.page-fields-container {
+	text-align:left;
+}
+
+.page-element {
+	margin:10px;
+	width:25%;
+}
+
+.page-element textarea {
+	width: 25em;
+  height: 7em;
+}
+
+img.new-picture {
+	width:250px;
+	height:250px;
 }

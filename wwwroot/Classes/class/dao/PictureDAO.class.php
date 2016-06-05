@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-05-26 12:02
+ * @date: 2016-06-05 14:12
  */
 interface PictureDAO{
 
@@ -77,7 +77,7 @@ interface PictureDAO{
 
 	public function queryByPrice($value);
 
-	public function queryByDimensions($value);
+	public function queryByAspect($value);
 
 
 	public function deleteByArtistid($value);
@@ -106,7 +106,7 @@ interface PictureDAO{
 
 	public function deleteByPrice($value);
 
-	public function deleteByDimensions($value);
+	public function deleteByAspect($value);
 
 
 }

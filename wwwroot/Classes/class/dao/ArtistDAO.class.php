@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-05-26 12:02
+ * @date: 2016-06-05 14:12
  */
 interface ArtistDAO{
 
@@ -53,13 +53,15 @@ interface ArtistDAO{
 
 	public function queryByName($value);
 
+	public function queryByFirstname($value);
+
+	public function queryByLastname($value);
+
 	public function queryByShortDescr($value);
 
 	public function queryByLongDescr($value);
 
 	public function queryByProfilePicturePath($value);
-
-	public function queryByJsonData($value);
 
 	public function queryByCreatedDate($value);
 
@@ -68,13 +70,15 @@ interface ArtistDAO{
 
 	public function deleteByName($value);
 
+	public function deleteByFirstname($value);
+
+	public function deleteByLastname($value);
+
 	public function deleteByShortDescr($value);
 
 	public function deleteByLongDescr($value);
 
 	public function deleteByProfilePicturePath($value);
-
-	public function deleteByJsonData($value);
 
 	public function deleteByCreatedDate($value);
 

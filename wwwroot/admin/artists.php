@@ -35,7 +35,8 @@
             var artist = findArtist(id);
             var $content = $(this).parents(".ui_content");
             artist.id = id;
-            artist.name = $content.find("input.artist-name").val();
+            artist.firstname = $content.find("input.artist-firstname").val();
+            artist.lastname = $content.find("input.artist-lastname").val();
             artist.shortDescr = $content.find("input.artist-shortdescr").val();
             artist.longDescr = $content.find("textarea.artist-longdescr").val();
             artist.createdDate = format(new Date(), "yyyy-MM-dd hh:mm:ss");
@@ -49,7 +50,8 @@
     function updateListEntry(artist) {
         var $content = $("section#main .row");
         var $element = $content.find(".artist-element[data-id='" + artist.id + "']");
-        $element.find(".artist-name").text(artist.name);
+        $element.find(".artist-firstname").text(artist.firstname);
+        $element.find(".artist-lastname").text(artist.lastname);
         $element.attr("data-shortdescr",a.shortDescr);
     }
 
@@ -65,30 +67,19 @@
            success: function(xhr) {
                if (a.id == 0) {
                    a.id = xhr.id;
-                   artists.push(a);
-               } else {
-                   var j = 0;
-                   for (i = 0; i < artists.length; i++) {
-                       if (id == artists[i].id) {
-                           j = i;
-                           break;
-                       }
-                   }
-                   artists[j] = a;
                }
            },
            error: function(xhr) {
                alert(xhr.responseText);
            }
        });
-
-        //$("section#detail a.btn.main").click();
     }
 
     function editArtist(a) {
         var $content = $("section#detail .ui_content");
         $content.attr("data-id", a.id);
-        $content.find("input.artist-name").val(a.name);
+        $content.find("input.artist-firstname").val(a.firstname);
+        $content.find("input.artist-lastname").val(a.lastname);
         $content.find("input.artist-shortdescr").val(a.shortDescr);
         $content.find("textarea.artist-longdescr").val(a.longDescr);
         $content.find("button.btn.save").attr("data-id", a.id);
@@ -98,16 +89,18 @@
         var $artist = $('div.artist-element[data-id="' + id + '"]');
         if ($artist.length == 0) {
             return { "id": "0",
-                "name": "0",
-                "shortDescr": "",
-                "longDescr": "",
-                "createdDate": "0000-00-00",
-                "deletedDate": "0000-00-00"
+	          	"firstname": "",
+	            "lastname": "",
+              "shortDescr": "",
+              "longDescr": "",
+              "createdDate": "0000-00-00",
+              "deletedDate": "0000-00-00"
             };
         }
         else {
             return { "id": id,
-                "name": $artist.find(".artist-name").text(),
+                "firstname": $artist.attr("data-firstname"),
+                "lastname": $artist.attr("data-lastname"),
                 "shortDescr": $artist.attr("data-shortdescr"),
                 "longDescr": $artist.attr("data-longdescr"),
                 "createdDate": $artist.attr("data-createddate"),
@@ -122,7 +115,8 @@
             return;
         }
         else {
-            $artist.find(".artist-name").text(artist.name);
+            $artist.find(".artist-firstname").text(artist.firstname);
+            $artist.find(".artist-lastname").text(artist.lastname);
             $artist.attr("data-shortdescr", artist.shortDescr);
             $artist.attr("data-longdescr", artist.longDescr);
             $artist.attr("data-createddate", artist.createdDate);
@@ -130,6 +124,7 @@
         }
     }
 </script>
+<?php include "header.php"?>
 <div class="container-fluid">
 
 <section class="ui_page active" id="main">
@@ -145,13 +140,15 @@
 	$data = 'data-id="'. $artist->id . 
 			'" data-shortdescr="' . $artist->shortDescr . 
 			'" data-longdescr="' .	$artist->longDescr . 
+			'" data-firstname="' .	$artist->firstname . 
+			'" data-lastname="' .	$artist->lastname . 
 			'" data-createddate="' . $artist->createdDate . '"' .
 		'" data-deleteddate="' . $artist->deletedDate . '"'
 		?>
 	  <div class="artist-element" <?php echo $data?>">
   		<a href="#detail" data-id="<?php echo $artist->id?>" class="nav detail">
 	  		<img alt="<?php echo $artist->name; ?>" src="../images/art-icon.png">
-	  		<p class="artist-name"><?php echo $artist->name; ?></p>
+	  		<p class="artist-name"><?php echo $artist->firstname . " " . $artist->lastname ; ?></p>
 	  		<p class="artist-pictures">0</p>
   		</a>
   	 </div>
@@ -162,7 +159,8 @@
 <section class="ui_page" id="detail">
     <h1>rediger</h1>
     <div class="ui_content" data-id="1" >
-        <div class="artist-name"><input type="text" class="artist-name" placeholder="navn" value=""/></div>
+        <div class="artist-firstname"><input type="text" class="artist-firstname" placeholder="fornavn" value=""/></div>
+        <div class="artist-lastname"><input type="text" class="artist-lastname" placeholder="etternavn" value=""/></div>
         <div class="artist-shortdescr"><input type="text" class="artist-shortdescr" placeholder="kort beskrivesle" value=""/></div>
         <div class="artist-longdescr"><textarea class="artist-longdescr" placeholder="lang beskrivelse"></textarea></div>
         <button class="btn save" data-id="1">lagre</button>

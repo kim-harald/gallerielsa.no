@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-05-26 12:02
+ * @date: 2016-06-05 14:12
  */
 interface ExhibitionPictureDAO{
 
@@ -51,6 +51,10 @@ interface ExhibitionPictureDAO{
 	 */
 	public function clean();
 
+	public function queryByOrderNo($value);
+
+
+	public function deleteByOrderNo($value);
 
 
 }

@@ -3,7 +3,7 @@
  * Class that operate on table 'artist'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-05-26 12:01
+ * @date: 2016-06-05 14:11
  */
 class ArtistMySqlDAO implements ArtistDAO{
 
@@ -57,14 +57,15 @@ class ArtistMySqlDAO implements ArtistDAO{
  	 * @param ArtistMySql artist
  	 */
 	public function insert($artist){
-		$sql = 'INSERT INTO artist (name, shortDescr, longDescr, profile_picture_path, jsonData, createdDate, deletedDate) VALUES (?, ?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO artist (name, Firstname, Lastname, shortDescr, longDescr, profile_picture_path, createdDate, deletedDate) VALUES (?, ?, ?, ?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($artist->name);
+		$sqlQuery->set($artist->firstname);
+		$sqlQuery->set($artist->lastname);
 		$sqlQuery->set($artist->shortDescr);
 		$sqlQuery->set($artist->longDescr);
 		$sqlQuery->set($artist->profilePicturePath);
-		$sqlQuery->set($artist->jsonData);
 		$sqlQuery->set($artist->createdDate);
 		$sqlQuery->set($artist->deletedDate);
 
@@ -79,14 +80,15 @@ class ArtistMySqlDAO implements ArtistDAO{
  	 * @param ArtistMySql artist
  	 */
 	public function update($artist){
-		$sql = 'UPDATE artist SET name = ?, shortDescr = ?, longDescr = ?, profile_picture_path = ?, jsonData = ?, createdDate = ?, deletedDate = ? WHERE id = ?';
+		$sql = 'UPDATE artist SET name = ?, Firstname = ?, Lastname = ?, shortDescr = ?, longDescr = ?, profile_picture_path = ?, createdDate = ?, deletedDate = ? WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($artist->name);
+		$sqlQuery->set($artist->firstname);
+		$sqlQuery->set($artist->lastname);
 		$sqlQuery->set($artist->shortDescr);
 		$sqlQuery->set($artist->longDescr);
 		$sqlQuery->set($artist->profilePicturePath);
-		$sqlQuery->set($artist->jsonData);
 		$sqlQuery->set($artist->createdDate);
 		$sqlQuery->set($artist->deletedDate);
 
@@ -110,6 +112,20 @@ class ArtistMySqlDAO implements ArtistDAO{
 		return $this->getList($sqlQuery);
 	}
 
+	public function queryByFirstname($value){
+		$sql = 'SELECT * FROM artist WHERE Firstname = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
+	public function queryByLastname($value){
+		$sql = 'SELECT * FROM artist WHERE Lastname = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
 	public function queryByShortDescr($value){
 		$sql = 'SELECT * FROM artist WHERE shortDescr = ?';
 		$sqlQuery = new SqlQuery($sql);
@@ -126,13 +142,6 @@ class ArtistMySqlDAO implements ArtistDAO{
 
 	public function queryByProfilePicturePath($value){
 		$sql = 'SELECT * FROM artist WHERE profile_picture_path = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->getList($sqlQuery);
-	}
-
-	public function queryByJsonData($value){
-		$sql = 'SELECT * FROM artist WHERE jsonData = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
@@ -160,6 +169,20 @@ class ArtistMySqlDAO implements ArtistDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
+	public function deleteByFirstname($value){
+		$sql = 'DELETE FROM artist WHERE Firstname = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->executeUpdate($sqlQuery);
+	}
+
+	public function deleteByLastname($value){
+		$sql = 'DELETE FROM artist WHERE Lastname = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->executeUpdate($sqlQuery);
+	}
+
 	public function deleteByShortDescr($value){
 		$sql = 'DELETE FROM artist WHERE shortDescr = ?';
 		$sqlQuery = new SqlQuery($sql);
@@ -176,13 +199,6 @@ class ArtistMySqlDAO implements ArtistDAO{
 
 	public function deleteByProfilePicturePath($value){
 		$sql = 'DELETE FROM artist WHERE profile_picture_path = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->executeUpdate($sqlQuery);
-	}
-
-	public function deleteByJsonData($value){
-		$sql = 'DELETE FROM artist WHERE jsonData = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
@@ -214,10 +230,11 @@ class ArtistMySqlDAO implements ArtistDAO{
 		
 		$artist->id = $row['id'];
 		$artist->name = $row['name'];
+		$artist->firstname = $row['Firstname'];
+		$artist->lastname = $row['Lastname'];
 		$artist->shortDescr = $row['shortDescr'];
 		$artist->longDescr = $row['longDescr'];
 		$artist->profilePicturePath = $row['profile_picture_path'];
-		$artist->jsonData = $row['jsonData'];
 		$artist->createdDate = $row['createdDate'];
 		$artist->deletedDate = $row['deletedDate'];
 

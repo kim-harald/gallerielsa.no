@@ -34,9 +34,9 @@ $artists = DAOFactory::getArtistDAO()->all();
 	    </div>
 	  </fieldset>
     <div class="buttonGroup">
-        <a href="#main" class="btn save btn-default" data-id="1">lagre</a>
+        <a href="#main" class="btn save btn-default" data-id="<?php echo $exhibition->id?>">lagre</a>
         <a href="#main" class="btn nav btn-default">avbryt</a>
-        <a href="#main" class="btn delete btn-default" data-id="0">slette</a>
+        <a href="#main" class="btn delete btn-default" data-id="<?php echo $exhibition->id?>">slette</a>
     </div>
 </div>
 <div class="row">
@@ -47,7 +47,7 @@ $artists = DAOFactory::getArtistDAO()->all();
 		    <img src="<?php echo $p->thPath?>">
 	    	<div><?php echo $p->name ?></div>
 	    	<a href="#" data-id="<?php echo $p->id?>" data-artistid="<?php echo $p->artistid?>">
-	        	<span class="glyphicon glyphicon-plus"></span>
+	        	<span class="glyphicon glyphicon-minus"></span>
 			</a>
 	    </li>
 	    <?php } ?>

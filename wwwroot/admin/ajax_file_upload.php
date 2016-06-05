@@ -1,5 +1,6 @@
 <?php
 include_once "/../classes/include_dao.php";
+include_once "/../utilities/common.php";
 
 $data = array();
 if( isset( $_POST['image_upload'] ) && !empty( $_FILES['images'] )){
@@ -32,11 +33,12 @@ if( isset( $_POST['image_upload'] ) && !empty( $_FILES['images'] )){
 	}
 	
 	if($image_flag){
-		move_uploaded_file($image["tmp_name"], "../pictures/".$name);
+		$path = "../pictures/";
+		move_uploaded_file($image["tmp_name"], $path . $name);
 		$picture = new Picture();
 		$picture->path = "/pictures/".$name;
 		$picture->thPath = "/pictures/"."th_".$name;
-		createThumbnail("../pictures/".$name, "../pictures/th_".$name, 150,150);
+		createThumbnail("../pictures/".$name, $path . "/th_".$name, 160,160);
 		$id = isset($_POST["pictureid"])?$_POST["pictureid"]:0;
 		$id == "" ? 0 : $id; 
 		if (is_numeric($id)) {
@@ -44,11 +46,11 @@ if( isset( $_POST['image_upload'] ) && !empty( $_FILES['images'] )){
 			$picture = DAOFactory::getPictureDAO()->load($id);
 			$picture->thPath = "/pictures/th_".$name;
 			$picture->path = "/pictures/".$name;
+			$picture->aspect = getAspect($picture->path);
 			DAOFactory::getPictureDAO()->update($picture);
 		} else {
 			$picture->id = DAOFactory::getPictureDAO()->insert($picture);
 		}
-		
 		
 		$data['success'] = $picture;
 	}
@@ -59,7 +61,6 @@ if( isset( $_POST['image_upload'] ) && !empty( $_FILES['images'] )){
 	$data[] = 'No Image Selected..';
 }
 
-
 function createThumbnail($filepath, $thumbpath, $thumbnail_width, $thumbnail_height) {
     list($original_width, $original_height, $original_type) = getimagesize($filepath);
     if ($original_width > $original_height) {
@@ -69,8 +70,6 @@ function createThumbnail($filepath, $thumbpath, $thumbnail_width, $thumbnail_hei
         $new_height = $thumbnail_height;
         $new_width = intval($original_width * $new_height / $original_height);
     }
-    $dest_x = intval(($thumbnail_width - $new_width) / 2);
-    $dest_y = intval(($thumbnail_height - $new_height) / 2);
 
     if ($original_type === 1) {
         $imgt = "ImageGIF";
@@ -86,8 +85,10 @@ function createThumbnail($filepath, $thumbpath, $thumbnail_width, $thumbnail_hei
     }
 
     $old_image = $imgcreatefrom($filepath);
-    $new_image = imagecreatetruecolor($thumbnail_width, $thumbnail_height);
-    imagecopyresampled($new_image, $old_image, $dest_x, $dest_y, 0, 0, $new_width, $new_height, $original_width, $original_height);
+    $new_image = imagecreatetruecolor($new_width, $new_height);
+    imagecopyresampled($new_image, $old_image, 0, 0, 0, 0, $new_width, $new_height, $original_width, $original_height);
+    $bgcolor = imagecolorallocate($new_image, 255, 255, 255);
+    imagefill($new_image, 0, 0, $bgcolor);
     $imgt($new_image, $thumbpath);
 
     return file_exists($thumbpath);

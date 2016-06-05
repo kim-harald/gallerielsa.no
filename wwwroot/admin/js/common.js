@@ -74,6 +74,7 @@ function loadContent(src,$anchor,onComplete) {
 	setSpinner();
 	$.ajax({
         url: src,
+        method: "GET",
         dataType: 'html',
         success: function(xhr) {
         	$anchor.html(xhr);
@@ -113,3 +114,15 @@ function format(x, y) {
         return x.getFullYear().toString().slice(-v.length)
     });
 }
+
+jQuery.fn.extend({
+    disable: function(state) {
+        return this.each(function() {
+            var $this = $(this);
+            if($this.is('input, button, textarea, select'))
+              this.disabled = state;
+            else
+              $this.toggleClass('disabled', state);
+        });
+    }
+});

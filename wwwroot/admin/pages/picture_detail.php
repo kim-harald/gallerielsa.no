@@ -19,7 +19,7 @@ $status = DAOFactory::getStatusDAO()->queryAll();
 	<div class="page-element">
 		<div><img class="picture-medium" src="" title="navn" /></div>
 		<form enctype="multipart/form-data" name='imageform' role="form" id="imageform" method="post" action="pages/ajax_file_upload.php">
-			<input type=file name="picture_path" id="picture_path" accept=".jpg,.png,.jpeg" placeholder="valg bilde" />
+			<input type=file name="picture_path" id="picture_path" accept=".jpg,.png,.jpeg" placeholder="valg bilde" value="<?php echo $picture->path?>"/>
 			<div id="loader" style="display: none;">opplastes til serveren</div>
 			<div id="picture-error"></div>
 			<input type="submit" class="btn" >
@@ -43,9 +43,6 @@ $status = DAOFactory::getStatusDAO()->queryAll();
 	</div>
 	<div class="page-element">
 		<input type=text class="price picture" placeholder="pris eg 2000kr" value="<?php echo $picture->price;?>" />
-	</div>
-	<div class="page-element">
-		<input type=text class="dimensions picture"  placeholder="eg 60 x 40cm" value="<?php echo $picture->dimensions;?>" />
 	</div>
 	<div class="page-element">
 		<input type=text class="keywords picture" placeholder="eg titel;kunstner;" value="<?php echo $picture->keywords;?>" />
@@ -78,7 +75,6 @@ $status = DAOFactory::getStatusDAO()->queryAll();
 						shortDescr : $(".page-element input.shortdescr.picture").val(),
 						longDescr : $(".page-element input.longdescr.picture").val(),
 						price : $(".page-element input.longdescr.price").val(),
-						dimensions : $(".page-element input.dimensions.picture").val(),
 						keywords : $(".page-element input.keywords.picture").val(),
 						status : $(".page-element select.status.picture").val()
 				};

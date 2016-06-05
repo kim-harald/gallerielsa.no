@@ -3,7 +3,7 @@
  * Class that operate on table 'picture'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-05-26 12:01
+ * @date: 2016-06-05 14:12
  */
 class PictureMySqlDAO implements PictureDAO{
 
@@ -57,7 +57,7 @@ class PictureMySqlDAO implements PictureDAO{
  	 * @param PictureMySql picture
  	 */
 	public function insert($picture){
-		$sql = 'INSERT INTO picture (artistid, refid, name, path, thPath, dateCreated, dateDisplayed, dateRemoved, keywords, status, shortDescr, longDescr, price, dimensions) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO picture (artistid, refid, name, path, thPath, dateCreated, dateDisplayed, dateRemoved, keywords, status, shortDescr, longDescr, price, aspect) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->setNumber($picture->artistid);
@@ -73,7 +73,7 @@ class PictureMySqlDAO implements PictureDAO{
 		$sqlQuery->set($picture->shortDescr);
 		$sqlQuery->set($picture->longDescr);
 		$sqlQuery->set($picture->price);
-		$sqlQuery->set($picture->dimensions);
+		$sqlQuery->set($picture->aspect);
 
 		$id = $this->executeInsert($sqlQuery);	
 		$picture->id = $id;
@@ -86,7 +86,7 @@ class PictureMySqlDAO implements PictureDAO{
  	 * @param PictureMySql picture
  	 */
 	public function update($picture){
-		$sql = 'UPDATE picture SET artistid = ?, refid = ?, name = ?, path = ?, thPath = ?, dateCreated = ?, dateDisplayed = ?, dateRemoved = ?, keywords = ?, status = ?, shortDescr = ?, longDescr = ?, price = ?, dimensions = ? WHERE id = ?';
+		$sql = 'UPDATE picture SET artistid = ?, refid = ?, name = ?, path = ?, thPath = ?, dateCreated = ?, dateDisplayed = ?, dateRemoved = ?, keywords = ?, status = ?, shortDescr = ?, longDescr = ?, price = ?, aspect = ? WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->setNumber($picture->artistid);
@@ -102,7 +102,7 @@ class PictureMySqlDAO implements PictureDAO{
 		$sqlQuery->set($picture->shortDescr);
 		$sqlQuery->set($picture->longDescr);
 		$sqlQuery->set($picture->price);
-		$sqlQuery->set($picture->dimensions);
+		$sqlQuery->set($picture->aspect);
 
 		$sqlQuery->setNumber($picture->id);
 		return $this->executeUpdate($sqlQuery);
@@ -208,8 +208,8 @@ class PictureMySqlDAO implements PictureDAO{
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByDimensions($value){
-		$sql = 'SELECT * FROM picture WHERE dimensions = ?';
+	public function queryByAspect($value){
+		$sql = 'SELECT * FROM picture WHERE aspect = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
@@ -307,8 +307,8 @@ class PictureMySqlDAO implements PictureDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByDimensions($value){
-		$sql = 'DELETE FROM picture WHERE dimensions = ?';
+	public function deleteByAspect($value){
+		$sql = 'DELETE FROM picture WHERE aspect = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
@@ -338,7 +338,7 @@ class PictureMySqlDAO implements PictureDAO{
 		$picture->shortDescr = $row['shortDescr'];
 		$picture->longDescr = $row['longDescr'];
 		$picture->price = $row['price'];
-		$picture->dimensions = $row['dimensions'];
+		$picture->aspect = $row['aspect'];
 
 		return $picture;
 	}

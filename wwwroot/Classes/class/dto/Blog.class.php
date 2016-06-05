@@ -3,14 +3,15 @@
 	 * Object represents table 'blog'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2016-05-26 12:01	 
+     	 * @date: 2016-06-05 14:11	 
 	 */
 	class Blog{
 		
 		var $id;
 		var $title;
 		var $message;
-		var $createdDate;
+		var $startDate;
+		var $endDate;
 		
 	}
 ?>

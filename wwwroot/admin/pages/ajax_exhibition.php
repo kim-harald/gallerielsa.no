@@ -64,7 +64,7 @@ function post($data) {
 	$pictures = $php_object->pictures;
 	
 	if ($exhibition->id == 0) {
-		$artist->id = DAOFactory::getExhibitionDAO()->insert($exhibition);
+		$exhibition->id = DAOFactory::getExhibitionDAO()->insert($exhibition);
 	} else {
 		DAOFactory::getExhibitionDAO()->update($exhibition);
 	}
@@ -75,9 +75,12 @@ function post($data) {
 			$exhibitionPicture = new ExhibitionPicture();
 			$exhibitionPicture->exhibitionId = $exhibition->id;
 			$exhibitionPicture->pictureId = $picture->id;
+			$exhibitionPicture->orderNo = $picture->orderNo;
 			DAOFactory::getExhibitionPictureDAO()->insert($exhibitionPicture);
 		}
 	}
+	
+	return $exhibition;
 }
 	
 

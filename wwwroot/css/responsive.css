@@ -2,21 +2,22 @@
 @media ( min-width: 768px) {
 	ul.menu li>a {	
 		margin: 0px;
-		width: 6.1em;
-		padding: 10px 5px 15px 5px;
-		height: 30px;
-		color: black;
-		text-decoration: none;
-		display: block;
-		letter-spacing: 1px;
-		font-size: 1.1em;
-		font-family: verdana;
-		-o-transition: 0.7s;
-		-ms-transition: 0.7s;
-		-moz-transition: 0.7s;
-		transition: 0.7s;
-		text-align: center;
+    width: 9.1em;
+    padding: 10px 5px 15px 5px;
+    height: 50px;
+    color: black;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    font-family: verdana;
+    -o-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -moz-transition: 0.7s;
+    transition: 0.7s;
+    text-align: center;
 	}
+	
 	ul.menu {
 		text-align: center;
 		width: 100%;
@@ -37,7 +38,7 @@
 	}
 	
 	body {
-	margin:50px 0px; padding:0px;
+	margin:10px 0px; padding:0px;
 	text-align:center;
 	}
 	
@@ -46,6 +47,11 @@
 		margin:0px auto;
 		text-align:left;
 	}
+	
+	.banner {
+		padding: 5px;
+	}
+	
 }
 
 @media (max-width: 768px) {
@@ -88,13 +94,14 @@
 	}
 	
 	ul.menu {
-		text-align: left;
-		width: 100px;
-		display: block;
-		position: relative;
-		float: right;
-		background-color: lightgray;
-		border-radius: 4px;
+		    text-align: left;
+    width: 170px;
+    display: block;
+    position: relative;
+    float: right;
+    background-color: lightgray;
+    border-radius: 4px;
+    padding: 20px 5px 5px 20px;
 			}
 	
 	.social {
@@ -132,7 +139,6 @@
 		filter:  none;
 	}
 	
-	
 	.slideShow figure img {
 		width: 100%;
 	}
@@ -152,14 +158,13 @@
 	
 	#Header {
 		width: 100%;
-		background-color: lightblue;
-		box-sizing: none;
-		border-bottom: rgb(0, 76, 75);
-		border-bottom-width: 2px;
-		border-bottom-style: solid;
-		/* position: fixed; */
-		max-height: 60px;
-		height: 60px;
+    box-sizing: none;
+    border-bottom: rgb(0, 76, 75);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    /* position: fixed; */
+    max-height: 135px;
+    height: 135px;
 	}
 	
 	#Header div.logo {
@@ -175,6 +180,7 @@
 	#Header nav.navbar {
 		
 	}
+	
 	#Header nav.navbar {
 		border:none;
 		-webkit-box-shadow: none;
@@ -193,5 +199,38 @@
 	.site-container {
 	width:100%
 	}
+
+.banner {
+		padding: 0px;
+	}
+	
+	.item-container {
+		width: 240px;
+		height: 240px;
+		text-align: center;
+		position:relative;
+		border:10px solid #FFF;
+		float:left;
+		margin:10px;
+	}
+	
+	.item-container .image-container img.landscape {
+		width: 240px;
+	}
+	
+	.item-container .image-container img.portrait {
+		height: 240px;
+	}
+	
+	.item-select {
+		top:224px;
+	}
+	
+	.thumbnail {
+  position: relative;
+  overflow: hidden;
+  width:240px;
+  height:240px;
+}
 }
 

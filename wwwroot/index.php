@@ -3,7 +3,8 @@
 <head>
 <?php 
 		include("head.php");
-		$exhibitions = DAOFactory::getExhibitionDAO()->queryAllOrderBy('startDate');
+		$exhibitions = DAOFactory::getExhibitionDAO()->queryGetCurrentFuture('startDate,endDate');
+		$events = DAOFactory::getBlogDAO()->queryAllOrderBy("startDate,endDate");
 ?>
 </head>
 <body>
@@ -25,7 +26,7 @@ for ($i = count($exhibitions)-1; $i >=0; $i--) {
 						<a href="exhibition.php?id=<?php echo $exh->id?>">
 							<h3 class=""><?php echo $exh->name?></h3>
 						</a>
-						<p class=""><?php echo $exh->longDescr?></p>
+						<p class=""><?php echo $exh->longDescr?> bilder</p>
 	        </div>
 <?php } ?>
 				</div>
@@ -37,6 +38,11 @@ for ($i = count($exhibitions)-1; $i >=0; $i--) {
   </div>
   
   <?//php echo phpinfo()?>
+<script>
+$(function(){
+	setMenuActive("home");
+});
+</script>
 </body>
 </html>
 <?php 
@@ -70,7 +76,7 @@ function getClass($date0,$date1) {
 		// past exhibition
 		$pastCount++;
 		if ($pastCount<=0) {
-			$exhibitionClass = 'past-exhibition';
+			$exhibitionClass = 'past-exhibition hidden';
 		} else {
 			$exhibitionClass = 'hidden';
 		}

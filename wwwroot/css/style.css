@@ -11,7 +11,12 @@ div.banner img {
 
 ul.menu li {
 	display: inline-block;
-	margin: 0 5px;
+	margin: 0px 5px;
+}
+
+ul.menu li.active {
+	background-color:aliceblue;
+	border-radius: 5px;
 }
 
 ul.menu li a {
@@ -227,6 +232,12 @@ address#Footer {
 
 .fancybox-button img {
 	padding:5px;
+	border: 10px solid white;
+	margin: 2px;
+}
+
+#ExhibitionPictures, #ExhibitionPictures a img {
+	vertical-align:top;
 }
 
 .item-container {
@@ -260,6 +271,7 @@ address#Footer {
     /*border: 1px solid blue;*/
     width: 160px;
     height: 160px;
+    vertical-align: middle;
 }
 
 .image-container:hover
@@ -274,11 +286,12 @@ address#Footer {
     }       
 .text-container {
 	z-index:1;
-	-webkit-margin-before: 4.5em;
-  -webkit-margin-after: 0em;
+	-webkit-margin-before: 2.5em;
+	-webkit-margin-after: 0em;
+	margin before: 3;
 }       
 .item-container .image-container img.landscape {
-	width: 160px;
+	/* width: 160px; */
 }
 
 .item-container .image-container img.portrait {
@@ -306,8 +319,8 @@ address#Footer {
 .thumbnail {
   position: relative;
   overflow: hidden;
-  width:160px;
-  height:160px;
+  width: 160px;
+  height: 160px;
 }
 .thumbnail img {
   position: absolute;
@@ -322,4 +335,38 @@ address#Footer {
 .thumbnail img.portrait {
   width: 100%;
   height: auto;
+}
+
+.exhibition-container {
+	width: 100%;
+	float: none;
+}
+
+	.exhibition-container h2 {
+		text-align: center;
+	}
+	
+	.exhibition-image {
+		width: 240px;
+		height: 240px;
+		border:10px solid white;
+		float: left;
+	}
+	
+	.exhibition-image img.thumbnail {
+		position: relative;
+		overflow: hidden;
+		width: 220px;
+		height: 220px;
+	}
+	
+	.exhibition-text {
+		width: 240px;
+		display: inline-block;
+		height: 240px;
+		border: 10px solid white;
+		text-align: left;
+		padding: 1em;
+		overflow: hidden;
+	}
 }

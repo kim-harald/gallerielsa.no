@@ -1,6 +1,8 @@
 <div id="Header">
 	 <div class="banner">
-	 <img src="/images/logo_4.svg">
+	 <a href="/">
+	 	<img src="/images/logo_4.svg">
+	 </a>
 	</div>
 	<nav role="navigation" class="navbar navbar-default">
 		<div class="navbar-header">

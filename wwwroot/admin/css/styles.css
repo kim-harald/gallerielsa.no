@@ -61,7 +61,7 @@ a.nav.detail img {
 	text-align:left;
 }
 
-.page-element {
+img.page-element {
 	margin:10px;
 	width:25%;
 }
@@ -74,4 +74,42 @@ a.nav.detail img {
 img.new-picture {
 	width:250px;
 	height:250px;
+}
+
+.event-container {
+	height:2em;
+	cursor: pointer;
+	text-align:left;
+	width:100%;
+}
+
+.event-status.past {
+	background-color:#fee;
+	text-decoration: line-through;
+}
+
+.event-status.present {
+	background-color: #efe;
+}
+
+.event-status.future {
+	background-color:#eef;
+}
+
+.event-container:hover {
+	background-color:aliceblue;
+}
+
+.event-header {
+	float:left;
+	width:10em;
+}
+
+.event-dates {
+	width:20em;
+}
+
+.btn-group {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }

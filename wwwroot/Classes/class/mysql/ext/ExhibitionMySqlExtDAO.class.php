@@ -16,6 +16,27 @@ class ExhibitionMySqlExtDAO extends ExhibitionMySqlDAO{
 		return $this->getList1($sqlQuery);
 	}
 	
+	public function queryGetCurrentFuture($orderColumn){
+		$sql = 'SELECT exh.id,exh.name,exh.startDate,exh.endDate, ' .
+		  '(SELECT COUNT(1) FROM exhibition_picture '. 
+		  'WHERE exhibition_id=exh.id '.
+		  ') longDescr ' .  
+		  'FROM exhibition exh WHERE endDate >= now() ' . 
+			'ORDER BY '.$orderColumn;
+
+		$sqlQuery = new SqlQuery($sql);
+		return $this->getList($sqlQuery);
+	}
+	
+	public function queryGetCurrentFutureDescr($orderColumn){
+		$sql = 'SELECT exh.id,exh.name,exh.startDate,exh.endDate, exh.longDescr ' .
+				'FROM exhibition exh WHERE endDate >= now() ' .
+				'ORDER BY '.$orderColumn;
+	
+		$sqlQuery = new SqlQuery($sql);
+		return $this->getList($sqlQuery);
+	}
+	
 	private function getList1($sqlQuery){
 		$tab = QueryExecutor::execute($sqlQuery);
 		
@@ -80,6 +101,6 @@ class PictureExhibition {
 	
 	var $price;
 	
-	var $dimensions;
+	var $aspect;
 }
 ?>

@@ -38,7 +38,7 @@
         	setSection("#"+section);
         	if (id != undefined) {
         		getDetails(id);
-        		$("a.btn.nav.save").disable(id==0);
+        		
             $("section#detail .row.picture,a.btn.save").attr("data-id",id);
         	}
         }
@@ -52,21 +52,21 @@
           });
 
           $("a.add").on("click", function() {
-              var id = $(this).attr("data-id");
-              getDetails(id);
-              var pageRef = $(this).attr("href");
+              //var id = $(this).attr("data-id");
+              //getDetails(id);
+              //var pageRef = $(this).attr("href");
               //setSection(pageRef);
-              $("section#detail .row.picture,a.btn.save").attr("data-id",id);
+              //$("section#detail .row.picture,a.btn.save").attr("data-id",id);
               
           });
 
-          $("section#detail .picture a.btn.save").on("click",function() {
+          $("section#detail a.btn.save").on("click",function() {
 						saveEvent();
 					});
 
 					$("a.btn.delete").on("click",function(){
 						var id = $(this).attr("data-id");
-						deletePicture(id);
+						deleteEvent(id);
 					});
 
 					$("#CheckUpload").on("change",function(){
@@ -81,11 +81,7 @@
 
       function getDetails(id) {
         setSpinner();
-        if (id==0) {
-        	$("#CheckUpload").attr("checked","");
-        	$("#imageform").show();
-        }
-    	  $.ajax({
+        $.ajax({
    	       dataType: 'json',
    	       url: "pages/ajax_event.php?verb=get&id="+id,
    	       method: "GET",
@@ -102,15 +98,16 @@
       }
 
       function displayDetails(v) {
-          $("#Title").val(v.title)
-          $("#Message").text(v.message),
-          $("#Startdate").val(v.startDate);
-          $("#Enddate").val(v.endDate);
-          $("a.btn.delete").attr("data-id",v.id);
-
-          if (v.id=="0") {
-              $("a.btn.nav.save").disabled(true);
+          $("#Title").val(v.title);
+          $("#Message").text(v.message);
+          if (v.startDate != null) {
+            	$("#Startdate").val(v.startDate.substring(0,10));
           }
+          if (v.endDate != null) {
+            	$("#Enddate").val(v.endDate.substring(0,10));
+          }
+          $("a.btn.delete").attr("data-id",v.id);
+          $("section#detail .row.event").attr("data-id",v.id);
       }
                 
 
@@ -149,7 +146,7 @@
 	    	});
       }
 
-      function deletePicture(id) {
+      function deleteEvent(id) {
           setSpinner();
     			$.ajax({
       	       dataType: 'json',
@@ -170,22 +167,21 @@
       }
 
       function deleteEntry(id) {
-    	  var $entry = $('.picture-element[data-id="' + id +'"');
+    	  var $entry = $('.event-entry[data-id="' + id +'"');
     	  $entry.remove();
       }
 
       function updateEntry(id) {
-          var $entry = $('.picture-element[data-id="' + id +'"');
+          var $entry = $('.event-entry[data-id="' + id +'"');
           loadContentGet("pages/event_entry.php",id,$entry,setEvents);
       }
 
       function addEntry(id) {
-          var $entry = $('.item-container:last');
-          $entry.append('<div class="item-container" data-id="'+id+'"/>');
-          loadContentGet("pages/event_entry.php",id,$entry,setEvents);
+          var $entry = $("#Event-Entries .row");
+          loadContentGet("pages/event_entry.php",id,$entry,setEvents,true);
       }
 
-      function loadContentGet(src,id,$anchor,onComplete) {
+      function loadContentGet(src,id,$anchor,onComplete,isAppend=false) {
     	  setSpinner();
     	  
     		$.ajax({
@@ -194,7 +190,12 @@
     	        method: "GET",
     	        dataType: 'html',
     	        success: function(xhr) {
-    	        	$anchor.html(xhr);
+        	      if (isAppend) {
+        	    	  $anchor.append(xhr);          	      	
+        	      } else {
+        	    	  $anchor.html(xhr);
+            	  }
+    	        	
     	        	onComplete();
     	        },
     	        error: function(xhr) {
@@ -232,24 +233,26 @@
 	<div class="row event" data-id="0">
 		<div class="page-fields-container">		
 			<div class="page-element">
-				<label for="Title">titel</label>
+				<label for="Title">titel</label><br/>
 				<input id="Title" name="Title" type=text class="event title" placeholder="titel" />
 			</div>
 			<div class="page-element">
-				<label for="Message">beskrivelse</label>
+				<label for="Message">beskrivelse</label><br/>
 				<textarea id="Message" name="Message" class="event message" placeholder="beskrivelse"></textarea>
 			</div>
 			<div class="page-element">
-				<label for="Startdate">startdato</label>
+				<label for="Startdate">startdato</label><br/>
 				<input id="Startdate" name="Startdate" type="date" class="event startdate" placeholder="1.7.2016"  />
 			</div>
 			<div class="page-element">
-				<label for="Enddate">sluttdato</label>
+				<label for="Enddate">sluttdato</label><br/>
 				<input id="Enddate" type=date name="Enddate" class="event enddate" placeholder="31.7.2016" />
 			</div>
-			<a href="#main" class="btn nav save btn-default" data-id="0">lagre</span></a>
-			<a href="#main" class="btn nav btn-default">avbryt</a>
-			<a href="#main" class="btn nav delete btn-default">slette</span></a>
+			<div class="btn-group">
+				<a href="#main" class="btn nav save btn-default" data-id="0">lagre</span></a>
+				<a href="#main" class="btn nav btn-default">avbryt</a>
+				<a href="#main" class="btn nav delete btn-default">slette</span></a>
+			</div>
 		</div>
 
 </div>

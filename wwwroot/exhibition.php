@@ -8,6 +8,8 @@
 		
 		$exh = DAOFactory::getExhibitionDAO()->load($id);
 		$pictures = DAOFactory::getPictureDAO()->queryByExhibition($id);
+		$startDate = new DateTime($exh->startDate);
+		$endDate = new DateTime($exh->endDate);
 ?>
 <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
   
@@ -23,8 +25,8 @@
       <div class="row">
 	      <div class="col-xs-12 col-sm-6 col-md-6">
 	      <h3><?php echo $exh->name?></h3>
-	      <h4><?php echo $exh->startDate?> til <?php echo $exh->endDate?></h4>
-	      <p><?php echo $exh->longDescr?></p>
+	      <h4><?php echo $startDate->format("d.m.Y")?> til <?php echo $endDate->format("d.m.Y")?></h4>
+	      <div><?php echo $exh->longDescr?></div>
 	      <div id="ExhibitionPictures">
 	      	
 	<?php foreach($pictures as $p) {?>
@@ -35,7 +37,7 @@
 					
 	      </div>
       </div>     
-      <div class="col-sm-3 col-md-3">gg</div>
+      <div class="col-sm-3 col-md-3"></div>
 
 		</div>
 <?php include 'footer.php'?>
@@ -56,6 +58,8 @@
 					}
 				}
 			});
+
+			setMenuActive("exhibitions");
 		});
   </script>
 </body>

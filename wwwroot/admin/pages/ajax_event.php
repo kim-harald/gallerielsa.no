@@ -32,9 +32,11 @@ echo json_encode($result);
 /************************************************************************************/
 function get($id) {
   if ($id==0) {
-	$event = new Blog();
+  	$event = new Blog();
+  	$event->id = 0;
+  	$event->startDate = (new DateTime())->format("Y-m-d");
   } else {
-	$event = DAOFactory::getBlogDAO()->load($id);
+  	$event = DAOFactory::getBlogDAO()->load($id);
   }
   
   return ($event) ;
@@ -66,7 +68,7 @@ function post($data) {
   } else {
 	DAOFactory::getBlogDAO()->update($event);
   }
-  return ($picture);
+  return ($event);
 }
 
 function delete($id)

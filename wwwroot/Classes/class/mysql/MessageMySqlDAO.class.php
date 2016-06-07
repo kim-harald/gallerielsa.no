@@ -1,20 +1,20 @@
 <?php
 /**
- * Class that operate on table 'blog'. Database Mysql.
+ * Class that operate on table 'message'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-06-07 13:42
+ * @date: 2016-06-07 13:43
  */
-class BlogMySqlDAO implements BlogDAO{
+class MessageMySqlDAO implements MessageDAO{
 
 	/**
 	 * Get Domain object by primry key
 	 *
 	 * @param String $id primary key
-	 * @return BlogMySql 
+	 * @return MessageMySql 
 	 */
 	public function load($id){
-		$sql = 'SELECT * FROM blog WHERE id = ?';
+		$sql = 'SELECT * FROM message WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->setNumber($id);
 		return $this->getRow($sqlQuery);
@@ -24,7 +24,7 @@ class BlogMySqlDAO implements BlogDAO{
 	 * Get all records from table
 	 */
 	public function queryAll(){
-		$sql = 'SELECT * FROM blog';
+		$sql = 'SELECT * FROM message';
 		$sqlQuery = new SqlQuery($sql);
 		return $this->getList($sqlQuery);
 	}
@@ -35,17 +35,17 @@ class BlogMySqlDAO implements BlogDAO{
 	 * @param $orderColumn column name
 	 */
 	public function queryAllOrderBy($orderColumn){
-		$sql = 'SELECT * FROM blog ORDER BY '.$orderColumn;
+		$sql = 'SELECT * FROM message ORDER BY '.$orderColumn;
 		$sqlQuery = new SqlQuery($sql);
 		return $this->getList($sqlQuery);
 	}
 	
 	/**
  	 * Delete record from table
- 	 * @param blog primary key
+ 	 * @param message primary key
  	 */
 	public function delete($id){
-		$sql = 'DELETE FROM blog WHERE id = ?';
+		$sql = 'DELETE FROM message WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->setNumber($id);
 		return $this->executeUpdate($sqlQuery);
@@ -54,37 +54,41 @@ class BlogMySqlDAO implements BlogDAO{
 	/**
  	 * Insert record to table
  	 *
- 	 * @param BlogMySql blog
+ 	 * @param MessageMySql message
  	 */
-	public function insert($blog){
-		$sql = 'INSERT INTO blog (title, message, startDate, endDate) VALUES (?, ?, ?, ?)';
+	public function insert($message){
+		$sql = 'INSERT INTO message (createdDate, email, subject, message, status, statusDescr) VALUES (?, ?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($blog->title);
-		$sqlQuery->set($blog->message);
-		$sqlQuery->set($blog->startDate);
-		$sqlQuery->set($blog->endDate);
+		$sqlQuery->set($message->createdDate);
+		$sqlQuery->set($message->email);
+		$sqlQuery->set($message->subject);
+		$sqlQuery->set($message->message);
+		$sqlQuery->set($message->status);
+		$sqlQuery->set($message->statusDescr);
 
 		$id = $this->executeInsert($sqlQuery);	
-		$blog->id = $id;
+		$message->id = $id;
 		return $id;
 	}
 	
 	/**
  	 * Update record in table
  	 *
- 	 * @param BlogMySql blog
+ 	 * @param MessageMySql message
  	 */
-	public function update($blog){
-		$sql = 'UPDATE blog SET title = ?, message = ?, startDate = ?, endDate = ? WHERE id = ?';
+	public function update($message){
+		$sql = 'UPDATE message SET createdDate = ?, email = ?, subject = ?, message = ?, status = ?, statusDescr = ? WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
-		$sqlQuery->set($blog->title);
-		$sqlQuery->set($blog->message);
-		$sqlQuery->set($blog->startDate);
-		$sqlQuery->set($blog->endDate);
+		$sqlQuery->set($message->createdDate);
+		$sqlQuery->set($message->email);
+		$sqlQuery->set($message->subject);
+		$sqlQuery->set($message->message);
+		$sqlQuery->set($message->status);
+		$sqlQuery->set($message->statusDescr);
 
-		$sqlQuery->setNumber($blog->id);
+		$sqlQuery->setNumber($message->id);
 		return $this->executeUpdate($sqlQuery);
 	}
 
@@ -92,63 +96,91 @@ class BlogMySqlDAO implements BlogDAO{
  	 * Delete all rows
  	 */
 	public function clean(){
-		$sql = 'DELETE FROM blog';
+		$sql = 'DELETE FROM message';
 		$sqlQuery = new SqlQuery($sql);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function queryByTitle($value){
-		$sql = 'SELECT * FROM blog WHERE title = ?';
+	public function queryByCreatedDate($value){
+		$sql = 'SELECT * FROM message WHERE createdDate = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
+	public function queryByEmail($value){
+		$sql = 'SELECT * FROM message WHERE email = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
+	public function queryBySubject($value){
+		$sql = 'SELECT * FROM message WHERE subject = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
 	public function queryByMessage($value){
-		$sql = 'SELECT * FROM blog WHERE message = ?';
+		$sql = 'SELECT * FROM message WHERE message = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByStartDate($value){
-		$sql = 'SELECT * FROM blog WHERE startDate = ?';
+	public function queryByStatus($value){
+		$sql = 'SELECT * FROM message WHERE status = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByEndDate($value){
-		$sql = 'SELECT * FROM blog WHERE endDate = ?';
+	public function queryByStatusDescr($value){
+		$sql = 'SELECT * FROM message WHERE statusDescr = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
 	}
 
 
-	public function deleteByTitle($value){
-		$sql = 'DELETE FROM blog WHERE title = ?';
+	public function deleteByCreatedDate($value){
+		$sql = 'DELETE FROM message WHERE createdDate = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->executeUpdate($sqlQuery);
+	}
+
+	public function deleteByEmail($value){
+		$sql = 'DELETE FROM message WHERE email = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->executeUpdate($sqlQuery);
+	}
+
+	public function deleteBySubject($value){
+		$sql = 'DELETE FROM message WHERE subject = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
 	public function deleteByMessage($value){
-		$sql = 'DELETE FROM blog WHERE message = ?';
+		$sql = 'DELETE FROM message WHERE message = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByStartDate($value){
-		$sql = 'DELETE FROM blog WHERE startDate = ?';
+	public function deleteByStatus($value){
+		$sql = 'DELETE FROM message WHERE status = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByEndDate($value){
-		$sql = 'DELETE FROM blog WHERE endDate = ?';
+	public function deleteByStatusDescr($value){
+		$sql = 'DELETE FROM message WHERE statusDescr = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
@@ -159,18 +191,20 @@ class BlogMySqlDAO implements BlogDAO{
 	/**
 	 * Read row
 	 *
-	 * @return BlogMySql 
+	 * @return MessageMySql 
 	 */
 	protected function readRow($row){
-		$blog = new Blog();
+		$message = new Message();
 		
-		$blog->id = $row['id'];
-		$blog->title = $row['title'];
-		$blog->message = $row['message'];
-		$blog->startDate = $row['startDate'];
-		$blog->endDate = $row['endDate'];
+		$message->id = $row['id'];
+		$message->createdDate = $row['createdDate'];
+		$message->email = $row['email'];
+		$message->subject = $row['subject'];
+		$message->message = $row['message'];
+		$message->status = $row['status'];
+		$message->statusDescr = $row['statusDescr'];
 
-		return $blog;
+		return $message;
 	}
 	
 	protected function getList($sqlQuery){
@@ -185,7 +219,7 @@ class BlogMySqlDAO implements BlogDAO{
 	/**
 	 * Get row
 	 *
-	 * @return BlogMySql 
+	 * @return MessageMySql 
 	 */
 	protected function getRow($sqlQuery){
 		$tab = QueryExecutor::execute($sqlQuery);

@@ -33,6 +33,10 @@
 	require_once('class/dto/ExhibitionPicture.class.php');
 	require_once('class/mysql/ExhibitionPictureMySqlDAO.class.php');
 	require_once('class/mysql/ext/ExhibitionPictureMySqlExtDAO.class.php');
+	require_once('class/dao/MessageDAO.class.php');
+	require_once('class/dto/Message.class.php');
+	require_once('class/mysql/MessageMySqlDAO.class.php');
+	require_once('class/mysql/ext/MessageMySqlExtDAO.class.php');
 	require_once('class/dao/PictureDAO.class.php');
 	require_once('class/dto/Picture.class.php');
 	require_once('class/mysql/PictureMySqlDAO.class.php');

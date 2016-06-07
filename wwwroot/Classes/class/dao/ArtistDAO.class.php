@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-06-05 14:12
+ * @date: 2016-06-07 13:43
  */
 interface ArtistDAO{
 

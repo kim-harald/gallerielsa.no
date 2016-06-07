@@ -3,7 +3,7 @@
  * Class that operate on table 'picture'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-06-05 14:12
+ * @date: 2016-06-07 13:43
  */
 class PictureMySqlDAO implements PictureDAO{
 

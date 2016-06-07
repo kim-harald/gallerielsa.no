@@ -5,13 +5,13 @@
  * @author: http://phpdao.com
  * @date: 2016-06-07 13:43
  */
-interface BlogDAO{
+interface MessageDAO{
 
 	/**
 	 * Get Domain object by primry key
 	 *
 	 * @param String $id primary key
-	 * @Return Blog 
+	 * @Return Message 
 	 */
 	public function load($id);
 
@@ -28,45 +28,53 @@ interface BlogDAO{
 	
 	/**
  	 * Delete record from table
- 	 * @param blog primary key
+ 	 * @param message primary key
  	 */
 	public function delete($id);
 	
 	/**
  	 * Insert record to table
  	 *
- 	 * @param Blog blog
+ 	 * @param Message message
  	 */
-	public function insert($blog);
+	public function insert($message);
 	
 	/**
  	 * Update record in table
  	 *
- 	 * @param Blog blog
+ 	 * @param Message message
  	 */
-	public function update($blog);	
+	public function update($message);	
 
 	/**
 	 * Delete all rows
 	 */
 	public function clean();
 
-	public function queryByTitle($value);
+	public function queryByCreatedDate($value);
+
+	public function queryByEmail($value);
+
+	public function queryBySubject($value);
 
 	public function queryByMessage($value);
 
-	public function queryByStartDate($value);
+	public function queryByStatus($value);
 
-	public function queryByEndDate($value);
+	public function queryByStatusDescr($value);
 
 
-	public function deleteByTitle($value);
+	public function deleteByCreatedDate($value);
+
+	public function deleteByEmail($value);
+
+	public function deleteBySubject($value);
 
 	public function deleteByMessage($value);
 
-	public function deleteByStartDate($value);
+	public function deleteByStatus($value);
 
-	public function deleteByEndDate($value);
+	public function deleteByStatusDescr($value);
 
 
 }

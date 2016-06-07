@@ -50,6 +50,13 @@ class DAOFactory{
 	}
 
 	/**
+	 * @return MessageDAO
+	 */
+	public static function getMessageDAO(){
+		return new MessageMySqlExtDAO();
+	}
+
+	/**
 	 * @return PictureDAO
 	 */
 	public static function getPictureDAO(){

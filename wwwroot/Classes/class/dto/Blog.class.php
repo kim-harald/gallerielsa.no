@@ -3,7 +3,7 @@
 	 * Object represents table 'blog'
 	 *
      	 * @author: http://phpdao.com
-     	 * @date: 2016-06-05 14:11	 
+     	 * @date: 2016-06-07 13:42	 
 	 */
 	class Blog{
 		

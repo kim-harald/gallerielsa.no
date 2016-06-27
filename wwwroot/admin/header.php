@@ -19,9 +19,15 @@
 				<li class=""><a href="index.php">admin</a></li>
 				<li class=""><a href="pictures.php">bilder</a></li>
 				<li class=""><a href="exhibitions.php">utstillinger</a></li>
-				<li class=""><a href="artists.php">kunstner</a></li>
-				<li class=""><a href="events.php">arrangementer</a></li>
+				<li class=""><a href="artists.php">kunstnere</a></li>
+				<li class=""><a href="events.php">arrangement</a></li>
 			</ul>
 		</div>
 	</nav>
 </div>
+<script>
+	function setMenuActive(id) {
+		$("ul.ui-menu li").removeClass("active");
+		$('ul.ui-menu li[data-id="'+id+'"]').addClass("active");
+	}
+</script>

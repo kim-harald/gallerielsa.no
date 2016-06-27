@@ -4,7 +4,7 @@ include_once "/../utilities/common.php";
 
 $data = array();
 if( isset( $_POST['image_upload'] ) && !empty( $_FILES['images'] )){
-	
+	$isProfile = isset($_POST['isProfile'])?$_POST['isProfile']:false;
 	$image = $_FILES['images'];
 	$allowedExts = array("gif", "jpeg", "jpg", "png");
 
@@ -41,16 +41,15 @@ if( isset( $_POST['image_upload'] ) && !empty( $_FILES['images'] )){
 		createThumbnail("../pictures/".$name, $path . "/th_".$name, 160,160);
 		$id = isset($_POST["pictureid"])?$_POST["pictureid"]:0;
 		$id == "" ? 0 : $id; 
-		if (is_numeric($id)) {
-			
+		if (is_numeric($id) && !$isProfile) {
 			$picture = DAOFactory::getPictureDAO()->load($id);
 			$picture->thPath = "/pictures/th_".$name;
 			$picture->path = "/pictures/".$name;
 			$picture->aspect = getAspect($picture->path);
-			DAOFactory::getPictureDAO()->update($picture);
-		} else {
-			$picture->id = DAOFactory::getPictureDAO()->insert($picture);
-		}
+			if ($id>0) DAOFactory::getPictureDAO()->update($picture);
+			} else {
+				$picture->id = DAOFactory::getPictureDAO()->insert($picture);
+			}		
 		
 		$data['success'] = $picture;
 	}

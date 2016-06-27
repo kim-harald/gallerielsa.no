@@ -1,5 +1,5 @@
 body {
-	background: #F9F9F9 url("/images/nice_snow_@2X.png") repeat scroll left top;
+	background: #F9F9F9 url("/images/lightpaperfibers.png") repeat scroll left top;
   color: #333;
   font-family: "Oswald",Arial,sans-serif;
   font-size: 13px;
@@ -340,17 +340,20 @@ address#Footer {
 .exhibition-container {
 	width: 100%;
 	float: none;
+	text-align: center;
 }
 
 	.exhibition-container h2 {
 		text-align: center;
+		height: 3em;
 	}
 	
 	.exhibition-image {
 		width: 240px;
 		height: 240px;
 		border:10px solid white;
-		float: left;
+		/* float: left; */
+		margin: auto;
 	}
 	
 	.exhibition-image img.thumbnail {
@@ -363,9 +366,9 @@ address#Footer {
 	.exhibition-text {
 		width: 240px;
 		display: inline-block;
-		height: 240px;
-		border: 10px solid white;
-		text-align: left;
+		max-height: 240px;
+		/* border: 10px solid white; */
+		/* text-align: center; */
 		padding: 1em;
 		overflow: hidden;
 	}
@@ -432,4 +435,10 @@ address#Footer {
     border-radius:4px;
     line-height:3em;
     
+}
+
+.exhibition-row {
+	min-height: 320px;
+	width: 300px;
+	float: left;
 }

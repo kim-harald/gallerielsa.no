@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-06-07 13:43
+ * @date: 2016-06-07 14:34
  */
 interface PictureDAO{
 

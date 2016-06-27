@@ -4,7 +4,7 @@
 <?php 
 		include("head.php");
 		$exhibitions = DAOFactory::getExhibitionDAO()->queryGetCurrentFuture('startDate,endDate');
-		$events = DAOFactory::getBlogDAO()->queryAllOrderBy("startDate,endDate");
+		$events = DAOFactory::getBlogDAO()->queryGetCurrentFuture("startDate,endDate");
 ?>
 </head>
 <body>
@@ -13,10 +13,23 @@
 	  <div id="Body" class="container-fluid">
         
 	  	<div class="col-sm-3 col-md-3"></div>
-            
-            
+      <div class="col-xs-12 col-sm-6 col-md-6">
+      <div id="Events" class="row">
+      	
+      	<?php 
+      		foreach($events as $event){
+      	?>
+      	<div class="event">
+      		<a href="event.php?id=<?php echo $event->id?>">
+      			<h4><?php echo $event->title?></h4>
+      		</a>
+      	</div>		
+      		
+      	<?php }?>
+      	</div>
+    
       <div id="CurrentExhibition" class="row">
-      	<div class="col-xs-12 col-sm-6 col-md-6">
+      	
 <?php 
 for ($i = count($exhibitions)-1; $i >=0; $i--) {
 	$exh = $exhibitions[$i];
@@ -30,7 +43,7 @@ for ($i = count($exhibitions)-1; $i >=0; $i--) {
 	        </div>
 <?php } ?>
 				</div>
-	    </div>
+			      </div> 	
 	    <div class="col-sm-3 col-md-3"></div>
 
 		</div>

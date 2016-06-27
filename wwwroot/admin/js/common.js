@@ -98,6 +98,29 @@ function clearSpinner() {
 	$("#AjaxSpinner").removeClass("loading");
 }
 
+function getActive($o) {
+	var url = $o.attr('href').split("#")[1];
+	var id = $o.attr('href').split("?")[1];
+	if (id != undefined) {
+		id = id.split("=")[1];
+	}
+	var section = "";
+	if (url != undefined) {
+		section = url.split("?")[0];
+	} else {
+		section = "main";
+	}
+
+	if (section != undefined) {
+		setSection("#"+section);
+		if (id != undefined) {
+			return (id);
+	    }
+	}
+	
+	return 0;
+}
+
 function format(x, y) {
     var z = {
         M: x.getMonth() + 1,

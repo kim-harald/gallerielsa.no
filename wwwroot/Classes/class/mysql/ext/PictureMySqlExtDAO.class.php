@@ -10,7 +10,7 @@ class PictureMySqlExtDAO extends PictureMySqlDAO{
 	 * Get all pictures by artist
 	 */
 	public function queryByArtist($artistId) {
-		$sql = 'SELECT p.* FROM picture p WHERE p.artist_Id = ?';
+		$sql = 'SELECT p.* FROM picture p WHERE p.artistid = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->setNumber($artistId);
 	

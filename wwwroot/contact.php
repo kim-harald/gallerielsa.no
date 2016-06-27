@@ -27,15 +27,15 @@
 		                <input class="validate" data-errormsg="Epost" name="Email" id="Email" type=email placeholder="feks noen@email.no" required/>
 		            </div>
 		            <div class="contact-field">
-		                <label for="Subject">Subjekt</label><br />
-		                <input class="validate" data-errormsg="Subjektet" name="Subject" id="Subject" type=text value="Kontakt" required/>
+		                <label for="Subject">emne</label><br />
+		                <input class="validate" data-errormsg="Subjektet" name="Subject" id="Subject" type=text value="emne" required/>
 		            </div>
 		            <div class="contact-field">
-		                <label for="Message">Melding</label><br />
+		                <label for="Message">melding</label><br />
 		                <textarea class="validate" data-errormsg="Meldingen" name="Message" id="Message" placeholder="Melding..." required></textarea>
 		            </div>
 		            <div class="contact-field">
-		                <label for="NotRobot">Jeg er ikke robot</label><br />
+		                <label for="NotRobot">Jeg er ikke en robot</label><br />
 		                <input type=checkbox name="NotRobot" id="NotRobot"  title="Jeg er ikke robot"  />
 		            </div>
 		            <div class="contact-field hidden">
@@ -87,6 +87,7 @@
 
         function sendMessage(msg) {
             var obj = { js_object: JSON.stringify(msg) };
+            setSpinner();
             $.ajax({
                 dataType: 'json',
                 url: "pages/ajax_message.php?verb=send",

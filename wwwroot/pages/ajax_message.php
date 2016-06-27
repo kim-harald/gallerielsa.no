@@ -47,6 +47,7 @@ function post($data) {
 	$m = new Message();
 	$m->id = isset($php_object->id)?$php_object->id:0;
 	$m->createdDate = (new DateTime())->format("Y-m-d H:i:s");
+	$m->name = $php_object->name;
 	$m->email = $php_object->email;
 	$m->subject = $php_object->subject;
 	$m->message = $php_object->message;
@@ -71,12 +72,7 @@ function sanitize($str, $quotes = ENT_NOQUOTES){
 
 function send($data) {
 	$m = post($data);
-	if (mail_utf8($m->email,$m->subject,$m->message)) {
-		$m->status = "Ok";
-	} else {
-		$m->status = "Failed";
-	}
-	DAOFactory::getMessageDAO()->update($m);
+	mail_gun_smtp($m);
 	return $m;
 }
 
@@ -93,5 +89,37 @@ function mail_utf8($to, $from_user, $from_email,
      return mail($to, $subject, $message, $headers);
 }
 
+function mail_gun_smtp($m) {
+	// Using Awesome https://github.com/PHPMailer/PHPMailer
+
+	require '../PHPMailer-master/PHPMailerAutoload.php';
+	
+	$mail = new PHPMailer;
+
+	$mail->isSMTP();                                      // Set mailer to use SMTP
+	$mail->Host = 'smtp.mailgun.org';                     // Specify main and backup SMTP servers
+	$mail->SMTPAuth = true;                               // Enable SMTP authentication
+	$mail->Username = 'postmaster@sandbox41b1f744b2b14b81a9f55432e56f1990.mailgun.org';   				// SMTP username
+	$mail->Password = '84bce9ad974433d7eeea6fd320e63c2a';                        // SMTP password
+	$mail->SMTPSecure = 'tls';                            // Enable encryption, only 'tls' is accepted
+
+	$mail->From = 'noreply@kimharald.com';
+	$mail->FromName = $m->name;
+	$mail->addAddress($m->email);                 // Add a recipient
+
+	$mail->WordWrap = 50;                                 // Set word wrap to 50 characters
+
+	$mail->Subject = $m->subject;
+	$mail->Body    = $m->message;
+
+	if(!$mail->send()) {
+		$m->status = "Failed";
+		
+	} else {
+		$m->status = "Ok";
+	}
+	
+	return $m;
+}
 
 ?>

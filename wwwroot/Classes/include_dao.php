@@ -11,6 +11,7 @@
  	
 	require_once('class/dao/ArtistDAO.class.php');
 	require_once('class/dto/Artist.class.php');
+	require_once('class/dto/ext/ArtistExt.class.php');
 	require_once('class/mysql/ArtistMySqlDAO.class.php');
 	require_once('class/mysql/ext/ArtistMySqlExtDAO.class.php');
 	require_once('class/dao/ArtistPictureDAO.class.php');

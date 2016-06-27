@@ -3,7 +3,7 @@
  * Class that operate on table 'message'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-06-07 13:43
+ * @date: 2016-06-07 14:34
  */
 class MessageMySqlDAO implements MessageDAO{
 
@@ -57,15 +57,15 @@ class MessageMySqlDAO implements MessageDAO{
  	 * @param MessageMySql message
  	 */
 	public function insert($message){
-		$sql = 'INSERT INTO message (createdDate, email, subject, message, status, statusDescr) VALUES (?, ?, ?, ?, ?, ?)';
+		$sql = 'INSERT INTO message (createdDate, name, email, subject, message, status) VALUES (?, ?, ?, ?, ?, ?)';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($message->createdDate);
+		$sqlQuery->set($message->name);
 		$sqlQuery->set($message->email);
 		$sqlQuery->set($message->subject);
 		$sqlQuery->set($message->message);
 		$sqlQuery->set($message->status);
-		$sqlQuery->set($message->statusDescr);
 
 		$id = $this->executeInsert($sqlQuery);	
 		$message->id = $id;
@@ -78,15 +78,15 @@ class MessageMySqlDAO implements MessageDAO{
  	 * @param MessageMySql message
  	 */
 	public function update($message){
-		$sql = 'UPDATE message SET createdDate = ?, email = ?, subject = ?, message = ?, status = ?, statusDescr = ? WHERE id = ?';
+		$sql = 'UPDATE message SET createdDate = ?, name = ?, email = ?, subject = ?, message = ?, status = ? WHERE id = ?';
 		$sqlQuery = new SqlQuery($sql);
 		
 		$sqlQuery->set($message->createdDate);
+		$sqlQuery->set($message->name);
 		$sqlQuery->set($message->email);
 		$sqlQuery->set($message->subject);
 		$sqlQuery->set($message->message);
 		$sqlQuery->set($message->status);
-		$sqlQuery->set($message->statusDescr);
 
 		$sqlQuery->setNumber($message->id);
 		return $this->executeUpdate($sqlQuery);
@@ -103,6 +103,13 @@ class MessageMySqlDAO implements MessageDAO{
 
 	public function queryByCreatedDate($value){
 		$sql = 'SELECT * FROM message WHERE createdDate = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->getList($sqlQuery);
+	}
+
+	public function queryByName($value){
+		$sql = 'SELECT * FROM message WHERE name = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->getList($sqlQuery);
@@ -136,16 +143,16 @@ class MessageMySqlDAO implements MessageDAO{
 		return $this->getList($sqlQuery);
 	}
 
-	public function queryByStatusDescr($value){
-		$sql = 'SELECT * FROM message WHERE statusDescr = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->getList($sqlQuery);
-	}
-
 
 	public function deleteByCreatedDate($value){
 		$sql = 'DELETE FROM message WHERE createdDate = ?';
+		$sqlQuery = new SqlQuery($sql);
+		$sqlQuery->set($value);
+		return $this->executeUpdate($sqlQuery);
+	}
+
+	public function deleteByName($value){
+		$sql = 'DELETE FROM message WHERE name = ?';
 		$sqlQuery = new SqlQuery($sql);
 		$sqlQuery->set($value);
 		return $this->executeUpdate($sqlQuery);
@@ -179,13 +186,6 @@ class MessageMySqlDAO implements MessageDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 
-	public function deleteByStatusDescr($value){
-		$sql = 'DELETE FROM message WHERE statusDescr = ?';
-		$sqlQuery = new SqlQuery($sql);
-		$sqlQuery->set($value);
-		return $this->executeUpdate($sqlQuery);
-	}
-
 
 	
 	/**
@@ -198,11 +198,11 @@ class MessageMySqlDAO implements MessageDAO{
 		
 		$message->id = $row['id'];
 		$message->createdDate = $row['createdDate'];
+		$message->name = $row['name'];
 		$message->email = $row['email'];
 		$message->subject = $row['subject'];
 		$message->message = $row['message'];
 		$message->status = $row['status'];
-		$message->statusDescr = $row['statusDescr'];
 
 		return $message;
 	}

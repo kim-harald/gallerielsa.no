@@ -18,9 +18,16 @@ class ArtistMySqlExtDAO extends ArtistMySqlDAO{
 	}
 	
 	public function all() {
-		$sql = "SELECT * FROM artist WHERE deletedDate='0000-00-00' OR NOW() < deletedDate";
+		$sql = 	"SELECT a . * , ap.cnt, ap.path, ap.thPath " .
+						"FROM artist a " .
+						"LEFT JOIN ( ".
+							"SELECT COUNT( 1 )  `cnt` , MIN( p.path )  `path` , MIN( p.thPath )  `thPath` , p.artistid " .
+							"FROM picture p " .
+							"GROUP BY p.artistid " .
+						") ap ON ap.artistid = a.id " .
+						"WHERE deletedDate =  '0000-00-00' OR NOW( ) < deletedDate";
 		$sqlQuery = new SqlQuery($sql);
-		return $this->getList($sqlQuery);
+		return $this->getList1($sqlQuery);
 	}
 	
 	public function remove($artist) {
@@ -33,5 +40,34 @@ class ArtistMySqlExtDAO extends ArtistMySqlDAO{
 		return $this->executeUpdate($sqlQuery);
 	}
 	
+	private function getList1($sqlQuery){
+		$tab = QueryExecutor::execute($sqlQuery);
+	
+		$ret = array();
+		for($i=0;$i<count($tab);$i++){
+			$ret[$i] = $this->readRow1($tab[$i]);
+		}
+	
+		return $ret;
+	}
+	
+	private function readRow1($row){
+		$a = new ArtistExtra();
+	
+		$a->id = $row['id'];
+		$a->firstname = $row['Firstname'];
+		$a->lastname= $row['Lastname'];
+		$a->shortDescr = $row['shortDescr'];
+		$a->longDescr = $row['longDescr'];
+		$a->profilePicturePath = $row['profile_picture_path'];
+		$a->picturePath = $row['path'];
+		$a->thPicturePath = $row['thPath'];
+		$a->name = $row['name'];
+		$a->createdDate = $row['createdDate'];
+		$a->deletedDate= $row['deletedDate'];
+		$a->numPictures= $row['cnt'];
+	
+		return $a;
+	}
 }
 ?>

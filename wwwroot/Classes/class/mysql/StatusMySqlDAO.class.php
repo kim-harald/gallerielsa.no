@@ -3,7 +3,7 @@
  * Class that operate on table 'status'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-06-07 13:43
+ * @date: 2016-06-07 14:34
  */
 class StatusMySqlDAO implements StatusDAO{
 

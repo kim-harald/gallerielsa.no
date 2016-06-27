@@ -3,7 +3,7 @@
  * Intreface DAO
  *
  * @author: http://phpdao.com
- * @date: 2016-06-07 13:43
+ * @date: 2016-06-07 14:34
  */
 interface MessageDAO{
 
@@ -53,6 +53,8 @@ interface MessageDAO{
 
 	public function queryByCreatedDate($value);
 
+	public function queryByName($value);
+
 	public function queryByEmail($value);
 
 	public function queryBySubject($value);
@@ -61,10 +63,10 @@ interface MessageDAO{
 
 	public function queryByStatus($value);
 
-	public function queryByStatusDescr($value);
-
 
 	public function deleteByCreatedDate($value);
+
+	public function deleteByName($value);
 
 	public function deleteByEmail($value);
 
@@ -73,8 +75,6 @@ interface MessageDAO{
 	public function deleteByMessage($value);
 
 	public function deleteByStatus($value);
-
-	public function deleteByStatusDescr($value);
 
 
 }

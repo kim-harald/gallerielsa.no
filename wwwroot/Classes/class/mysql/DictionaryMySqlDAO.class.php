@@ -3,7 +3,7 @@
  * Class that operate on table 'dictionary'. Database Mysql.
  *
  * @author: http://phpdao.com
- * @date: 2016-06-07 13:42
+ * @date: 2016-06-07 14:34
  */
 class DictionaryMySqlDAO implements DictionaryDAO{
 

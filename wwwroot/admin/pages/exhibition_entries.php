@@ -25,7 +25,7 @@ foreach($exhibitions as $exh) {
 	$endDate = new DateTime($exh->endDate);
 	?>
 		    <div class="item-container" data-id="<?php echo $exh->id?>">
-		    	<a href="#detail" data-id="<?php echo $exh->id?>" class="nav detail">
+		    	<a href="#detail?id=<?php echo $exh->id?>" data-id="<?php echo $exh->id?>" class="nav detail">
 				    <div class="item-title">
 					    	<h4><?php echo $exh->name?></h4>
 					    	<p><?php echo $startDate->format("d.m.y") . ' til ' . $endDate->format("d.m.y")?></p>

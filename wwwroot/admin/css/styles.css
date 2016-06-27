@@ -34,7 +34,7 @@ img.picture-medium {
 }
 
 a.nav.detail img {
-	/*width:50px;*/
+	/*width:75px;*/
 }
 
 .dateGroup {
@@ -112,4 +112,17 @@ img.new-picture {
 .btn-group {
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+.ui_content textarea {
+	width:20em;
+	height:5em;
+}
+
+.ui_content {
+	text-align:left;
+}
+
+.artist-field {
+	margin:5px;
 }

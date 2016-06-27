@@ -10,6 +10,7 @@
 <script type="text/javascript" src="js/jquery.form.min.js"></script>
 <script type="text/javascript" src="js/ajax_upload.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="http://js.nicedit.com/nicEdit-latest.js"></script>
  <script type="text/javascript">
       $(function() {
           $("section.ui_page").hide();
@@ -19,8 +20,12 @@
           $("#imageform").hide();
           getActive($(location));
           //$("a.btn.nav.save").disable(true);
+          
+          bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
       });
 
+      
+      
       function getActive($o) {
     	  var url = $o.attr('href').split("#")[1];
     	  var id = $o.attr('href').split("?")[1];
@@ -181,7 +186,7 @@
           loadContentGet("pages/event_entry.php",id,$entry,setEvents,true);
       }
 
-      function loadContentGet(src,id,$anchor,onComplete,isAppend=false) {
+      function loadContentGet(src,id,$anchor,onComplete,isAppend) {
     	  setSpinner();
     	  
     		$.ajax({

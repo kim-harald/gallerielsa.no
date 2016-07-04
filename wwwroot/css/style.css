@@ -5,6 +5,14 @@ body {
   font-size: 13px;
 }
 
+.left {
+	text-align: left;
+}
+
+.field-group-heading {
+	padding:5px;
+}
+
 div.banner img {
 	width : 75%;
 }
@@ -232,7 +240,7 @@ address#Footer {
 
 .fancybox-button img {
 	padding:5px;
-	border: 10px solid white;
+	border: 0px solid white;
 	margin: 2px;
 }
 
@@ -349,27 +357,26 @@ address#Footer {
 	}
 	
 	.exhibition-image {
-		width: 240px;
-		height: 240px;
-		border:10px solid white;
-		/* float: left; */
-		margin: auto;
+		/* border:10px solid white; */
 	}
 	
 	.exhibition-image img.thumbnail {
 		position: relative;
 		overflow: hidden;
-		width: 220px;
-		height: 220px;
 	}
 	
+	p.exhibition-title {
+		height: 3em;
+		overflow: hidden;
+	}
+
+	img.profile.thumbnail {
+		float:left;
+	}	
+	
 	.exhibition-text {
-		width: 240px;
 		display: inline-block;
-		max-height: 240px;
-		/* border: 10px solid white; */
-		/* text-align: center; */
-		padding: 1em;
+		padding: 0.1em;
 		overflow: hidden;
 	}
 	
@@ -408,6 +415,7 @@ address#Footer {
 .contact-fields 
 {
     width:30em;
+    text-align: left;
 }
 
 .invalid, .errorMessage
@@ -438,7 +446,39 @@ address#Footer {
 }
 
 .exhibition-row {
-	min-height: 320px;
-	width: 300px;
+	/* min-height: 320px; */
+	width: 170px;
 	float: left;
+	padding: 5px 5px 5px 5px;
+}
+
+.artist-element, .page-element {
+	float:left;
+	padding: 5px;
+}
+
+.row h1 {
+	text-align:left;
+}
+
+.artist-description {
+	text-align:left;
+	width: 40em;
+	float: right;
+	margin: 0px 0px 5px 5px;
+}
+
+.contact-address {
+	text-align:left;
+}
+
+.contact-map, #gmap_canvas {
+	height:22em;
+	width:22em;
+}
+
+.contact-map
+{
+	overflow:hidden;
+	box-shadow : 2px 2px 1px #888888; 
 }

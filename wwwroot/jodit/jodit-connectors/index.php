@@ -275,8 +275,9 @@ class FileBrowser {
 }
 
 $config = array(
-    'root' => realpath(realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..').DIRECTORY_SEPARATOR.'files'.DIRECTORY_SEPARATOR). DIRECTORY_SEPARATOR,
-    'baseurl' => '/pictures/',
+    //'root' => realpath(realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..').DIRECTORY_SEPARATOR.'files'.DIRECTORY_SEPARATOR). DIRECTORY_SEPARATOR,
+    'root' => '/pictures',
+    'baseurl' => '../../pictures/',
     'createThumb' => true,
     'thumbFolderName' => '_thumbs',
     'extensions' => array('jpg', 'png', 'gif', 'jpeg'),

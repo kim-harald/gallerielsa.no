@@ -13,6 +13,8 @@
 </head>
 <body>
 <script type="text/javascript" src="js/artists.js"></script>
+<script type="text/javascript" src="js/jquery.form.min.js"></script>
+<script type="text/javascript" src="js/ajax_upload.js"></script>
     
 
 <?php include "header.php"?>
@@ -22,7 +24,7 @@
 	<div class="row add">
 		<div class="artist-element">
 			<a href="#detail" data-id="0" class="nav btn detail">
-				<img src="../images/artist-icons-71126_add.png">
+				<img class="thumbnail" src="../images/artist-icons-71126_add.png">
 			</a>
 		</div>
 	</div>
@@ -41,6 +43,7 @@
 			'" data-longdescr="' .	$artist->longDescr . 
 			'" data-firstname="' .	$artist->firstname . 
 			'" data-lastname="' .	$artist->lastname . 
+			'"data-profilepicturepath="'. $imgPath .
 			'" data-createddate="' . $artist->createdDate . '"' .
 		'" data-deleteddate="' . $artist->deletedDate . '"'
 		?>
@@ -48,7 +51,7 @@
   		<a href="#detail?id=<?php echo $artist->id?>" data-id="<?php echo $artist->id?>" class="nav detail">
 	  		<img class="thumbnail" alt="<?php echo $artist->name; ?>" src="<?php echo $imgPath?>">
 	  		<p class="artist-name"><?php echo $artist->firstname . " " . $artist->lastname ; ?></p>
-	  		<p class="artist-pictures"><?php echo isset($pictures)?count($pictures):0?></p>
+	  		<p class="artist-pictures"><?php echo isset($artist->numPictures)?$artist->numPictures:0?></p>
   		</a>
   	 </div>
   <?php }?>
@@ -74,11 +77,34 @@
         	<label for="artist-longdescr">lang beskrivelse</label><br/>
         	<textarea name="artist-longdescr" class="artist-longdescr" placeholder="lang beskrivelse"></textarea>
         </div>
-        <button class="btn save" data-id="1">lagre</button>
-        <button class="btn delete" data-id="1">slett</button>
-        <a href="#main" data-id="1" class="btn nav">tilbakke</a>
-        
-    </div>
+        <div class="artist-field">
+        	<div class="hide">
+        	<form enctype="multipart/form-data" name='imageform' role="form" id="imageform" method="post" action="ajax_file_upload.php">
+						<div class="form-group">
+							<p>Velg bilde: </p>
+							<input  style="display: none" class='file' type="file" class="form-control" name="images" id="images" placeholder="Please choose your image">
+							<span class="help-block"></span>
+						</div>
+						<input style="display: none" type="submit" value="Upload" name="image_upload" id="image_upload" class="btn"/>
+						<input type="hidden" name="isProfile" value=true>
+					</form>
+					</div>
+					<div>
+						<div class="artist-profile">
+							<img id="Path" src="" class="artist-profile thumbnail">							
+						</div>
+						<div class="profile-chooser">
+							<a id="Choose" class="btn btn-default">Nye profil bilde</a>
+							<img id="loader" src="../images/ajax-loader.gif"></img>
+						</div>
+					</div>
+				</div>
+				<a href="#main" class="btn btn-default save" data-id="1">lagre</a>
+				<a href="#main" class="btn btn-default delete" data-id="1">slett</a>
+				<a href="#main" data-id="1" class="btn btn-default nav">tilbakke</a>
+			</div>
+			
+    
 </section>
 
 <section class="ui_page" id="pictures">

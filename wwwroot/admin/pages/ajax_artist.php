@@ -53,7 +53,7 @@ function post($data) {
 	$artist->lastname = $php_object->lastname;
 	$artist->shortDescr = $php_object->shortDescr;
 	$artist->longDescr = $php_object->longDescr;
-	//$artist->profilePicturePath = $php_object->profilepicturepath;
+	$artist->profilePicturePath = $php_object->profilePicturePath;
 	$artist->id = $php_object->id;
 	$artist->createdDate = date('Y-m-d H:i:s');
 	$artist->deletedDate = $php_object->deletedDate;

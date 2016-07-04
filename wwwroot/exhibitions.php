@@ -18,7 +18,7 @@
 	<div class="container">
 <?php include("header.php"); ?>
 	  <div id="Body" class="container-fluid">
-
+	  	<h3>utstillinger</h3>
 <?php 
 include 'pages/exhibition_entries.php';
 include 'footer.php'?>

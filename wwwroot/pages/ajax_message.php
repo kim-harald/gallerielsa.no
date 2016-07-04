@@ -103,10 +103,10 @@ function mail_gun_smtp($m) {
 	$mail->Password = '84bce9ad974433d7eeea6fd320e63c2a';                        // SMTP password
 	$mail->SMTPSecure = 'tls';                            // Enable encryption, only 'tls' is accepted
 
-	$mail->From = 'noreply@kimharald.com';
+	$mail->From = $m->email;
 	$mail->FromName = $m->name;
-	$mail->addAddress($m->email);                 // Add a recipient
-
+//	$mail->addAddress('noreply@gallerielsa.no');                 // Add a recipient
+	$mail->addAddress('kim.dadswell@gmail.com');                 // Add a recipient
 	$mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
 	$mail->Subject = $m->subject;

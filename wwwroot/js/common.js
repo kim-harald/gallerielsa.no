@@ -45,4 +45,10 @@ function getParameterByName(name, url) {
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-        
+function setSpinner() {
+	$("#AjaxSpinner").addClass("loading");
+}
+
+function clearSpinner() {
+	$("#AjaxSpinner").removeClass("loading");
+}

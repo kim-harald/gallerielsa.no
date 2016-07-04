@@ -3,15 +3,15 @@
 	width:400px;	
 }
 
+.left {
+	text-align: left;
+}
+
 .artist-element,.picture-element,.exhibition-element {
 	display: inline-block;
 	min-width:100px;
 	padding:5px;
 	vertical-align: top;
-}
-
-.artist-element a img, .picture-element a img, .exhibition-element a img, .exhibition-picture img {
-/*	width :50px*/
 }
 
 .exhibition-picture.selected  {
@@ -115,8 +115,8 @@ img.new-picture {
 }
 
 .ui_content textarea {
-	width:20em;
-	height:5em;
+	width:30em;
+	height:10em;
 }
 
 .ui_content {
@@ -125,4 +125,43 @@ img.new-picture {
 
 .artist-field {
 	margin:5px;
+}
+
+img#Path {
+	/* width:150px; */
+	/* min-height:150px; */
+}
+
+img.artist-profile {
+	
+}
+
+.artist-profile {
+	/* padding: 5px 5px 5px 5px; */
+}
+
+.profile-chooser {
+	position:relative;
+	width: 5em;
+	height: 3em;
+}
+
+#Choose{
+	position:absolute;
+	left: 0px;
+	top:0px;
+}
+
+#loader {
+	position:absolute;
+	left: 3.5em;
+	top:0px;
+}
+
+section.ui_page h1 {
+	text-align:left;
+}
+
+.page-element {
+	padding: 5px;
 }

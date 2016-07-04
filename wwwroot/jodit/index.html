@@ -16,7 +16,7 @@
 	new Jodit('#jodit', {
 		enableDragAndDropFileToEditor: true,
 	    uploader: {
-	        url: 'connector/upload.php',
+	        url: 'connector/uploader.php',
 	        format: 'json',
 	        pathVariableName: 'path',
 	        filesVariableName: 'images',
@@ -52,12 +52,8 @@
 	        defaultHandlerError: function (resp) {
 	            this.events.fire('errorPopap', [this.options.uploader.getMsg(resp)]);
 	        }
-	    },
-        filebrowser: {
-            ajax: {
-                url: 'jodit-connectors/index.php'
-            },
-        }
+	    }
+        
     });
 </script>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,100italic,300italic,400italic,700italic' rel='stylesheet' type='text/css'>

@@ -37,6 +37,7 @@ function get($id) {
   	$event->startDate = (new DateTime())->format("Y-m-d");
   } else {
   	$event = DAOFactory::getBlogDAO()->load($id);
+  	$event->message = htmlspecialchars_decode($event->message);
   }
   
   return ($event) ;
@@ -46,9 +47,9 @@ function post($data) {
 
 //Sanitize the json received from the client-side
 //Keys correspond to 'data:{ js_string: val , js_array: arr,  js_object: obj }' in $.ajax
-  if(isset($data['js_string'])) $string = sanitize($data['js_string']);
-  if(isset($data['js_array']))  $json_array = sanitize($_POST['js_array']);
-  if(isset($data['js_object'])) $json_object = sanitize($_POST['js_object']);
+  if(isset($data['js_string'])) $string = ($data['js_string']);
+  if(isset($data['js_array']))  $json_array = ($_POST['js_array']);
+  if(isset($data['js_object'])) $json_object = ($_POST['js_object']);
 
 
 //Decode the json to get workable PHP variables
@@ -58,7 +59,7 @@ function post($data) {
   $event = new Blog();
   $event->title = $php_object->title;
   $event->id = $php_object->id;
-  $event->message= $php_object->message;
+  $event->message= htmlspecialchars($php_object->message);
   
   $event->startDate = $php_object->startDate;
   $event->endDate = $php_object->endDate;

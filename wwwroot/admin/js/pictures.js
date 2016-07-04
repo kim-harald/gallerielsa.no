@@ -14,6 +14,10 @@ $(function() {
 function setEvents() {
 	$("a.nav").on("click", function() {
 		getActive($(this));
+		var id = $(this).attr("data-id");
+		if  (id >0) {
+			getDetails(id);
+		}
 	});
 
 	$("a.add").on("click", function() {

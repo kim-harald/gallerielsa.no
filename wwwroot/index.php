@@ -3,9 +3,10 @@
 <head>
 <?php 
 		include("head.php");
-		$exhibitions = DAOFactory::getExhibitionDAO()->queryGetCurrentFuture('startDate,endDate');
+		$exhibitions = DAOFactory::getExhibitionDAO()->queryGetCurrentFuture('startDate,endDate',1);
 		$events = DAOFactory::getBlogDAO()->queryGetCurrentFuture("startDate,endDate");
 ?>
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -23,27 +24,36 @@
       		<a href="event.php?id=<?php echo $event->id?>">
       			<h4><?php echo $event->title?></h4>
       		</a>
+      		<div class="event-content-container transparent-fade">
+	      		<?php echo htmlspecialchars_decode($event->message)?>
+	      		<p class="read-more"><a href="#">mer</a></p>
+      		</div>
       	</div>		
       		
       	<?php }?>
       	</div>
     
-      <div id="CurrentExhibition" class="row">
-      	
-<?php 
-for ($i = count($exhibitions)-1; $i >=0; $i--) {
-	$exh = $exhibitions[$i];
-	$class = getClass($exh->startDate, $exh->endDate)
+<?php if (isset($exhibitions) && count($exhibitions)>0) {
+	$exh = $exhibitions[0];
+	$startDate = new DateTime($exh->startDate);
+	$endDate = new DateTime($exh->endDate);
+	$picture = DAOFactory::getPictureDAO()->queryGetFirstPicture($exh->id);
+	//$class = getClass($exh->startDate, $exh->endDate)
 ?>
-					<div class="exhibition <?php echo $class?>">
+      	<div id="CurrentExhibition" class="row">
+      		<div class="exhibition">
 						<a href="exhibition.php?id=<?php echo $exh->id?>">
-							<h3 class=""><?php echo $exh->name?></h3>
+							<h4 class=""><?php echo $exh->name?></h4>
+							<img src="<?php echo $picture->path?>">
+							<p><small><?php echo $picture->name?></small></p>
+							<p><?php echo $exh->longDescr." bilde".($exh->longDescr > 1 ?"r":"") ?> </p>
+							<p><?php echo $startDate->format("d.m.Y") . ' til ' . $endDate->format("d.m.Y")?></p>
 						</a>
-						<p class=""><?php echo $exh->longDescr?> bilder</p>
 	        </div>
-<?php } ?>
+
 				</div>
-			      </div> 	
+<?php }?>
+			  </div> 	
 	    <div class="col-sm-3 col-md-3"></div>
 
 		</div>

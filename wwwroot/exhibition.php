@@ -32,7 +32,9 @@
 	<?php foreach($pictures as $p) {?>
 	      		<a class="fancybox-button" rel="fancybox-button" href="<?php echo $p->path?>" title = '<?php echo $p->name?>'>
 	      			<img src="<?php echo $p->thPath?>" alt="" />
+	      			
 	      		</a>
+	      		
 	<?php }?>
 					
 	      </div>

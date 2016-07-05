@@ -16,14 +16,16 @@ class ExhibitionMySqlExtDAO extends ExhibitionMySqlDAO{
 		return $this->getList1($sqlQuery);
 	}
 	
-	public function queryGetCurrentFuture($orderColumn){
+	public function queryGetCurrentFuture($orderColumn,$limit){
 		$sql = 'SELECT exh.id,exh.name,exh.startDate,exh.endDate, ' .
 		  '(SELECT COUNT(1) FROM exhibition_picture '. 
 		  'WHERE exhibition_id=exh.id '.
 		  ') longDescr ' .  
 		  'FROM exhibition exh WHERE endDate >= now() ' . 
-			'ORDER BY '.$orderColumn;
-
+		  'ORDER BY '.$orderColumn . ' ';
+		
+		$sql .= ($limit==0) ? '' :'LIMIT '.$limit;
+		
 		$sqlQuery = new SqlQuery($sql);
 		return $this->getList($sqlQuery);
 	}

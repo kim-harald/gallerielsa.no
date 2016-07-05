@@ -71,13 +71,14 @@ ul.menu {
 }
 
 .exhibition {
-	text-align:left;
+	/* text-align:left; */
 }
 
 #Footer {
 	font-size: 10px;
 	border-top: 1px solid gray;
 	padding-top: 3px;
+	margin-top: 5px;
 }
 
 address#Footer {
@@ -372,6 +373,7 @@ address#Footer {
 
 	img.profile.thumbnail {
 		float:left;
+		margin: 5px;
 	}	
 	
 	.exhibition-text {
@@ -414,8 +416,9 @@ address#Footer {
 
 .contact-fields 
 {
-    width:30em;
+    width: 20em;
     text-align: left;
+    padding: 5px;
 }
 
 .invalid, .errorMessage
@@ -464,21 +467,52 @@ address#Footer {
 .artist-description {
 	text-align:left;
 	width: 40em;
-	float: right;
+	/* float: right; */
 	margin: 0px 0px 5px 5px;
 }
 
 .contact-address {
 	text-align:left;
+	padding: 5px;
 }
 
 .contact-map, #gmap_canvas {
-	height:22em;
-	width:22em;
+	height: 300px;
+	width: 100%;
 }
 
 .contact-map
 {
 	overflow:hidden;
-	box-shadow : 2px 2px 1px #888888; 
+	box-shadow: 2px 2px 1px #888888;
+	padding: 5px;
+}
+
+.transparent-fade {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+	background: -moz-linear-gradient(top, transparent, white); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, transparent, white); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, transparent, white); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.event-content-container {
+	position:relative;
+	text-align: center;
+	overflow: hidden;
+	width: 100%;
+	max-height:6em;
+}
+
+.read-more {
+	position:absolute;
+	margin: 0;
+	padding: 5em 0;
+	top:0px;
+	width: 100%;
+}
+
+.exhibition img {
+	max-height:20em;
+	max-width:20em;
 }

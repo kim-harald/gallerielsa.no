@@ -48,59 +48,65 @@
 	</div>
 	<script>
 		$(function(){
-// 			$(".fancybox-button").fancybox({
-// 				prevEffect		: 'none',
-// 				nextEffect		: 'none',
-// 				arrows : true,
-// 				closeBtn : true,
-// 				helpers	: {
-// 					title	: {
-// 						type: 'outside'
-// 					},
-// 					thumbs	: {
-// 						width	: 50,
-// 						height	: 50
-// 					}
-// 				}
-// 			});
+			$(".fancybox-button").fancybox({
+				width: "100%",
+				prevEffect		: 'none',
+				nextEffect		: 'none',
+				arrows : true,
+				helpers	: {
+					title	: {
+						type: 'outside'
+					},
+					thumbs	: {
+						width	: 50,
+						height	: 50
+					}
+				}
+			});
 
-			$('.fancybox-button').fancybox({
-		        width: "100%",
-		        margin: [0, 0, 0, 0],
-		        padding: [0, 0, 0, 0],
-		        openEffect  : 'none',
-		        closeEffect : 'none',
-		        prevEffect : 'fade',
-		        nextEffect : 'fade',
-		        closeBtn  : false,
-		        arrows: true,
-		        helpers : {
-		            title : null,
-		            overlay : {
-		                css : {
-		                    'background' : 'rgba(0, 0, 0, 0.95)' 
-		                }
-		            },
-		            buttons : {
-		            }
+			$(".fancybox-wrap").swipe({
+				swipe : function(event, direction) {
+					alert(direction);
+				}
+			});
 
-		        },
-		        afterShow: function() {
-		            $('.fancybox-wrap').swipe({
-		                swipe : function(event, direction) {
-		                    if (direction === 'left' || direction === 'up') {
-		                        $.fancybox.prev( direction );
-		                    } else {
-		                        $.fancybox.next( direction );
-		                    }
-		                }
-		            });
+// 			$('.fancybox-button').fancybox({
+// 		        width: "100%",
+// 		        margin: [0, 0, 0, 0],
+// 		        padding: [0, 0, 0, 0],
+// 		        openEffect  : 'none',
+// 		        closeEffect : 'none',
+// 		        prevEffect : 'fade',
+// 		        nextEffect : 'fade',
+// 		        closeBtn  : false,
+// 		        arrows: true,
+// 		        helpers : {
+// 		            title : null,
+// 		            overlay : {
+// 		                css : {
+// 		                    'background' : 'rgba(0, 0, 0, 0.95)' 
+// 		                }
+// 		            },
+// 		            buttons : {
+// 		            }
 
-		        },
+// 		        },
+// 		        afterShow: function() {
+// 		            $('.fancybox-wrap').swipe({
+// 		                swipe : function(event, direction) {
+// 		                    if (direction === 'left' || direction === 'up') {
+// 		                        $.fancybox.prev( direction );
+// 		                    } else {
+// 		                        $.fancybox.next( direction );
+// 		                    }
+// 		                }
+// 		            });
 
-		        afterLoad : function() {
-		        }
-		    });
+// 		        },
+
+// 		        afterLoad : function() {
+// 		        }
+// 		    });
 
 			setMenuActive("artists");
 		});

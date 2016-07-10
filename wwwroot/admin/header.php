@@ -15,12 +15,12 @@
 		</div>
 		<div id="navbarCollapse" class="collapse navbar-collapse">
 			<ul class="ui-menu menu ">
-				<li class="active"><a href="/index.php">hjem</a></li>
-				<li class="admin"><a href="index.php">admin</a></li>
-				<li class="pictures"><a href="pictures.php">bilder</a></li>
-				<li class="exhibitions"><a href="exhibitions.php">utstillinger</a></li>
-				<li class="artists"><a href="artists.php">kunstnere</a></li>
-				<li class="events"><a href="events.php">arrangement</a></li>
+				<li class="active" data-id="home"><a href="/index.php">hjem</a></li>
+				<li class="" data-id="admin"><a href="index.php">admin</a></li>
+				<li class="" data-id="pictures"><a href="pictures.php">bilder</a></li>
+				<li class="" data-id="exhibitions"><a href="exhibitions.php">utstillinger</a></li>
+				<li class="" data-id="artists"><a href="artists.php">kunstnere</a></li>
+				<li class="" data-id="events"><a href="events.php">arrangement</a></li>
 			</ul>
 		</div>
 	</nav>

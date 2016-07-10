@@ -11,12 +11,18 @@ if (isset($artistId) && $artistId > 0) {
 }
 ?>
 <div class="row">
-<?php foreach ($pictures as $picture) { ?>
+<?php foreach ($pictures as $picture) { 
+	$ts =time();
+	
+		?>
 	<div class="picture-element" data-id="<?php echo $picture->id?>">
 		<a href="#detail?id=<?php echo $picture->id?>" data-id="<?php echo $picture->id?>" class="nav detail">
 			<div class="item-container">
 				<div class="image-container">					
-					<img class="thumbnail <?php echo isset($picture->aspect)?$picture->aspect:"landscape"?>" alt='<?php echo $picture->name?>' src="<?php echo isset($picture->thPath)?$picture->thPath:$picture->path ?>" />
+					<img class="thumbnail <?php echo isset($picture->aspect)?$picture->aspect:"landscape"?>" 
+						alt='<?php echo $picture->name?>' 
+						src="<?php echo (isset($picture->thPath)?$picture->thPath:$picture->path)."?ts=".$ts ?>" 
+						data-id="<?php echo $picture->id?>" />
 				</div>
 				<div class="text-container">
 					<p><?php echo $picture->name?></p>

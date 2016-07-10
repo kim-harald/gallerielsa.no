@@ -138,6 +138,15 @@ function format(x, y) {
     });
 }
 
+var FileUploadWrapper = (function($chooseBtn) {
+    $chooseBtn.on("click", function() {
+        $("form input[type=file]").click();
+    });
+    $("form input[type=file]").on("change", function() {
+    	$("form input[type=submit]").click();
+    });
+});
+
 jQuery.fn.extend({
     disable: function(state) {
         return this.each(function() {
@@ -149,3 +158,54 @@ jQuery.fn.extend({
         });
     }
 });
+
+function setupJodit(tagName,isImage) {
+	if (isImage==true) {
+		new Jodit(tagName, {
+			enableDragAndDropFileToEditor: true,
+		    uploader: {
+		        url: '../jodit/connector/uploader.php',
+		        format: 'json',
+		        pathVariableName: 'path',
+		        filesVariableName: 'images',
+		        prepareData: function (data) {
+		            return data;
+		        },
+		        isSuccess: function (resp) {
+		            return !resp.error;
+		        },
+		        getMsg: function (resp) {
+		            return resp.msg.join !== undefined ? resp.msg.join(' ') : resp.msg;
+		        },
+		        process: function (resp) {
+		            return {
+		                files: resp[this.options.uploader.filesVariableName] || [],
+		                path: resp.path,
+		                baseurl: resp.baseurl,
+		                error: resp.error,
+		                msg: resp.msg
+		            };
+		        },
+		        error: function (e) {
+		            this.events.fire('errorPopap', [e.getMessage(), 'error', 4000]);
+		        },
+		        defaultHandlerSuccess: function (data, resp) {
+		            var i, field = this.options.uploader.filesVariableName;
+		            if (data[field] && data[field].length) {
+		                for (i = 0; i < data[field].length; i += 1) {
+		                    this.selection.insertImage(data.baseurl + data[field][i]);
+		                }
+		            }
+		        },
+		        defaultHandlerError: function (resp) {
+		            this.events.fire('errorPopap', [this.options.uploader.getMsg(resp)]);
+		        }
+		    }
+		    
+		});
+	} else {
+		new Jodit(tagName, {
+			buttons: ['source', 'fullsize', 'bold', 'underline', 'italic', 'strikethrough', 'font', 'fontsize', 'brush', 'eraser', 'link', 'ol', 'ul', 'list2', 'table', 'hr', 'left', 'center', 'justify', 'right', 'paragraph', 'redo', 'undo']
+		});
+	}
+}

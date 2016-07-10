@@ -6,8 +6,9 @@ $(function() {
   $("#imageform").hide();
   getActive($(location));
   //$("a.btn.nav.save").disable(true);
-      
   
+  setupJodit("#Message",true)
+  setMenuActive("events");
 });
       
 function getActive($o) {
@@ -191,48 +192,3 @@ function loadContentGet(src,id,$anchor,onComplete,isAppend) {
         	
     });
 }
-
-$(function(){
-	new Jodit('#Message', {
-		enableDragAndDropFileToEditor: true,
-	    uploader: {
-	        url: '../jodit/connector/uploader.php',
-	        format: 'json',
-	        pathVariableName: 'path',
-	        filesVariableName: 'images',
-	        prepareData: function (data) {
-	            return data;
-	        },
-	        isSuccess: function (resp) {
-	            return !resp.error;
-	        },
-	        getMsg: function (resp) {
-	            return resp.msg.join !== undefined ? resp.msg.join(' ') : resp.msg;
-	        },
-	        process: function (resp) {
-	            return {
-	                files: resp[this.options.uploader.filesVariableName] || [],
-	                path: resp.path,
-	                baseurl: resp.baseurl,
-	                error: resp.error,
-	                msg: resp.msg
-	            };
-	        },
-	        error: function (e) {
-	            this.events.fire('errorPopap', [e.getMessage(), 'error', 4000]);
-	        },
-	        defaultHandlerSuccess: function (data, resp) {
-	            var i, field = this.options.uploader.filesVariableName;
-	            if (data[field] && data[field].length) {
-	                for (i = 0; i < data[field].length; i += 1) {
-	                    this.selection.insertImage(data.baseurl + data[field][i]);
-	                }
-	            }
-	        },
-	        defaultHandlerError: function (resp) {
-	            this.events.fire('errorPopap', [this.options.uploader.getMsg(resp)]);
-	        }
-	    }
-	    
-	});
-});

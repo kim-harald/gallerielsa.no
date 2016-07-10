@@ -28,7 +28,7 @@
 				<?php $path = $artist->profilePicturePath=='' ? $pictures[0]->path:$artist->profilePicturePath?>
 				<h3><?php echo $artist->firstname . " " . $artist->lastname?></h3>
 				<img class="profile thumbnail" src="<?php echo $path?>">
-				<div class="artist-description"><?php echo $artist->longDescr?></div>
+				<div class="artist-description"><?php echo html_entity_decode($artist->longDescr)?></div>
 			</div>
 		</div>
 		<div class="row">
@@ -37,7 +37,7 @@
 			foreach ($pictures as $picture) {
 		?>
 			<div class="page-element">
-				<a class="fancybox-button" rel="fancybox-button" href="<?php echo $picture->path?>">
+				<a class="fancybox-button" rel="fancybox-button" href="<?php echo $picture->path?>" title = '<?php echo $picture->name?>'>
 					<img class="thumbnail" src="<?php echo $picture->thPath?>">
 					<p><?php echo $picture->name?></p>
 				</a>

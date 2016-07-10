@@ -32,6 +32,7 @@ function get($id) {
 	} else {
 		$exhibition = DAOFactory::getExhibitionDAO()->load($id);
 	}
+	$exhibition->longDescr = htmlspecialchars_decode($exhibition->longDescr);
 	return ($exhibition) ;
 }
 
@@ -57,7 +58,7 @@ function post($data) {
 	
 	$exhibition = new Exhibition();
 	$exhibition->name = $php_object->name;
-	$exhibition->longDescr = $php_object->longDescr;
+	$exhibition->longDescr = htmlspecialchars($php_object->longDescr);
 	$exhibition->id = $php_object->id;
 	$exhibition->startDate = $php_object->startDate;
 	$exhibition->endDate = $php_object->endDate;

@@ -1,7 +1,9 @@
 $(function() {
 		var href = $("section#main").attr("src");
-		loadContent(href,$("section#main"),setEvents);
+		//loadContent(href,$("section#main"),setEvents);
     setSection("#main");
+    setEvents();
+    setMenuActive("exhibitions");
 });
 
 function setEvents() {

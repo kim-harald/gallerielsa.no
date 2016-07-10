@@ -32,7 +32,9 @@ function get($id) {
 		$picture = new Picture();
 	} else {
 		$picture = DAOFactory::getArtistDAO()->load($id);
+		
 	}
+	$picture->longDescr = htmlspecialchars_decode($picture->longDescr);
 	return ($picture) ;
 }
 
@@ -40,9 +42,9 @@ function post($data) {
 
 	//Sanitize the json received from the client-side
 	//Keys correspond to 'data:{ js_string: val , js_array: arr,  js_object: obj }' in $.ajax
-	if(isset($data['js_string'])) $string = sanitize($data['js_string']);
-	if(isset($data['js_array']))  $json_array = sanitize($_POST['js_array']);
-	if(isset($data['js_object'])) $json_object = sanitize($_POST['js_object']);
+	if(isset($data['js_string'])) $string = ($data['js_string']);
+	if(isset($data['js_array']))  $json_array = ($_POST['js_array']);
+	if(isset($data['js_object'])) $json_object = ($_POST['js_object']);
 
 	//Decode the json to get workable PHP variables
 	//$php_array = json_decode($json_array);
@@ -52,7 +54,7 @@ function post($data) {
 	$artist->firstname = $php_object->firstname;
 	$artist->lastname = $php_object->lastname;
 	$artist->shortDescr = $php_object->shortDescr;
-	$artist->longDescr = $php_object->longDescr;
+	$artist->longDescr = htmlspecialchars($php_object->longDescr);
 	$artist->profilePicturePath = $php_object->profilePicturePath;
 	$artist->id = $php_object->id;
 	$artist->createdDate = date('Y-m-d H:i:s');

@@ -38,8 +38,9 @@
 	}
 	
 	body {
-	margin:10px 0px; padding:0px;
-	text-align:center;
+	margin:10px 0px;
+	padding:0px;
+	/* text-align:center; */
 	}
 	
 	#OuterContent {
@@ -166,8 +167,8 @@
 		border-bottom-width: 2px;
 		border-bottom-style: solid;
 		/* position: fixed; */
-		max-height: 75px;
-		height: 75px;
+		max-height: 105px;
+		height: 105px;
 	}
 	
 	#Header div.logo {
@@ -189,7 +190,7 @@
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		float: right;
-		width: 25%;
+		width: 75%;
 		margin-bottom:0px;
 		min-height: 35px;
 	}

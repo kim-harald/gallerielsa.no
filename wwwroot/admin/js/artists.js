@@ -45,6 +45,9 @@ $(function() {
         saveArtist(artist);
         setSection("#main");
     });
+    
+    setupJodit("#Artist-longdescr",false);
+    setMenuActive("artists");
 });
 
 function updateListEntry(artist) {
@@ -95,6 +98,8 @@ function editArtist(a) {
     $content.find("input.artist-lastname").val(a.lastname);
     $content.find("input.artist-shortdescr").val(a.shortDescr);
     $content.find("textarea.artist-longdescr").val(a.longDescr);
+    $(".jodit_editor").html(a.longDescr);
+    $("#joditArtist-longdescr").click();
     $("#Path").attr("src",a.profilePicturePath);
     $content.find("a.btn").attr("data-id", a.id);
 }
@@ -145,12 +150,3 @@ function deleteEntry(artist) {
 	var $artist = $('div.artist-element[data-id="' + artist.id + '"]');
 	$artist.remove();
 }
-
-var FileUploadWrapper = (function($chooseBtn) {
-    $chooseBtn.on("click", function() {
-        $("form input[type=file]").click();
-    });
-    $("form input[type=file]").on("change", function() {
-    	$("form input[type=submit]").click();
-    });
-});

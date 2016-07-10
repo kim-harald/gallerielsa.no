@@ -1,5 +1,5 @@
 <?php 
-include_once '../../Classes/include_dao.php';
+include_once '../Classes/include_dao.php';
 
 ?>
 <div class="add">
@@ -26,15 +26,10 @@ foreach($exhibitions as $exh) {
 	?>
 		    <div class="item-container" data-id="<?php echo $exh->id?>">
 		    	<a href="#detail?id=<?php echo $exh->id?>" data-id="<?php echo $exh->id?>" class="nav detail">
-				    <div class="item-title">
-					    	<h4><?php echo $exh->name?></h4>
+				      <img class="thumbnail <?php echo $picture->aspect?>" alt="<?php echo $picture->name?>" src="<?php echo $picture->thPath?>">
+					    	<p><?php echo $exh->name?></p>
 					    	<p><?php echo $startDate->format("d.m.y") . ' til ' . $endDate->format("d.m.y")?></p>
 					    	<p><?php echo count($pictures)?> bilder</p>
-					  </div>
-				    <div class="image-container">
-					    <img class="thumbnail <?php echo $picture->aspect?>" alt="<?php echo $picture->name?>" src="<?php echo $picture->thPath?>">
-				    </div>
-				    <div class="text-container"></div>
 			    </a>
 			  </div>
 <?php } ?>

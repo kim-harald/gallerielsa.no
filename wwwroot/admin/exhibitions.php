@@ -14,7 +14,8 @@
 <?php include "header.php"?>
 <div class="container-fluid site-container">
 
-<section class="ui_page" id="main" src="pages/exhibition_entries.php" >
+<section class="ui_page" id="main" >
+<?php include "pages/exhibition_entries.php"?>
     
 </section>
 

@@ -50,8 +50,9 @@
 				$(".row.picture").attr("data-id",result.success.id);
 				$("#Path").attr("src",name);
 				$("#ThPath").text(thumb);
-				$("#CheckUpload").removeAttr("checked");
-				$("a.btn.nav.save").disabled(false);
+				$("#Path").removeClass("landscape");
+                $("#Path").removeClass("portrait");
+                $("#Path").addClass(result.success.aspect);
 			} else if( result.error ){
 				error = result.error
 				html = '';

@@ -7,10 +7,10 @@
 	
 ?>
 <link rel="stylesheet" href="css/styles.css">
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/events.js"></script>
 <link rel="stylesheet" href="../jodit/jodit.min.css">
 <script src="../jodit/jodit.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/events.js"></script>
 </head>
 <body>
  

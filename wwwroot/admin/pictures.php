@@ -15,50 +15,78 @@
 	}
 	
 	$status = DAOFactory::getStatusDAO()->queryAll();
+	$ts =time();
 ?>
+	<link rel="stylesheet" href="../jodit/jodit.min.css">
+	<script src="../jodit/jodit.min.js"></script>
 	<link rel="stylesheet" href="css/styles.css">
 	<script type="text/javascript" src="js/jquery.form.min.js"></script>
 	<script type="text/javascript" src="js/ajax_upload.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/pictures.js"></script>
+	<script type="text/javascript" src="js/pictures.js"></script>
 </head>
 <body>
  
 <?php include "header.php"?>
-<div class="container-fluid  site-container">
+<div class="container-fluid site-container">
 <section class="ui_page active" id="main">
-    <div class="add">
-        <div class="picture-element">
-            <a href="#detail?id=0" data-id="0" class="btn nav add">
-	  		    <img class="picture-element" alt="Ny bilde" src="../images/art-icon-add.png" />
-	  		    <p>Ny bilde</p>
-  		    </a>
-        </div>
+	<div class="row add">
+		<div class="picture-element">
+			<a href="#detail?id=0" data-id="0" class="btn nav add">
+				<img class="thumbnail" alt="Ny bilde" src="../images/art-icon-add.png" />
+	  		<p>Ny bilde</p>
+  		</a>
     </div>
-    <div id="Picture-Entries">
-    	<?php include "pages/picture_entries.php"?>
-    </div>
+  </div>
+  <div class="row">
+<?php foreach ($pictures as $picture) {	?>
+	<div class="picture-element" data-id="<?php echo $picture->id?>">
+		<a href="#detail?id=<?php echo $picture->id?>" data-id="<?php echo $picture->id?>" class="nav detail">
+			<img class="thumbnail <?php echo isset($picture->aspect)?$picture->aspect:"landscape"?>" 
+				alt='<?php echo $picture->name?>' 
+				src="<?php echo (isset($picture->thPath)?$picture->thPath:$picture->path)."?ts=".$ts ?>" 
+				data-id="<?php echo $picture->id?>" />
+			<p><?php echo $picture->name?></p>
+		</a>
+	</div>
+<?php }?>
+</div>
 </section>
 
 <section class="ui_page" id="detail">
 	<div class="row picture" data-id="0">
+		<div class="col-sm-6 col-md-6">
+		<div class="page-fields-container">
+			
+				<div class="hidden">
+					<div id="ThPath"></div>
+					<form enctype="multipart/form-data" name='imageform' role="form" id="imageform" method="post" action="ajax_file_upload.php">
+						<input type=file name="images" id="images" accept=".jpg,.png,.jpeg" placeholder="valg bilde" data-id="0" value=""/>
+						<input type=hidden name="pictureid" id="pictureid" />
+						<input type=hidden name="Rotation" id="Rotation" />
+						
+						<div id="picture-error"></div>
+						<input type="submit" class="btn btn-primary" value="opplast" id="image_upload" name="image_upload">
+					</form>
+				</div>
+				<div class="page-element image-upload">
+					<div class="new-picture">
+						<img id="Path" src="" class="">							
+					</div>
+					<div class="upload-controls">
+						<a id="Choose" class="btn btn-default">Nye bilde</a>
+						<img id="loader" src="../images/ajax-loader.gif"></img>
+					</div>
+					<div>
+						<a id="BtnRotation" class="btn btn-default" data-id="0">Roter</a>
+					</div>
+			</div>
+		</div>
+		</div>
+		<div class="col-sm-6 col-md-6">
 		<div class="page-fields-container">
 			<div class="page-element">
-				<div><img id="Path" class="picture-medium new-picture" src="" title='navn' /></div>
-				<div class="hidden" id="ThPath"></div>
-				<label for="CheckUpload">Opplast ny bilde</label>
-				<input type="checkbox" id="CheckUpload" name="CheckUpload">
-				<form enctype="multipart/form-data" name='imageform' role="form" id="imageform" method="post" action="ajax_file_upload.php">
-					<input type=file name="images" id="images" accept=".jpg,.png,.jpeg" placeholder="valg bilde" data-id="0" value=""/>
-					<input type=hidden name="pictureid" id="pictureid" />
-					<div id="loader" style="display: none;">opplastes til serveren</div>
-					<div id="picture-error"></div>
-					<input type="submit" class="btn btn-primary" value="opplast" id="image_upload" name="image_upload">
-				</form>
-			</div>
-		
-			<div class="page-element">
-				<label for="Name">navn</label>
+				<label for="Name">navn</label><br/>
 				<input id="Name" name="Name" type=text class="name picture" placeholder="navn" />
 			</div>
 			<div class="page-element">
@@ -81,11 +109,6 @@
 				<label for="Price">pris</label><br/>
 				<input id="Price" name="Price" type="number" min="0" class="price picture" placeholder="pris eg 2000"  /><span>kr</span>
 			</div>
-			<div id="DimensionsJson" class="hidden"></div>
-			<div class="page-element">
-				<label for="Keywords">nøkel ord</label><br/>
-				<input id="Keywords" type=text class="keywords picture" placeholder="eg titel;kunstner;" />
-			</div>
 			<div class="page-element">
 				<label for="Status">status</label><br/>
 				<select id="Status" name="Status" class="status picture">
@@ -95,12 +118,14 @@
 				<?php }?>
 				</select>
 			</div>   
-			<a href="#main" class="btn nav save btn-default" data-id="0">lagre</span></a>
-			<a href="#main" class="btn nav btn-default">avbryt</a>
-			<a href="#main" class="btn nav delete btn-default">slette</span></a>
 		</div>
-
-</div>
+		</div>
+	</div>
+	<div class="row page-fields-container">
+			<a href="#main" class="btn save btn-default" data-id="0">lagre</span></a>
+			<a href="#main" class="btn nav btn-default">avbryt</a>
+			<a href="#main" class="btn delete btn-default">slette</span></a>
+	</div>
 </section>
 
 </div>

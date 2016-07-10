@@ -8,17 +8,19 @@
 	//$langCode = getDefaultLanguage();
 	$artists = DAOFactory::getArtistDAO()->all();
 ?>
-<link rel="stylesheet" href="css/styles.css">
-<script type="text/javascript" src="js/common.js"></script>
+	<link rel="stylesheet" href="../jodit/jodit.min.css">
+	<script src="../jodit/jodit.min.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/artists.js"></script>
+	<script type="text/javascript" src="js/jquery.form.min.js"></script>
+	<script type="text/javascript" src="js/ajax_upload.js"></script>
 </head>
 <body>
-<script type="text/javascript" src="js/artists.js"></script>
-<script type="text/javascript" src="js/jquery.form.min.js"></script>
-<script type="text/javascript" src="js/ajax_upload.js"></script>
     
 
 <?php include "header.php"?>
-<div class="container-fluid">
+<div class="container-fluid site-container"">
 
 <section class="ui_page active" id="main">
 	<div class="row add">
@@ -70,12 +72,12 @@
         	<input type="text" name="artist-lastname" class="artist-lastname" placeholder="etternavn" value=""/>
         </div>
         <div class="artist-field">
-        	<label for="artist-shortdescr">besrkivelse</label><br/>
+        	<label for="artist-shortdescr">beskrivelse</label><br/>
         <input type="text" name="artist-shortdescr" class="artist-shortdescr" placeholder="kort beskrivesle" value=""/>
         </div>
         <div class="artist-field">
         	<label for="artist-longdescr">lang beskrivelse</label><br/>
-        	<textarea name="artist-longdescr" class="artist-longdescr" placeholder="lang beskrivelse"></textarea>
+        	<textarea id="Artist-longdescr" name="artist-longdescr" class="artist-longdescr" placeholder="lang beskrivelse"></textarea>
         </div>
         <div class="artist-field">
         	<div class="hide">

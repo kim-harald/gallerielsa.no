@@ -3,12 +3,16 @@ $(function() {
       $("section.ui_page.active").show();
       //loadContent("pages/picture_entries.php",$("#Picture-Entries"),setEvents);
       setEvents();
-      $("#imageform").hide();
+      
+      $("#loader").hide();
+      
       var id = getActive($(location));
       getDetails(id);
       $("a.btn.nav.save").disable(id==0);
       $("section#detail .picture,a.btn.save").attr("data-id",id);
-      //$("a.btn.nav.save").disable(true);
+      FileUploadWrapper($("#Choose"));
+      setupJodit("#LongDescr",false);
+      setMenuActive("pictures");
   });
 
 function setEvents() {
@@ -26,23 +30,41 @@ function setEvents() {
 		$("section#detail .row.picture,a.btn.save").attr("data-id",id);
 	});
 
-	$("section#detail .picture a.btn.save").on("click",function() {
+	$("section#detail a.btn.save").on("click",function() {
 		savePicture();
 	});
 
-	$("a.btn.delete").on("click",function(){
+	$("section#detail a.btn.delete").on("click",function(){
 		var id = $(this).attr("data-id");
 		deletePicture(id);
 	});
 
-	$("#CheckUpload").on("change",function(){
-	    if($(this).is(":checked")){
-	        $("#imageform").show();
-	    }
-	    else if($(this).is(":not(:checked)")){
-	    	$("#imageform").hide();
-	        }
+	$("#BtnRotation").on("click",function(){
+		var id = $("#BtnRotation").attr("data-id");
+		var rotation = 90;
+		$.ajax({
+		dataType: 'json',
+		    url: "pages/ajax_picture.php?verb=rotate&id=" + id+"&rotation="+rotation,
+		    method: "GET",
+		    success: function(xhr) {
+		        var d = new Date();
+                var n = d.getTime(); 
+		        $("#Path").attr("src",xhr.path+"?ts=" + n);
+                $("#ThPath").text(xhr.thPath+"?ts=" + n);
+                $("img[data-id='"+id+"']").attr("src",xhr.thPath+"?ts=" + n);
+                $("#Path").removeClass("landscape");
+                $("#Path").removeClass("portrait");
+                $("#Path").addClass(xhr.aspect);
+                
+		    },
+		    error: function(xhr) {
+		        alert(JSON.stringify(xhr));
+		    },
+		    complete: function(xhr) {
+		        clearSpinner();
+		    }
 		});
+	});
 }
 
 function getDetails(id) {
@@ -57,7 +79,7 @@ function getDetails(id) {
 		method: "GET",
 		success: function(xhr) {
 		 		 displayDetails(xhr);
-		 		 $("input.picture,textarea.picture").disabled = (xhr.id == 0);
+		 		 $("input.picture,textarea.picture").disable = (xhr.id == "0");
 	    },
 	    error: function(xhr) {
 	           alert(JSON.stringify(xhr));
@@ -69,39 +91,48 @@ function getDetails(id) {
 }
 
 function displayDetails(p) {
-  var $e = $(".page-element");
-  $("#Path").attr("src",p.path);
+	if (p.id == null) {
+		
+		return;
+	}
+  var d = new Date();
+  var n = d.getTime();
+  var path = p.path=="" ? "" : p.path+"?ts="+n;
+  var thPath = p.thPath == "" ? "" : p.thPath+"?ts="+n
+  $("#Path").attr("src",path);
+  $("#Path").addClass(p.aspect);
   //$("#images").val(p.path);
-  $("#ThPath").text(p.thPath),
+  $("#ThPath").text(thPath),
   $("#Name").val(p.name);
   $("#ShortDescr").val(p.shortDescr);
   $("#LongDescr").val(p.longDescr);
+  $(".jodit_editor").html(p.longDescr);
+  $("#joditLongDescr").click();
   $("#ArtistId").val(p.artistid);
   $("#Price").val(p.price);
-  $("#Keywords").val(p.keywords);
   $("#Status").val(p.status);
   $("#images").attr("data-id",p.id);
   $("#pictureid").val(p.id);
+  $("section#detail .row.picture").attr("data-id",p.id);
   $("a.btn.delete").attr("data-id",p.id);
-
-  if (p.id=="0") {
-      $("a.btn.nav.save").disabled(true);
-  }
+  $("a.btn.save").attr("data-id",p.id);
+  $("#BtnRotation").attr("data-id",p.id);
+  
+  $("a.btn.nav.save").disable(p.id=="0");
 }
           
 
 function savePicture() {
 		var picture = {
-				id : $("section#detail .row.picture").attr("data-id"),
+			id : $("#pictureid").val(),
 			artistid : $("#ArtistId").val(),
 			name : $("#Name").val(),
 			shortDescr : $("#ShortDescr").val(),
 			longDescr : $("#LongDescr").val(),
 			price : $("#Price").val(),
-			keywords : $("#Keywords").val(),
 			status : $("#Status").val(),
-			path : $("#Path").attr("src"),
-  thPath : $("#ThPath").text()
+			path : removeTs($("#Path").attr("src")),
+            thPath : removeTs($("#ThPath").text())
 	};
 	var obj = { js_object : JSON.stringify(picture)};
 	setSpinner();
@@ -111,12 +142,15 @@ function savePicture() {
 	       method: "POST",
 	       data: obj,
 	       success: function(xhr) {
-	           if (picture.id == 0) {
-	        	   picture.id = xhr.id;
-	        	   addEntry(picture.id);
-	           } else {
+//	           if (picture.id == 0) {
+//	        	   picture.id = xhr.id;
+//	        	   addEntry(picture.id);
+//	        	   
+//	           } else 
+//	           {
     	           updateEntry(picture.id);
-	           }
+//	           }
+	           $("a.btn.nav.save").disable(picture.id=="0");
 	           setSection("#main");
 	           //loadContent("pages/picture_entries.php?artistid="+picture.artistId,$("#Picture-Entries"),setEvents);
     	           
@@ -156,12 +190,15 @@ function deleteEntry(id) {
 }
 
 function updateEntry(id) {
-      var $entry = $('.picture-element[data-id="' + id +'"');
+  var $entry = $('.picture-element[data-id="' + id +'"');
+  if ($entry.length ==0) {
+	  addEntry(id);
+  }
   loadContentGet("pages/picture_entry.php",id,$entry,setEvents);
 }
 
 function addEntry(id) {
-      var $entry = $('.item-container:last');
+  var $entry = $('.item-container:last');
   $entry.append('<div class="item-container" data-id="'+id+'"/>');
   loadContentGet("pages/picture_entry.php",id,$entry,setEvents);
 }
@@ -186,4 +223,10 @@ function loadContentGet(src,id,$anchor,onComplete) {
 	        }
 	        	
 	    });
+}
+
+function removeTs(s) {
+    var a = s.split("?");
+    if (a.length>1) return a[0]; // return first part
+    return s;
 }

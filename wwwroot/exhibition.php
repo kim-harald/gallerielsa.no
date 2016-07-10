@@ -20,10 +20,8 @@
 	<div class="container">
 <?php include("header.php"); ?>
 	  <div id="Body" class="container-fluid">
-        
-	  	<div class="col-sm-3 col-md-3"></div>
       <div class="row">
-	      <div class="col-xs-12 col-sm-6 col-md-6">
+	      
 	      <h3><?php echo $exh->name?></h3>
 	      <h4><?php echo $startDate->format("d.m.Y")?> til <?php echo $endDate->format("d.m.Y")?></h4>
 	      <div><?php echo $exh->longDescr?></div>
@@ -38,9 +36,7 @@
 	<?php }?>
 					
 	      </div>
-      </div>     
-      <div class="col-sm-3 col-md-3"></div>
-
+           
 		</div>
 <?php include 'footer.php'?>
   </div>

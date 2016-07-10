@@ -9,9 +9,11 @@
 
 .artist-element,.picture-element,.exhibition-element {
 	display: inline-block;
-	min-width:100px;
+	min-width: 100px;
 	padding:5px;
 	vertical-align: top;
+	/* float: left; */
+	text-align: center;
 }
 
 .exhibition-picture.selected  {
@@ -67,13 +69,22 @@ img.page-element {
 }
 
 .page-element textarea {
-	width: 25em;
-  height: 7em;
+	width: 50em;
+	height: 10em;
 }
 
-img.new-picture {
-	width:250px;
-	height:250px;
+img.new-picture, .new-picture {
+	width: 250px;
+	height: 250px;
+	margin-bottom: 10px;
+}
+
+img.portrait {
+	max-height:250px
+}
+
+img.landscape {
+	max-width:250px;
 }
 
 .event-container {
@@ -128,7 +139,7 @@ img.new-picture {
 }
 
 img#Path {
-	/* width:150px; */
+	/* width: 100%; */
 	/* min-height:150px; */
 }
 
@@ -163,5 +174,20 @@ section.ui_page h1 {
 }
 
 .page-element {
-	padding: 5px;
+		padding: 3px;
+		/* width: 93%; */
+}
+
+.upload-controls {
+	position:relative;
+	width: 7em;
+	height: 3em;
+	float: left;
+	margin-left: 10px;
+}
+
+.picture-element a p {
+	width: 160px;
+	overflow: hidden;
+	max-height: 3em;
 }

@@ -12,8 +12,12 @@ if( isset( $_POST['image_upload'] ) && !empty( $_FILES['images'] )){
 	//get image extension
 	$ext = strtolower(pathinfo($image_name, PATHINFO_EXTENSION));
 	//assign unique name to image
+	
+	$id = isset($_POST["pictureid"])?$_POST["pictureid"]:0;
+	$id == "" ? 0 : $id;
+
 	$name = time().'.'.$ext;
-	//$name = $image_name;
+	
 	//image size calcuation in KB
 	$image_size = $image["size"] / 1024;
 	$image_flag = true;
@@ -32,24 +36,35 @@ if( isset( $_POST['image_upload'] ) && !empty( $_FILES['images'] )){
 		$data['error'].= '<br/> '.$image_name.' Image contains error - Error Code : '.$image["error"];
 	}
 	
+	
+	
 	if($image_flag){
 		$path = "../pictures/";
 		move_uploaded_file($image["tmp_name"], $path . $name);
-		$picture = new Picture();
-		$picture->path = "/pictures/".$name;
-		$picture->thPath = "/pictures/"."th_".$name;
 		createThumbnail("../pictures/".$name, $path . "/th_".$name, 160,160);
-		$id = isset($_POST["pictureid"])?$_POST["pictureid"]:0;
-		$id == "" ? 0 : $id; 
-		if (is_numeric($id) && !$isProfile) {
-			$picture = DAOFactory::getPictureDAO()->load($id);
-			$picture->thPath = "/pictures/th_".$name;
+		if ($id==0) {
+			$picture = new Picture();
 			$picture->path = "/pictures/".$name;
+			$picture->thPath = "/pictures/"."th_".$name;
 			$picture->aspect = getAspect($picture->path);
-			if ($id>0) DAOFactory::getPictureDAO()->update($picture);
+		}
+		if (!$isProfile) {
+			if ($id > 0) {
+				$picture = DAOFactory::getPictureDAO()->load($id);
+				$picture->thPath = "/pictures/th_".$name;
+				$picture->path = "/pictures/".$name;
+				$picture->aspect = getAspect($picture->path);
+				DAOFactory::getPictureDAO()->update($picture);
 			} else {
 				$picture->id = DAOFactory::getPictureDAO()->insert($picture);
-			}		
+			}	
+		}
+		
+// 		$rotation = isset($_POST["Rotation"])?$_POST["Rotation"]:0;
+// 		if ($rotation > 0) {
+// 			rotateImage($picture->path,$rotation);
+// 			createThumbnail($picture->path, $picture->thPath, 160, 160);
+// 		}
 		
 		$data['success'] = $picture;
 	}
@@ -92,5 +107,7 @@ function createThumbnail($filepath, $thumbpath, $thumbnail_width, $thumbnail_hei
 
     return file_exists($thumbpath);
 }
+
+
 
 ?>
